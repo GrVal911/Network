@@ -1,0 +1,2612 @@
+<!DOCTYPE html>
+<html class="bx-core bx-no-touch bx-no-retina bx-firefox"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="1С-Битрикс, CMS, PHP, bitrix, система управления контентом">
+<meta name="description" content="Знак-ДВ">
+<link href="https://znakdv.ru/bitrix/js/main/core/css/core.min.css?15849355482854" type="text/css" rel="stylesheet">
+
+
+
+<link href="https://znakdv.ru/bitrix/css/main/bootstrap.min.css?1584935546121326" type="text/css" rel="stylesheet">
+<link href="https://znakdv.ru/bitrix/css/main/font-awesome.min.css?158493554623748" type="text/css" rel="stylesheet">
+<link href="https://znakdv.ru/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?15849355481861" type="text/css" rel="stylesheet">
+<link href="https://znakdv.ru/bitrix/js/main/popup/dist/main.popup.bundle.min.css?158761268723459" type="text/css" rel="stylesheet">
+<link href="https://znakdv.ru/bitrix/cache/css/s1/znak_dv_main/template_d87a8a3a107fa6f3de03f0ce6652ef9a/template_d87a8a3a107fa6f3de03f0ce6652ef9a_v1.css?1601353934399490" type="text/css" data-template-style="true" rel="stylesheet">
+<script src="https://www.google-analytics.com/analytics.js" async="" type="text/javascript"></script><script src="https://www.google-analytics.com/analytics.js" async=""></script><script src="https://mc.yandex.ru/metrika/watch.js" async="" type="text/javascript"></script><script src="https://bitrix.info/ba.js" async="" type="text/javascript"></script><script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+
+<script type="text/javascript" src="/bitrix/js/main/core/core.min.js?1592277842249634"></script>
+
+<script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1610618298','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'5f68ab1ac19368d0d8bc69cf7d723d47'});</script>
+
+
+<script type="text/javascript" src="/bitrix/js/main/jquery/jquery-1.8.3.min.js?158493554893637"></script>
+<script type="text/javascript" src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?160021944858041"></script>
+<script type="text/javascript">BX.setJSList(['/local/templates/znak_dv_main/js/jquery/jquery-1.11.1.min.js','/local/templates/znak_dv_main/js/common.js','/local/templates/znak_dv_main/bootstrap/js/bootstrap.min.js','/local/templates/znak_dv_main/bootstrap/js/collapse.js','/local/templates/znak_dv_main/js/owl/owl.carousel.js','/bitrix/components/bitrix/search.title/script.js','/local/templates/znak_dv_main/components/bitrix/sale.basket.basket.line/popup-cart2/script.js']);</script>
+<script type="text/javascript">BX.setCSSList(['/local/templates/znak_dv_main/css/reset.css','/local/templates/znak_dv_main/js/owl/assets/owl.theme.default.min.css','/local/templates/znak_dv_main/js/owl/assets/owl.carousel.min.css','/local/templates/znak_dv_main/bootstrap/css/bootstrap.css','/local/templates/znak_dv_main/css/font-awesome.min.css','/local/templates/znak_dv_main/css/hint/hint.css','/local/templates/znak_dv_main/css/main.css','/local/templates/znak_dv_main/css/road.css','/local/templates/znak_dv_main/css/about.css','/local/templates/znak_dv_main/css/fonts.css','/local/templates/znak_dv_main/css/media.css','/local/templates/znak_dv_main/components/bitrix/menu/top-menu/style.css','/local/templates/znak_dv_main/components/bitrix/search.title/main-search/style.css','/local/templates/znak_dv_main/styles.css','/local/templates/znak_dv_main/template_styles.css']);</script>
+<script type="text/javascript">
+					(function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+				</script>
+<link rel="shortcut icon" href="https://znakdv.ru/favicon.ico">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,800&amp;subset=cyrillic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+
+
+
+<script type="text/javascript" src="/bitrix/cache/js/s1/znak_dv_main/template_fdcf8a8fd11010c3f0d0cfaa59db69aa/template_fdcf8a8fd11010c3f0d0cfaa59db69aa_v1.js?1601353934252047"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "4eeeb5fb1d5b7629955d57e5740135f0"]); _ba.push(["host", "znakdv.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+	<title>Знак-ДВ</title>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-175812149-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175812149-1');
+</script>
+
+</head>
+<body>
+
+<div class="xs-menu js-xs-menu">
+	
+	<div class="containe r-fluid">
+		
+		<div class="xs-block-menu">
+			<div class="city-block">
+				<i class="icon-pin-top" aria-hidden="true"></i>
+				<div class="city">
+					<p><b><a href="#">ул. Нефтеветка, 7В</a></b></p>
+					<p style="margin-top: -15px;"><span><a href="https://znakdv.ru/contacts/">Как проехать</a> / <a href="https://znakdv.ru/affiliates/">Филиалы</a></span></p>
+				</div>
+			</div>
+		</div>
+		<div class="xs-block-menu">
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="phone-block">
+						<i class="icon-2phone-top" aria-hidden="true"></i>
+						<div class="phone">
+							<p><b>(423) 200 02 02</b></p>
+							<p style="margin-top: -14px;"><span><a href="#" data-toggle="modal" data-target="#call">Заказать звонок</a></span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6" style="padding-left: 0px;">
+						<div class="messenger-block">
+							
+							<div class="messenger">
+								<p><i class="icon-phone-top" aria-hidden="true" style="padding-right: 7px;"></i><b><nobr>(423) 294-87-07</nobr></b></p>
+								<p style="margin-top: -14px; height: 21px;">
+									<span>
+										<a href="http://wa.me/79247300202" target="_blank">
+										<i class="icon-whatsapp"></i>
+										</a>
+									</span>
+<!--
+									<span>
+										<a href="http://t.me/+79247300202" target="_blank">
+										<i class="icon-telegram" aria-hidden="true"></i>
+										</a>
+									</span>
+-->
+									<span>
+										<a href="viber://chat?number=+79247300202" target="_blank">
+										<i class="icon-viber"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="xs-block-menu">
+			<a href="#">
+				<div class="catalog-btn" style="width: 248px;display: block;margin: auto;">
+					<i class="fa icon-catalog-icon" aria-hidden="true"></i>
+					<span><b style="font-size: 22px;">Каталог&nbsp;продукции</b></span>
+				</div>								
+			</a>
+		</div>
+		<div class="xs-block-menu">
+							<i class="fa icon-lk-icon h-ico" aria-hidden="true"></i>
+				<a href="https://znakdv.ru/personal/private/">Войти</a>
+					</div>
+		<div class="xs-block-menu">
+					<div class="top-menu-container">
+						
+<ul class="top-menu">
+
+			<li><a href="https://znakdv.ru/about/">О компании</a></li>
+	
+			<li><a href="https://znakdv.ru/about/#delivery">Доставка и оплата</a></li>
+	
+			<li><a href="https://znakdv.ru/cooperation/">Сотрудничество</a></li>
+	
+			<li><a href="https://znakdv.ru/affiliates/">Филиалы</a></li>
+	
+			<li><a href="https://znakdv.ru/contacts/">Контакты</a></li>
+	
+			<li><a href="https://znakdv.ru/posts/">Статьи</a></li>
+	
+
+</ul>
+					</div>
+		</div>
+	</div>
+	
+</div>
+
+
+
+<header>
+	<section class="top">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-5 col-md-4 col-sm-1 col-xs-2">
+					<div id="menu-bars" class="top-bars">
+						<i class="icon-burger" aria-hidden="true"></i>
+					</div>
+					<div class="top-menu-container">
+						
+<ul class="top-menu">
+
+			<li><a href="https://znakdv.ru/about/">О компании</a></li>
+	
+			<li><a href="https://znakdv.ru/about/#delivery">Доставка и оплата</a></li>
+	
+			<li><a href="https://znakdv.ru/cooperation/">Сотрудничество</a></li>
+	
+			<li><a href="https://znakdv.ru/affiliates/">Филиалы</a></li>
+	
+			<li><a href="https://znakdv.ru/contacts/">Контакты</a></li>
+	
+			<li><a href="https://znakdv.ru/posts/">Статьи</a></li>
+	
+
+</ul>
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-8 col-sm-11 col-xs-11 hidden-xs">
+					<div class="top-contacts">
+						<div class="city-block">
+							<i class="icon-pin-top" aria-hidden="true"></i>
+							<div class="city">
+								<p><b><a href="#"><span style="" wa-subtypes="" wa-id="4" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">ул. Нефтеветка, 7В</span></a></b></p>
+								<p style="margin-top: 8px;"><span><a href="https://znakdv.ru/contacts/">Как проехать</a> / <a href="https://znakdv.ru/affiliates/">Филиалы</a></span></p>
+							</div>
+						</div>
+						<div class="phone-block">
+							<i class="icon-2phone-top" aria-hidden="true"></i>
+							<div class="phone">
+								<p><b><span style="" wa-subtypes="" wa-id="5" wa-type="PHONE" class="WebAnnotator_PHONE">(423) 200 02 02</span></b></p>
+								<p style="margin-top: 8px;"><span><a href="#" data-toggle="modal" data-target="#call">Заказать звонок</a></span></p>
+							</div>
+						</div>
+						<div class="messenger-block text-center">
+							
+							<div class="messenger">
+								<p><i class="icon-phone-top" aria-hidden="true" style="padding-right: 13px;"></i><b><span style="" wa-subtypes="" wa-id="6" wa-type="PHONE" class="WebAnnotator_PHONE">(423) 294-87-07</span></b></p>
+								<p><span>Написать в мессенджер</span>
+									<span>
+										<a href="http://wa.me/79247300202" target="_blank">
+										<i class="icon-whatsapp"></i>
+										</a>
+									</span>
+<!--
+									<span>
+										<a href="http://t.me/+79247300202" target="_blank">
+										<i class="icon-telegram" aria-hidden="true"></i>
+										</a>
+									</span>
+-->
+									<span>
+										<a href="viber://chat?number=+79247300202" target="_blank">
+										<i class="icon-viber"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+						<div class="sendmail-block">
+							<div class="sendmail">
+								<a href="mailto:info@znakdv.ru">
+									<i class="icon-mail-top" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>			
+				</div>
+				<div class="col-sm-10 col-xs-8 visible-xs">
+					<div class="zdv-logo">
+												<i class="icon-logo-top"></i>
+											</div>					
+				</div>
+				<div class="col-sm-1 col-xs-2 visible-xs">
+					<div class="top-search-cart">
+						<a href="https://znakdv.ru/search/"><i class="fa fa-search" aria-hidden="true"></i></a>
+						<a href="https://znakdv.ru/personal/cart/" class="xs-menu-basket">
+							<span class="account-cart-amount">0</span>
+							<span><i class="icon-basket-icon" aria-hidden="true"></i></span>
+						</a>
+						
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+</header>
+<main>
+	<section class="js-top-menu top-menu">
+		<div class="container-fluid">
+
+			<!----------NEW SEARCH-------->
+
+			<div class="row">
+				<div class="catalog-search">
+					<div class="col-md-12">
+						<div class="zdv-logo-color hidden-sm hidden-xs">
+															<img src="/local/templates/znak_dv_main/img/znakdv.svg" alt="">
+													</div>
+						<div class="zdv-header-description">
+							<div>
+
+								Сертифицированный производитель автономеров, ДОПОГ, дорожных знаков и&nbsp;рекламы
+
+							</div>
+						</div>
+						<div class="catalog-btn-container">
+							<a href="#">
+							<div class="catalog-btn">
+								<i class="fa icon-catalog-icon" aria-hidden="true"></i>
+								<span><b>Каталог&nbsp;продукции</b></span>
+							</div>								
+							</a>
+						</div>
+						<!--<div class="search-query-container hidden-xs">
+							<input type="search" placeholder="Поиск среди 20 000 товаров" class="search-query">
+							<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>							
+						</div>-->
+						 <div id="title-search" class="search-query-container">
+	<form action="/search/index.php">
+			<input id="title-search-input" name="q" autocomplete="off" class="bx-form-control search-query" placeholder="Дубликат гос. номера Тип 2" type="text">
+			<a><button type="submit" name="s"><i class="fa fa-search"></i></button></a>
+	</form>
+</div>
+<script>
+	BX.ready(function(){
+		new JCTitleSearch({
+			'AJAX_PAGE' : '/',
+			'CONTAINER_ID': 'title-search-input',
+			'INPUT_ID': 'title-search-input',
+			'MIN_QUERY_LEN': 2
+		});
+	});
+</script>
+
+						
+						<div class="account-cart-container hidden-xs">
+													<a href="https://znakdv.ru/personal/private/">Войти</a>
+													<div class="account-cart">
+								<span>
+									<a href="https://znakdv.ru/personal/"><i class="fa icon-lk-icon h-ico" aria-hidden="true"></i></a> 
+								
+																		<div class="account-hover">
+										<ul>
+											<li><a href="https://znakdv.ru/personal/private/">Войти</a></li>
+											<li><a href="https://znakdv.ru/personal/private/?register=yes">Регистрация</a></li>
+										</ul>
+									</div>
+																	</span>
+								<span class="account-cart-amount">0</span>
+								<span>
+								<a href="https://znakdv.ru/personal/cart/"><i class="fa icon-basket-icon h-ico" aria-hidden="true"></i><span class="hidden-md hidden-sm"> </span></a>
+									<div class="cart-wrap">
+										<div class="cart-hover">
+										<script>
+var bx_basketFKauiI = new BitrixSmallCart;
+</script>
+<div id="bx_basketFKauiI" class="bx-basket bx-opener">
+	<!--'start_frame_cache_bx_basketFKauiI'-->Ваша корзина пуста<!--'end_frame_cache_bx_basketFKauiI'--></div>
+<script type="text/javascript">
+	bx_basketFKauiI.siteId       = 's1';
+	bx_basketFKauiI.cartId       = 'bx_basketFKauiI';
+	bx_basketFKauiI.ajaxPath     = '/bitrix/components/bitrix/sale.basket.basket.line/ajax.php';
+	bx_basketFKauiI.templateName = 'popup-cart2';
+	bx_basketFKauiI.arParams     =  {'HIDE_ON_BASKET_PAGES':'N','PATH_TO_AUTHORIZE':'/login/','PATH_TO_BASKET':'/personal/cart/','PATH_TO_ORDER':'/personal/order/make/','PATH_TO_PERSONAL':'/personal/','PATH_TO_PROFILE':'/personal/','PATH_TO_REGISTER':'/login/','POSITION_FIXED':'N','SHOW_AUTHOR':'N','SHOW_EMPTY_VALUES':'Y','SHOW_NUM_PRODUCTS':'Y','SHOW_PERSONAL_LINK':'N','SHOW_PRODUCTS':'Y','SHOW_REGISTRATION':'N','SHOW_TOTAL_PRICE':'Y','COMPONENT_TEMPLATE':'popup-cart2','SHOW_DELAY':'N','SHOW_NOTAVAIL':'N','SHOW_IMAGE':'N','SHOW_PRICE':'Y','SHOW_SUMMARY':'Y','CACHE_TYPE':'A','POSITION_VERTICAL':'top','POSITION_HORIZONTAL':'right','MAX_IMAGE_SIZE':'70','AJAX':'N','~HIDE_ON_BASKET_PAGES':'N','~PATH_TO_AUTHORIZE':'/login/','~PATH_TO_BASKET':'/personal/cart/','~PATH_TO_ORDER':'/personal/order/make/','~PATH_TO_PERSONAL':'/personal/','~PATH_TO_PROFILE':'/personal/','~PATH_TO_REGISTER':'/login/','~POSITION_FIXED':'N','~SHOW_AUTHOR':'N','~SHOW_EMPTY_VALUES':'Y','~SHOW_NUM_PRODUCTS':'Y','~SHOW_PERSONAL_LINK':'N','~SHOW_PRODUCTS':'Y','~SHOW_REGISTRATION':'N','~SHOW_TOTAL_PRICE':'Y','~COMPONENT_TEMPLATE':'popup-cart2','~SHOW_DELAY':'N','~SHOW_NOTAVAIL':'N','~SHOW_IMAGE':'N','~SHOW_PRICE':'Y','~SHOW_SUMMARY':'Y','~CACHE_TYPE':'A','~POSITION_VERTICAL':'top','~POSITION_HORIZONTAL':'right','~MAX_IMAGE_SIZE':'70','~AJAX':'N','cartId':'bx_basketFKauiI'}; // TODO \Bitrix\Main\Web\Json::encode
+	bx_basketFKauiI.closeMessage = 'Скрыть';
+	bx_basketFKauiI.openMessage  = 'Раскрыть';
+	bx_basketFKauiI.activate();
+</script>									</div>
+								</div>
+							</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+
+	<section style="top: -87px;" class="fixed-menu js-fixed-menu">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="catalog-search">
+						<div class="zdv-logo-color hidden-sm hidden-xs">
+															<img src="/img/logo-small.png" alt="">
+													</div>
+<!--
+						<div class="zdv-header-description">
+							<div>
+
+								Сертифицированный производитель автономеров, ДОПОГ, дорожных знаков и&nbsp;рекламы
+
+							</div>
+						</div>
+-->
+						<div class="catalog-btn-container">
+							<a href="#">
+							<div class="catalog-btn">
+								<i class="fa icon-catalog-icon" aria-hidden="true"></i>
+								<span><b>Каталог&nbsp;продукции</b></span>
+							</div>								
+							</a>
+						</div>
+						<!--<div class="search-query-container hidden-xs">
+							<input type="search" placeholder="Поиск среди 20 000 товаров" class="search-query">
+							<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>							
+						</div>-->
+						 <div id="title-search" class="search-query-container">
+	<form action="/search/index.php">
+			<input id="title-search-input" name="q" autocomplete="off" class="bx-form-control search-query" placeholder="Дубликат гос. номера Тип 2" type="text">
+			<a><button type="submit" name="s"><i class="fa fa-search"></i></button></a>
+	</form>
+</div>
+<script>
+	BX.ready(function(){
+		new JCTitleSearch({
+			'AJAX_PAGE' : '/',
+			'CONTAINER_ID': 'title-search-input',
+			'INPUT_ID': 'title-search-input',
+			'MIN_QUERY_LEN': 2
+		});
+	});
+</script>
+
+						
+						<div class="account-cart-container hidden-xs">
+							<div class="account-cart">
+
+								<span class="account-cart-amount">0</span>
+								<span>
+								<a href="https://znakdv.ru/personal/cart/"><i class="fa icon-basket-icon h-ico" aria-hidden="true"></i><span class="hidden-md hidden-sm"> </span></a>
+									<div class="cart-wrap">
+										<div class="cart-hover">
+										<script>
+var bx_basketT0kNhm = new BitrixSmallCart;
+</script>
+<div id="bx_basketT0kNhm" class="bx-basket bx-opener">
+	<!--'start_frame_cache_bx_basketT0kNhm'-->Ваша корзина пуста<!--'end_frame_cache_bx_basketT0kNhm'--></div>
+<script type="text/javascript">
+	bx_basketT0kNhm.siteId       = 's1';
+	bx_basketT0kNhm.cartId       = 'bx_basketT0kNhm';
+	bx_basketT0kNhm.ajaxPath     = '/bitrix/components/bitrix/sale.basket.basket.line/ajax.php';
+	bx_basketT0kNhm.templateName = 'popup-cart2';
+	bx_basketT0kNhm.arParams     =  {'HIDE_ON_BASKET_PAGES':'N','PATH_TO_AUTHORIZE':'/login/','PATH_TO_BASKET':'/personal/cart/','PATH_TO_ORDER':'/personal/order/make/','PATH_TO_PERSONAL':'/personal/','PATH_TO_PROFILE':'/personal/','PATH_TO_REGISTER':'/login/','POSITION_FIXED':'N','SHOW_AUTHOR':'N','SHOW_EMPTY_VALUES':'Y','SHOW_NUM_PRODUCTS':'Y','SHOW_PERSONAL_LINK':'N','SHOW_PRODUCTS':'Y','SHOW_REGISTRATION':'N','SHOW_TOTAL_PRICE':'Y','COMPONENT_TEMPLATE':'popup-cart2','SHOW_DELAY':'N','SHOW_NOTAVAIL':'N','SHOW_IMAGE':'N','SHOW_PRICE':'Y','SHOW_SUMMARY':'Y','CACHE_TYPE':'A','POSITION_VERTICAL':'top','POSITION_HORIZONTAL':'right','MAX_IMAGE_SIZE':'70','AJAX':'N','~HIDE_ON_BASKET_PAGES':'N','~PATH_TO_AUTHORIZE':'/login/','~PATH_TO_BASKET':'/personal/cart/','~PATH_TO_ORDER':'/personal/order/make/','~PATH_TO_PERSONAL':'/personal/','~PATH_TO_PROFILE':'/personal/','~PATH_TO_REGISTER':'/login/','~POSITION_FIXED':'N','~SHOW_AUTHOR':'N','~SHOW_EMPTY_VALUES':'Y','~SHOW_NUM_PRODUCTS':'Y','~SHOW_PERSONAL_LINK':'N','~SHOW_PRODUCTS':'Y','~SHOW_REGISTRATION':'N','~SHOW_TOTAL_PRICE':'Y','~COMPONENT_TEMPLATE':'popup-cart2','~SHOW_DELAY':'N','~SHOW_NOTAVAIL':'N','~SHOW_IMAGE':'N','~SHOW_PRICE':'Y','~SHOW_SUMMARY':'Y','~CACHE_TYPE':'A','~POSITION_VERTICAL':'top','~POSITION_HORIZONTAL':'right','~MAX_IMAGE_SIZE':'70','~AJAX':'N','cartId':'bx_basketT0kNhm'}; // TODO \Bitrix\Main\Web\Json::encode
+	bx_basketT0kNhm.closeMessage = 'Скрыть';
+	bx_basketT0kNhm.openMessage  = 'Раскрыть';
+	bx_basketT0kNhm.activate();
+</script>									</div>
+								</div>
+							</span>
+							</div>
+						</div>
+						<div class="border-menu">
+							<span></span>
+						</div>
+						<div class="phone-block">
+							<i class="icon-2phone-top" aria-hidden="true"></i>
+							<div class="phone">
+								<p><b><span style="" wa-subtypes="" wa-id="38" wa-type="EMAIL" class="WebAnnotator_EMAIL">(423) 200 02 02</span></b> <img src="/img/i.jpg" class="js-open-submenu"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div style="display: none;" class="hover-on-i-menu js-hover-on-i-menu">		
+				<div class="row">
+					<div class="col-xs-5">
+						<div class="phone-block">
+							<i class="icon-2phone-top" aria-hidden="true"></i>
+							<div class="phone">
+								<p><b>(423) 200 02 02</b></p>
+								<p style=" line-height: 21px;position: relative;top: -1px; font-size: 12px;"><a href="#" data-toggle="modal" data-target="#callBack">Заказать звонок</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-5">
+						<div class="phone-block">
+							<i class="icon-phone-top" aria-hidden="true"></i>
+							<div class="phone">
+								<p><b>(423) 294-87-07</b></p>
+								<p style=" line-height: 0px;position: relative;top: -5px;">
+									<span>
+										<a href="http://wa.me/79247300202" class="no-links" target="_blank">
+										<i class="icon-whatsapp"></i>
+										</a>
+									</span>
+<!--
+									<span>
+										<a href="http://t.me/+79247300202" class="no-links" target="_blank">
+										<i class="icon-telegram" aria-hidden="true"></i>
+										</a>
+									</span>
+-->
+									<span>
+										<a href="viber://chat?number=+79247300202" target="_blank" class="no-links">
+										<i class="icon-viber"></i>
+										</a>
+									</span>
+								</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-2">
+						<div class="sendmail-block">
+							<div class="sendmail">
+								<a href="#">
+									<i class="icon-mail-top" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<section class="main-slider">
+<div class="container-fluid">
+	<div class="row">
+		<div class="banners">
+			<div id="owl-banners" class="owl-carousel owl-theme owl-loaded owl-drag">
+				
+				
+				
+				
+			<div class="owl-stage-outer"><div style="transform: translate3d(-7612px, 0px, 0px); transition: all 2.05s ease 0s; width: 15227px;" class="owl-stage"><div style="width: 1903px;" class="owl-item cloned"><div class="slide-bg slide-fade main-slide3">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="slide">
+								<div class="col-xs-12 col-sm-10 col-md-7" style="left: 260px; max-width: 683px;">
+									<div class="main-slider-h1">
+										<h1>Таблички ДОПОГ и знаки опасности</h1>
+										<h2 class="hidden-xs">
+										Широкий ассортимент  табличек и наклеек на транспорт для маркировки опасных грузов, негабарита и пр. Индивидуальное производство знаков под спецпроекты.</h2>
+									</div>
+									<div class="main-slider-btn">
+ <a href="https://znakdv.ru/catalog/znaki-opasnosti/">Перейти в каталог</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-2 col-sm-pull-10 col-md-2 col-md-pull-5 to-bottom">
+									<div class="row">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div></div><div style="width: 1903px;" class="owl-item cloned"><div class="slide-bg slide-fade main-slide4">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="slide">
+								<div class="col-xs-12 col-sm-10 col-md-7" style="left: 260px; max-width: 683px;">
+									<div class="main-slider-h1">
+										<h1>Эффектные вывески для улицы, навигации, рекламы</h1>
+										<h2 class="hidden-xs">
+										Собственный цех и креатив команды «ЗнакДВ» позволяют нам воплотить в жизнь даже самую смелую вашу идею. Печатаем баннеры наружной рекламы, изготавливаем режимники, адресные таблички, наклейки и пр.</h2>
+									</div>
+									<div class="main-slider-btn">
+ <a href="https://znakdv.ru/catalog/ulichnye-vyveski/">Перейти в каталог</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-2 col-sm-pull-10 col-md-2 col-md-pull-5 to-bottom">
+									<div class="row">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div></div><div style="width: 1903px;" class="owl-item"><div class="slide-bg slide-fade main-slide1">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="slide">
+								<div class="col-xs-12 col-sm-10 col-md-7" style="left: 260px; max-width: 683px;">
+									<div class="main-slider-h1">
+										<h1>Дубликаты номеров авто государственного образца</h1>
+										<h2 class="hidden-xs">
+										Лицензия на производство даже самых редких номеров на авто и технику, включая иностранные.  Изготовление за 5 минут. Доставка по всей России!</h2>
+									</div>
+									<div class="main-slider-btn">
+ <a href="https://znakdv.ru/catalog/registratsionnye-nomera/">Перейти в каталог</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-2 col-sm-pull-10 col-md-2 col-md-pull-5 to-bottom">
+									<div class="row">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div></div><div style="width: 1903px;" class="owl-item"><div class="slide-bg slide-fade main-slide2">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="slide">
+								<div class="col-xs-12 col-sm-10 col-md-7" style="left: 260px; max-width: 683px;">
+									<div class="main-slider-h1">
+										<h1>Дорожные знаки и материалы для дорожных работ</h1>
+										<h2 class="hidden-xs">
+										Высококачественная продукция для сферы дорожного хозяйства: знаки и средства ограждения, светофоры и зеркала, лежачие полицейские и оборудование для паркинга, фонари, катафоты и многое другое.</h2>
+									</div>
+									<div class="main-slider-btn">
+ <a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/">Перейти в каталог</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-2 col-sm-pull-10 col-md-2 col-md-pull-5 to-bottom">
+									<div class="row">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div></div><div style="width: 1903px;" class="owl-item active"><div class="slide-bg slide-fade main-slide3">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="slide">
+								<div class="col-xs-12 col-sm-10 col-md-7" style="left: 260px; max-width: 683px;">
+									<div class="main-slider-h1">
+										<h1>Таблички ДОПОГ и знаки опасности</h1>
+										<h2 class="hidden-xs">
+										Широкий ассортимент  табличек и наклеек на транспорт для маркировки опасных грузов, негабарита и пр. Индивидуальное производство знаков под спецпроекты.</h2>
+									</div>
+									<div class="main-slider-btn">
+ <a href="https://znakdv.ru/catalog/znaki-opasnosti/">Перейти в каталог</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-2 col-sm-pull-10 col-md-2 col-md-pull-5 to-bottom">
+									<div class="row">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div></div><div style="width: 1903px;" class="owl-item"><div class="slide-bg slide-fade main-slide4">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="slide">
+								<div class="col-xs-12 col-sm-10 col-md-7" style="left: 260px; max-width: 683px;">
+									<div class="main-slider-h1">
+										<h1>Эффектные вывески для улицы, навигации, рекламы</h1>
+										<h2 class="hidden-xs">
+										Собственный цех и креатив команды «ЗнакДВ» позволяют нам воплотить в жизнь даже самую смелую вашу идею. Печатаем баннеры наружной рекламы, изготавливаем режимники, адресные таблички, наклейки и пр.</h2>
+									</div>
+									<div class="main-slider-btn">
+ <a href="https://znakdv.ru/catalog/ulichnye-vyveski/">Перейти в каталог</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-2 col-sm-pull-10 col-md-2 col-md-pull-5 to-bottom">
+									<div class="row">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div></div><div style="width: 1903px;" class="owl-item cloned"><div class="slide-bg slide-fade main-slide1">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="slide">
+								<div class="col-xs-12 col-sm-10 col-md-7" style="left: 260px; max-width: 683px;">
+									<div class="main-slider-h1">
+										<h1>Дубликаты номеров авто государственного образца</h1>
+										<h2 class="hidden-xs">
+										Лицензия на производство даже самых редких номеров на авто и технику, включая иностранные.  Изготовление за 5 минут. Доставка по всей России!</h2>
+									</div>
+									<div class="main-slider-btn">
+ <a href="https://znakdv.ru/catalog/registratsionnye-nomera/">Перейти в каталог</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-2 col-sm-pull-10 col-md-2 col-md-pull-5 to-bottom">
+									<div class="row">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div></div><div style="width: 1903px;" class="owl-item cloned"><div class="slide-bg slide-fade main-slide2">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="slide">
+								<div class="col-xs-12 col-sm-10 col-md-7" style="left: 260px; max-width: 683px;">
+									<div class="main-slider-h1">
+										<h1>Дорожные знаки и материалы для дорожных работ</h1>
+										<h2 class="hidden-xs">
+										Высококачественная продукция для сферы дорожного хозяйства: знаки и средства ограждения, светофоры и зеркала, лежачие полицейские и оборудование для паркинга, фонари, катафоты и многое другое.</h2>
+									</div>
+									<div class="main-slider-btn">
+ <a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/">Перейти в каталог</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-2 col-sm-pull-10 col-md-2 col-md-pull-5 to-bottom">
+									<div class="row">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div></div></div></div><div class="owl-nav"><button class="owl-prev" type="button" role="presentation"><span class="icon-wrap"><i class="fa fa-angle-left" aria-hidden="true"></i></span></button><button class="owl-next" type="button" role="presentation"><span class="icon-wrap"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button></div></div>
+			<div class="main-slider-icons-block disabled">
+				<ul>
+					<li class="main-slider-icon"><img src="/local/templates/znak_dv_main/img/ico-reg.svg" alt=""></li>
+					<li class="main-slider-icon"><img src="/local/templates/znak_dv_main/img/ico-rw.svg" alt=""></li>
+					<li class="main-slider-icon main-slider-icon-active"><img src="/local/templates/znak_dv_main/img/ico-danger.svg" alt=""></li>
+					<li class="main-slider-icon"><img src="/local/templates/znak_dv_main/img/ico-arrows.svg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+ </section>
+ 
+ <section class="reg-nums">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Автомобильные номера и дубликаты</h2>
+				</div>
+			</div>
+			<div class="row">
+				<ul class="reg-nums-types hidden-xs">
+					<li class="reg-nums-type"><span>Тип 1</span><br><a href="" class="reg-nums-active">Авто</a></li>
+<!-- 					<li class="reg-nums-type"><span>Тип 4</span><br><a href="">Мото</a></li> -->
+					<li class="reg-nums-type"><span>Тип 1А</span><br><a href="">Авто</a></li>
+					<li class="reg-nums-type"><span>Тип 4</span><br><a href="">Мото</a></li>
+					<li class="reg-nums-type"><span>Тип 3</span><br><a href="">Трактор</a></li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+
+				<div id="owl-reg-num" class="owl-carousel owl-theme owl-loaded owl-drag">
+					
+					
+					
+					
+										
+
+					
+					
+
+					
+					
+				<div class="owl-stage-outer"><div style="transition: all 0s ease 0s; width: 13775px; transform: translate3d(-3395px, 0px, 0px);" class="owl-stage"><div style="width: auto; margin-right: 100px;" class="owl-item cloned"><div class="item-slider-reg-number">
+						<form action="" class="js-sumbit-reg-number-on-index">
+						<div class="my-new-number my-new-number__type2">
+							<div class="my-new-number__inside">
+									<input class="my-new-number__input my-new-number__input__numbers max-length-4" placeholder="6874" maxlength="4" type="text">
+									<input class="my-new-number__input my-new-number__input__words max-length-2" placeholder="ЕЕ" maxlength="2" type="text">
+									<input class="my-new-number__input my-new-number__input__region" placeholder="25" maxlength="2" type="text">
+									<input name="PRODUCT_ID" value="571" class="js-item-id" type="hidden">
+								<div class="my-new-number__inside__line1"></div>
+								<div class="my-new-number__inside__line2"></div>
+								<div class="my-new-number__flag">
+									<img style="opacity: 1;" src="https://znakdv.ru/local/templates/znak_dv_main/img/rus.png" alt="">
+								</div>						
+							</div>
+						</div>
+
+						<div class="catalog-btn-container center-block">
+							<button type="submit" style="border: 0px;background: transparent;">
+							<div class="reg-make-order-btn">
+								<span><b>Добавить в корзину</b></span>
+							</div>								
+							</button>
+							<a href="https://znakdv.ru/personal/cart/" class="item-btn-quick-order js-go-to-basket" style="display: none;">Оформить заказ&nbsp;<i class="fa fa-check" aria-hidden="true"></i></a>
+						</div>
+						</form>
+						</div></div><div style="width: auto; margin-right: 100px;" class="owl-item cloned"><div class="item-slider-reg-number">
+						<form action="" class="js-sumbit-reg-number-on-index">
+						<div class="my-new-number my-new-number__type4 tractor">
+							<div class="my-new-number__inside">
+
+									<input class="my-new-number__input my-new-number__input__numbers  max-length-4" placeholder="3773" maxlength="4" type="text">
+									<input class="my-new-number__input  my-new-number__input__words max-length-2" placeholder="MM" maxlength="2" type="text">
+									<input class="my-new-number__input my-new-number__input__region" placeholder="55" maxlength="2" type="text">
+									<input name="PRODUCT_ID" value="568" class="js-item-id" type="hidden">
+
+								<div class="my-new-number__inside__square"></div>
+						                <div class="my-new-number__flag">
+									<img style="opacity: 1;" src="https://znakdv.ru/local/templates/znak_dv_main/img/rus.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog-btn-container center-block">
+							<button type="submit" style="border: 0px;background: transparent;">
+								<div class="reg-make-order-btn">
+									<span><b>Добавить в корзину</b></span>
+								</div>								
+							</button>
+							<a href="https://znakdv.ru/personal/cart/" class="item-btn-quick-order js-go-to-basket" style="display: none;">Оформить заказ&nbsp;<i class="fa fa-check" aria-hidden="true"></i></a>
+
+						</div>					
+						</form>
+					</div></div><div style="width: auto; margin-right: 100px;" class="owl-item cloned"><div class="item-slider-reg-numbers">
+						<div class="text-in-slider center-block xs-text-on-slider-index">
+							<h3 class="xs-hidden">Не нашли необходимый регистрационный номер?</h3>
+							<h2 style="margin-top: 25px;">Смотрите все товары в разделе!</h2>
+						</div>		
+						<br><br>
+						<div class="catalog-btn-container center-block">
+							<a href="https://znakdv.ru/catalog/registratsionnye-nomera/">
+							<div class="reg-make-order-btn">
+								<span><b>Перейти в раздел</b></span>
+							</div>								
+							</a>
+							<a href="https://znakdv.ru/personal/cart/" class="item-btn-quick-order js-go-to-basket" style="display: none;">Оформить заказ&nbsp;<i class="fa fa-check" aria-hidden="true"></i></a>
+
+						</div>					
+												
+					</div></div><div style="width: auto; margin-right: 100px;" class="owl-item active center"><div class="item-slider-reg-number">
+						<form action="" class="js-sumbit-reg-number-on-index">
+						<div class="my-new-number my-new-number__type1">
+							<div class="my-new-number__inside">
+								
+									<input class="my-new-number__input my-new-number__input__words max-length-1" placeholder="Е" maxlength="1" type="text">
+									<input class="my-new-number__input my-new-number__input__numbers max-length-3" placeholder="777" maxlength="3" type="text">
+									<input class="my-new-number__input my-new-number__input__words max-length-2" placeholder="ЕЕ" maxlength="2" type="text">
+									<input class="my-new-number__input my-new-number__input__region" placeholder="125" maxlength="3" type="text">
+									<input name="PRODUCT_ID" value="566" class="js-item-id" type="hidden">
+								
+								<div class="my-new-number__inside__line"></div>
+								<div class="my-new-number__flag">
+									<img style="opacity: 1;" src="https://znakdv.ru/local/templates/znak_dv_main/img/rus.png" alt="">
+								</div>						
+							</div>
+						</div>
+						<div class="catalog-btn-container center-block">
+							<button type="submit" style="border: 0px;background: transparent;">
+							<div class="reg-make-order-btn">
+								<span><b>Добавить в корзину</b></span>
+							</div>								
+							</button>
+							<a href="https://znakdv.ru/personal/cart/" class="item-btn-quick-order js-go-to-basket" style="display: none;">Оформить заказ&nbsp;<i class="fa fa-check" aria-hidden="true"></i></a>
+
+						</div>					
+						</form>
+					</div></div><div style="width: auto; margin-right: 100px;" class="owl-item active"><div class="item-slider-reg-number">
+						<form action="" class="js-sumbit-reg-number-on-index">
+							<div class="my-new-number my-new-number__type3">
+								<div class="my-new-number__inside">
+									
+										<input class="my-new-number__input my-new-number__input__words  max-length-2" placeholder="B" maxlength="1" type="text">
+										<input class="my-new-number__input my-new-number__input__numbers max-length-3" placeholder="555" maxlength="3" type="text">
+										<input class="my-new-number__input my-new-number__input__words max-length-2" placeholder="PX" maxlength="2" type="text">
+										<input class="my-new-number__input my-new-number__input__region" placeholder="125" maxlength="3" minlength="2" style="padding-left:0px;" type="text">
+										<input name="PRODUCT_ID" value="1334" class="js-item-id" type="hidden">
+
+									
+									<div class="my-new-number__inside__square"></div>
+									<div class="my-new-number__flag">
+										<img style="opacity: 1;" src="https://znakdv.ru/local/templates/znak_dv_main/img/rus.png" alt="">
+									</div>						
+								</div>
+							</div>
+							<div class="catalog-btn-container center-block">
+							<button type="submit" style="border: 0px;background: transparent;">
+							<div class="reg-make-order-btn">
+								<span><b>Добавить в корзину</b></span>
+							</div>								
+							</button>
+							<a href="https://znakdv.ru/personal/cart/" class="item-btn-quick-order js-go-to-basket" style="display: none;">Оформить заказ&nbsp;<i class="fa fa-check" aria-hidden="true"></i></a>
+
+						</div>	
+						</form>
+										
+					</div></div><div style="width: auto; margin-right: 100px;" class="owl-item"><div class="item-slider-reg-number">
+						<form action="" class="js-sumbit-reg-number-on-index">
+						<div class="my-new-number my-new-number__type2">
+							<div class="my-new-number__inside">
+									<input class="my-new-number__input my-new-number__input__numbers max-length-4" placeholder="6874" maxlength="4" type="text">
+									<input class="my-new-number__input my-new-number__input__words max-length-2" placeholder="ЕЕ" maxlength="2" type="text">
+									<input class="my-new-number__input my-new-number__input__region" placeholder="25" maxlength="2" type="text">
+									<input name="PRODUCT_ID" value="571" class="js-item-id" type="hidden">
+								<div class="my-new-number__inside__line1"></div>
+								<div class="my-new-number__inside__line2"></div>
+								<div class="my-new-number__flag">
+									<img style="opacity: 1;" src="https://znakdv.ru/local/templates/znak_dv_main/img/rus.png" alt="">
+								</div>						
+							</div>
+						</div>
+
+						<div class="catalog-btn-container center-block">
+							<button type="submit" style="border: 0px;background: transparent;">
+							<div class="reg-make-order-btn">
+								<span><b>Добавить в корзину</b></span>
+							</div>								
+							</button>
+							<a href="https://znakdv.ru/personal/cart/" class="item-btn-quick-order js-go-to-basket" style="display: none;">Оформить заказ&nbsp;<i class="fa fa-check" aria-hidden="true"></i></a>
+						</div>
+						</form>
+						</div></div><div style="width: auto; margin-right: 100px;" class="owl-item"><div class="item-slider-reg-number">
+						<form action="" class="js-sumbit-reg-number-on-index">
+						<div class="my-new-number my-new-number__type4 tractor">
+							<div class="my-new-number__inside">
+
+									<input class="my-new-number__input my-new-number__input__numbers  max-length-4" placeholder="3773" maxlength="4" type="text">
+									<input class="my-new-number__input  my-new-number__input__words max-length-2" placeholder="MM" maxlength="2" type="text">
+									<input class="my-new-number__input my-new-number__input__region" placeholder="55" maxlength="2" type="text">
+									<input name="PRODUCT_ID" value="568" class="js-item-id" type="hidden">
+
+								<div class="my-new-number__inside__square"></div>
+						                <div class="my-new-number__flag">
+									<img style="opacity: 1;" src="https://znakdv.ru/local/templates/znak_dv_main/img/rus.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog-btn-container center-block">
+							<button type="submit" style="border: 0px;background: transparent;">
+								<div class="reg-make-order-btn">
+									<span><b>Добавить в корзину</b></span>
+								</div>								
+							</button>
+							<a href="https://znakdv.ru/personal/cart/" class="item-btn-quick-order js-go-to-basket" style="display: none;">Оформить заказ&nbsp;<i class="fa fa-check" aria-hidden="true"></i></a>
+
+						</div>					
+						</form>
+					</div></div><div style="width: auto; margin-right: 100px;" class="owl-item"><div class="item-slider-reg-numbers">
+						<div class="text-in-slider center-block xs-text-on-slider-index">
+							<h3 class="xs-hidden">Не нашли необходимый регистрационный номер?</h3>
+							<h2 style="margin-top: 25px;">Смотрите все товары в разделе!</h2>
+						</div>		
+						<br><br>
+						<div class="catalog-btn-container center-block">
+							<a href="https://znakdv.ru/catalog/registratsionnye-nomera/">
+							<div class="reg-make-order-btn">
+								<span><b>Перейти в раздел</b></span>
+							</div>								
+							</a>
+							<a href="https://znakdv.ru/personal/cart/" class="item-btn-quick-order js-go-to-basket" style="display: none;">Оформить заказ&nbsp;<i class="fa fa-check" aria-hidden="true"></i></a>
+
+						</div>					
+												
+					</div></div><div style="width: auto; margin-right: 100px;" class="owl-item cloned"><div class="item-slider-reg-number">
+						<form action="" class="js-sumbit-reg-number-on-index">
+						<div class="my-new-number my-new-number__type1">
+							<div class="my-new-number__inside">
+								
+									<input class="my-new-number__input my-new-number__input__words max-length-1" placeholder="Е" maxlength="1" type="text">
+									<input class="my-new-number__input my-new-number__input__numbers max-length-3" placeholder="777" maxlength="3" type="text">
+									<input class="my-new-number__input my-new-number__input__words max-length-2" placeholder="ЕЕ" maxlength="2" type="text">
+									<input class="my-new-number__input my-new-number__input__region" placeholder="125" maxlength="3" type="text">
+									<input name="PRODUCT_ID" value="566" class="js-item-id" type="hidden">
+								
+								<div class="my-new-number__inside__line"></div>
+								<div class="my-new-number__flag">
+									<img style="opacity: 1;" src="https://znakdv.ru/local/templates/znak_dv_main/img/rus.png" alt="">
+								</div>						
+							</div>
+						</div>
+						<div class="catalog-btn-container center-block">
+							<button type="submit" style="border: 0px;background: transparent;">
+							<div class="reg-make-order-btn">
+								<span><b>Добавить в корзину</b></span>
+							</div>								
+							</button>
+							<a href="https://znakdv.ru/personal/cart/" class="item-btn-quick-order js-go-to-basket" style="display: none;">Оформить заказ&nbsp;<i class="fa fa-check" aria-hidden="true"></i></a>
+
+						</div>					
+						</form>
+					</div></div><div style="width: auto; margin-right: 100px;" class="owl-item cloned"><div class="item-slider-reg-number">
+						<form action="" class="js-sumbit-reg-number-on-index">
+							<div class="my-new-number my-new-number__type3">
+								<div class="my-new-number__inside">
+									
+										<input class="my-new-number__input my-new-number__input__words  max-length-2" placeholder="B" maxlength="1" type="text">
+										<input class="my-new-number__input my-new-number__input__numbers max-length-3" placeholder="555" maxlength="3" type="text">
+										<input class="my-new-number__input my-new-number__input__words max-length-2" placeholder="PX" maxlength="2" type="text">
+										<input class="my-new-number__input my-new-number__input__region" placeholder="125" maxlength="3" minlength="2" style="padding-left:0px;" type="text">
+										<input name="PRODUCT_ID" value="1334" class="js-item-id" type="hidden">
+
+									
+									<div class="my-new-number__inside__square"></div>
+									<div class="my-new-number__flag">
+										<img style="opacity: 1;" src="https://znakdv.ru/local/templates/znak_dv_main/img/rus.png" alt="">
+									</div>						
+								</div>
+							</div>
+							<div class="catalog-btn-container center-block">
+							<button type="submit" style="border: 0px;background: transparent;">
+							<div class="reg-make-order-btn">
+								<span><b>Добавить в корзину</b></span>
+							</div>								
+							</button>
+							<a href="https://znakdv.ru/personal/cart/" class="item-btn-quick-order js-go-to-basket" style="display: none;">Оформить заказ&nbsp;<i class="fa fa-check" aria-hidden="true"></i></a>
+
+						</div>	
+						</form>
+										
+					</div></div><div style="width: auto; margin-right: 100px;" class="owl-item cloned"><div class="item-slider-reg-number">
+						<form action="" class="js-sumbit-reg-number-on-index">
+						<div class="my-new-number my-new-number__type2">
+							<div class="my-new-number__inside">
+									<input class="my-new-number__input my-new-number__input__numbers max-length-4" placeholder="6874" maxlength="4" type="text">
+									<input class="my-new-number__input my-new-number__input__words max-length-2" placeholder="ЕЕ" maxlength="2" type="text">
+									<input class="my-new-number__input my-new-number__input__region" placeholder="25" maxlength="2" type="text">
+									<input name="PRODUCT_ID" value="571" class="js-item-id" type="hidden">
+								<div class="my-new-number__inside__line1"></div>
+								<div class="my-new-number__inside__line2"></div>
+								<div class="my-new-number__flag">
+									<img style="opacity: 1;" src="https://znakdv.ru/local/templates/znak_dv_main/img/rus.png" alt="">
+								</div>						
+							</div>
+						</div>
+
+						<div class="catalog-btn-container center-block">
+							<button type="submit" style="border: 0px;background: transparent;">
+							<div class="reg-make-order-btn">
+								<span><b>Добавить в корзину</b></span>
+							</div>								
+							</button>
+							<a href="https://znakdv.ru/personal/cart/" class="item-btn-quick-order js-go-to-basket" style="display: none;">Оформить заказ&nbsp;<i class="fa fa-check" aria-hidden="true"></i></a>
+						</div>
+						</form>
+						</div></div></div></div><div class="owl-nav"><button class="owl-prev" type="button" role="presentation"><span class="icon-wrap"><i class="fa fa-angle-left" aria-hidden="true"></i></span></button><button class="owl-next" type="button" role="presentation"><span class="icon-wrap"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button></div><div class="owl-dots"><button class="owl-dot active" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button></div></div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+<!--
+					<div class="catalog-btn-container center-block">
+						<a href="#">
+						<div id = "reg-make-order-btn" class="reg-make-order-btn">
+							<span><b>Добавить в корзину</b></span>
+						</div>								
+						</a>
+						&nbsp;&nbsp;
+						<a href="/reg-num/">
+						<div class="b6btn">
+							Смотреть все
+						</div>								
+						</a>						
+					</div>					
+-->
+				</div>
+			</div>
+		</div>
+		<br><br>
+	</section>
+	
+	
+	<section class="signs signs-color-link-onh2">
+		<div class="container-fluid">
+						<div class="row">
+				<div class="col-md-12">
+					<h2><a href="https://znakdv.ru/catalog/registratsionnye-nomera/">Регистрационные номера</a></h2>
+				</div>
+			</div>
+
+			<div class="my-double-scroll">
+				<div class="sign-group">
+					<div class="row">
+
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data construct" data-url="/catalog/registratsionnye-nomera/rossiyskie-nomera-s-flagom/" id="bx_3966226736_566">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/94f/94f35f3f4889142546d1f385aace45e3.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Тип 1 (авто)									</div>
+									<div class="sign-gost">Регистрационные знаки для легковых, грузовых автомобилей и автобусов (кроме отнесенных к типу 1Б).									</div>
+									<div class="sign-price">
+										<span class="old-price">1300 руб.</span>										<b style="color: red;">1 100 <span style="" wa-subtypes="" wa-id="7" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/registratsionnye-nomera/rossiyskie-nomera-s-flagom/">
+									<div class="btn-cat-order">
+																					В конструктор <i class="fa fa-constr" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data construct" data-url="/catalog/registratsionnye-nomera/tip-1a-avto-novyy-gost/" id="bx_3966226736_1334">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/b74/b747c67e6e30621c23ecc00eda268104.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Тип 1А (авто, новый ГОСТ)									</div>
+									<div class="sign-gost">Регистрационные знаки для легковых, грузовых автомобилей и автобусов с нестандартным местом крепления (кроме отнесенных к типу 1Б).									</div>
+									<div class="sign-price">
+										<span class="old-price">1700 руб.</span>										<b style="color: red;">1 500 <span style="" wa-subtypes="" wa-id="8" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/registratsionnye-nomera/tip-1a-avto-novyy-gost/">
+									<div class="btn-cat-order">
+																					В конструктор <i class="fa fa-constr" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data construct" data-url="/catalog/registratsionnye-nomera/tip-1b/" id="bx_3966226736_574">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/6e6/6e6b85aa91d8b40ee9c5c5d942051251.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Тип 1Б 									</div>
+									<div class="sign-gost">Регистрационные знаки для легковых такси, транспортных средств, оборудованных для перевозок более восьми человек, осуществляющих перевозку на основании лицензии.									</div>
+									<div class="sign-price">
+										<span class="old-price">1500 руб.</span>										<b style="color: red;">1 300 <span style="" wa-subtypes="" wa-id="9" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/registratsionnye-nomera/tip-1b/">
+									<div class="btn-cat-order">
+																					В конструктор <i class="fa fa-constr" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data construct" data-url="/catalog/registratsionnye-nomera/tip-2/" id="bx_3966226736_567">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/fe2/fe2e84d0483e596f1081b1ab94463ae5.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Тип 2 (прицеп)									</div>
+									<div class="sign-gost">Регистрационные знаки для автомобильных прицепов и полуприцепов.									</div>
+									<div class="sign-price">
+										<span class="old-price">1300 руб.</span>										<b style="color: red;">1 100 <span style="" wa-subtypes="" wa-id="10" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/registratsionnye-nomera/tip-2/">
+									<div class="btn-cat-order">
+																					В конструктор <i class="fa fa-constr" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data construct" data-url="/catalog/registratsionnye-nomera/tip-3/" id="bx_3966226736_568">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/b52/b52f40b9c129e9504eef8e47b802f742.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Тип 3 (трактор)									</div>
+									<div class="sign-gost">Регистрационные знаки для тракторов, самоходных дорожно-строительных и иных машин и прицепов (полуприцепов) к ним.									</div>
+									<div class="sign-price">
+										<span class="old-price">1700 руб.</span>										<b style="color: red;">1 500 <span style="" wa-subtypes="" wa-id="11" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/registratsionnye-nomera/tip-3/">
+									<div class="btn-cat-order">
+																					В конструктор <i class="fa fa-constr" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+											<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+							<a href="https://znakdv.ru/catalog/registratsionnye-nomera/" style="text-decoration:none; display: block; color: #363636;" class="all-signs single-sign">
+								<div class="all-signs-text">
+									<b style="font-weight: normal;">Смотреть все</b><br>
+									<span>(9)</span>
+								</div>
+							</a>		
+						</div>
+										</div>	
+				</div>
+			</div>
+<div class="row">
+				<div class="col-md-12">
+					<h2><a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/">Всё для дорожных работ</a></h2>
+				</div>
+			</div>
+
+			<div class="my-double-scroll">
+				<div class="sign-group">
+					<div class="row">
+
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/vsye-dlya-dorozhnykh-rabot/dorozhnye-znaki/predpisyvayushchie-dorozhnye-znaki/4-8-3-napravlenie-dvizheniya-transportnykh-sredstv-s-opasnymi-gruzami/" id="bx_1970176138_1317">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/51d/51d7fbb819f223bf0b81629b83bd79db.jpg" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										1.1 ЖД переезд со шлагбаумом									</div>
+									<div class="sign-gost">Движение транспортных средств, оборудованных опознавательными знаками "Опасный груз", разрешается только направо.									</div>
+									<div class="sign-price">
+																				<b>1 070 <span style="" wa-subtypes="" wa-id="16" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/dorozhnye-znaki/predpisyvayushchie-dorozhnye-znaki/4-8-3-napravlenie-dvizheniya-transportnykh-sredstv-s-opasnymi-gruzami/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/vsye-dlya-dorozhnykh-rabot/dorozhnye-znaki/znaki-servisa/7-1-punkt-pervoy-meditsinskoy-pomoshchi/" id="bx_1970176138_1283">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/9f4/9f42bf3ecff5b8a4fb081b89832b31f4.jpg" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										7.1 Пункт первой медицинской помощи									</div>
+									<div class="sign-gost">									</div>
+									<div class="sign-price">
+																				<b>1 070 <span style="" wa-subtypes="" wa-id="15" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/dorozhnye-znaki/znaki-servisa/7-1-punkt-pervoy-meditsinskoy-pomoshchi/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/vsye-dlya-dorozhnykh-rabot/dorozhnye-znaki/informatsionnye-znaki/6-2-rekomenduemaya-skorost/" id="bx_1970176138_1251">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/5d4/5d4414dd567b37aec4f244b3fb0ca82b.jpg" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										6.2 Рекомендуемая скорость									</div>
+									<div class="sign-gost">Общие ограничения скорости, установленные Правилами дорожного движения Российской федерации.									</div>
+									<div class="sign-price">
+																				<b>950 <span style="" wa-subtypes="" wa-id="14" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/dorozhnye-znaki/informatsionnye-znaki/6-2-rekomenduemaya-skorost/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/vsye-dlya-dorozhnykh-rabot/dorozhnye-znaki/znaki-osobykh-predpisaniy/5-1-avtomagistral/" id="bx_1970176138_1205">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/c9e/c9e15d8f6f366cfd9783e4344b3e48bf.jpg" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										5.1 Автомагистраль									</div>
+									<div class="sign-gost">Дорога, на которой действуют требования Правил, устанавливающие порядок движения по автомагистралям.									</div>
+									<div class="sign-price">
+																				<b>1 070 <span style="" wa-subtypes="" wa-id="12" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/dorozhnye-znaki/znaki-osobykh-predpisaniy/5-1-avtomagistral/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/vsye-dlya-dorozhnykh-rabot/dorozhnye-znaki/znaki-dopolnitelnoy-informatsii/8-1-1-rasstoyanie-do-obekta/" id="bx_1970176138_1146">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/8ff/8ffec89aa0f8d28aa68dd7fb0200adc3.jpg" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										8.1.1 Расстояние до объекта									</div>
+									<div class="sign-gost">Табличка указывается расстояние от знака до начала опасного участка, места введения соответствующего ограничения или определенного объекта (места), находящегося впереди по ходу движения.									</div>
+									<div class="sign-price">
+																				<b>630 <span style="" wa-subtypes="" wa-id="13" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/dorozhnye-znaki/znaki-dopolnitelnoy-informatsii/8-1-1-rasstoyanie-do-obekta/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+											<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+							<a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/dorozhnye-znaki/" style="text-decoration:none; display: block; color: #363636;" class="all-signs single-sign">
+								<div class="all-signs-text">
+									<b style="font-weight: normal;">Смотреть все</b><br>
+									<span>(226)</span>
+								</div>
+							</a>		
+						</div>
+										</div>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2><a href="https://znakdv.ru/catalog/dopog-znaki-opasnosti/">ДОПОГ Знаки опасности</a></h2>
+				</div>
+			</div>
+
+			<div class="my-double-scroll">
+				<div class="sign-group">
+					<div class="row">
+
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/dopog-znaki-opasnosti/klass-1-vzryvchatye-veshchestva-i-izdeliya/" id="bx_40480796_5170">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/640/640017b2209e8b756bf1de1a49b2acbb.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										КЛАСС 1. Взрывчатые вещества и изделия									</div>
+									<div class="sign-gost"><p>
+	Взрывчатые материалы, которые по своим свойствам могут взрываться, вызывать пожар с взрывчатым действием, а также устройства, содержащие взрывчатые вещества и средства взрывания, предназначенные для производства пиротехнического эффекта.
+</p>
+<p>
+	Вещества и изделия класса 1 отнесены к одной из групп совместимости, обозначенных заглавными буквами латинского алфавита от А до S. Обращение со взрывчатыми веществами и изделиями требует величайшей осторожности
+</p>
+<ul>
+	<li>Вещества могут реагировать на удары и толчки</li>
+	<li>Вещества могут реагировать на повышение температуры</li>
+	<li>Вещества могут реагировать на образование искр</li>
+</ul>
+<p>
+	** Место для указания подкласса – оставить незаполненным в случае дополнительной опасности «взрывается».
+</p>
+<p>
+	* Место для указания группы совместимости – оставить незаполненным в случае дополнительной опасности «взрывается» .
+</p>
+<p>
+	<strong>Материал:</strong>&nbsp;самоклеющаяся пленка.
+</p>
+<p>
+	<strong>Размеры:</strong> 250х250 мм.
+</p>
+ <br>									</div>
+									<div class="sign-price">
+																				<b>150 <span style="" wa-subtypes="" wa-id="21" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/dopog-znaki-opasnosti/klass-1-vzryvchatye-veshchestva-i-izdeliya/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/dopog-znaki-opasnosti/podklass-1-4-vzryvchatye-materialy/" id="bx_40480796_5171">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/1dd/1dd6d71a2d360acdfa9f5b69835325f2.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Подкласс 1.4. Взрывчатые материалы									</div>
+									<div class="sign-gost"><p>
+	 Взрывчатые и пиротехнические вещества и изделия, представляющие незначительную опасность взрыва во время транспортировки только в случае воспламенения или инициирования, не дающие разрушения устройств и упаковок,&nbsp;при этом не ожидается выброса осколков значительных размеров или на значительное расстояние. Внешний пожар не должен служить причиной практически мгновенного взрыва почти всего содержимого упаковки.
+</p>
+<p>
+ <b>Материал:&nbsp;</b>самоклеющаяся пленка.
+</p>
+<p>
+ <b>Размеры:</b>&nbsp;250х250 мм.
+</p>									</div>
+									<div class="sign-price">
+																				<b>150 <span style="" wa-subtypes="" wa-id="17" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/dopog-znaki-opasnosti/podklass-1-4-vzryvchatye-materialy/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/dopog-znaki-opasnosti/podklass-1-5-ochen-nechuvstvitelnye-vzryvchatye-materialy/" id="bx_40480796_5172">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/782/782507bfa763a91e1b6d5efd6480c9fa.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Подкласс 1.5. Очень нечувствительные взрывчатые материалы									</div>
+									<div class="sign-gost"><p>
+	 Взрывчатые и пиротехнические вещества и изделия, представляющие незначительную опасность взрыва во время транспортировки только в случае воспламенения или инициирования, не дающие разрушения устройств и упаковок.
+</p>
+<p>
+ <b>Материал:&nbsp;</b>самоклеющаяся пленка.
+</p>
+<p>
+ <b>Размеры:&nbsp;</b>250х250 мм.
+</p>									</div>
+									<div class="sign-price">
+																				<b>150 <span style="" wa-subtypes="" wa-id="18" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/dopog-znaki-opasnosti/podklass-1-5-ochen-nechuvstvitelnye-vzryvchatye-materialy/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/dopog-znaki-opasnosti/podklass-1-6-izdeliya-chrezvychayno-nizkoy-chuvstvitelnosti-kotorye-ne-kharakterizuyutsya-opasnostyu/" id="bx_40480796_5173">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/1c5/1c5be66b667dddcf630c858c1a20b298.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Подкласс 1.6. Изделия чрезвычайно низкой чувствительности, которые не характеризуются опасностью взрыва массой									</div>
+									<div class="sign-gost"><p>
+	 Изделия чрезвычайно низкой чувствительности, которые не характеризуются опасностью взрыва массой. Эти изделия содержат только крайне нечувствительные к детонации вещества и характеризуются ничтожной вероятностью случайного инициирования или распространения взрыва.
+</p>
+<p>
+ <b>ПРИМЕЧАНИЕ:</b> Опасность, характерная для изделий подкласса 1.6, ограничивается взрывом одного изделия.
+</p>
+<p>
+ <b>Материал:</b>&nbsp;самоклеющаяся пленка.
+</p>
+<p>
+ <b>Размеры:</b>&nbsp;250х250 мм.
+</p>									</div>
+									<div class="sign-price">
+																				<b>150 <span style="" wa-subtypes="" wa-id="19" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/dopog-znaki-opasnosti/podklass-1-6-izdeliya-chrezvychayno-nizkoy-chuvstvitelnosti-kotorye-ne-kharakterizuyutsya-opasnostyu/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/dopog-znaki-opasnosti/tablichka-opasnosti-konstruktor/" id="bx_40480796_1028">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/caf/caf5818c46f701578d6aa6b1d9caf2ba.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Табличка опасности - конструктор									</div>
+									<div class="sign-gost">У нас вы можете купить табличку опасный груз с ЛЮБЫМИ цифрами, соответствующими опасному грузу, перевозимому вашей компанией.<br>
+Чтобы купить табличку - отправьте нам запрос с указанием цифр (вверху и внизу) и количеством табличек.<br>
+Таблички для перевозки опасных грузов должны быть установлены на каждом транспортном средстве, перевозящем опасный груз.<br>
+									</div>
+									<div class="sign-price">
+																				<b>550 <span style="" wa-subtypes="" wa-id="20" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/dopog-znaki-opasnosti/tablichka-opasnosti-konstruktor/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+											<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+							<a href="https://znakdv.ru/catalog/znaki-opasnosti/" style="text-decoration:none; display: block; color: #363636;" class="all-signs single-sign">
+								<div class="all-signs-text">
+									<b style="font-weight: normal;">Смотреть все</b><br>
+									<span>(9)</span>
+								</div>
+							</a>		
+						</div>
+										</div>	
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<h2><a href="https://znakdv.ru/catalog/suvenirnaya-produktsiya/">Сувенирная продукция</a></h2>
+				</div>
+			</div>
+
+			<div class="my-double-scroll">
+				<div class="sign-group">
+					<div class="row">
+
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data construct" data-url="/catalog/suvenirnaya-produktsiya/suvenirnyy-nomer/" id="bx_2618107327_1332">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/772/7720ea98753cc7d75a698fef8b910a60.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Выдавливаемый (ГОСТ)									</div>
+									<div class="sign-gost">									</div>
+									<div class="sign-price">
+										<span class="old-price">1500 руб.</span>										<b style="color: red;">1 300 <span style="" wa-subtypes="" wa-id="22" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/suvenirnaya-produktsiya/suvenirnyy-nomer/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+											<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+							<a href="https://znakdv.ru/catalog/suvenirnaya-produktsiya/" style="text-decoration:none; display: block; color: #363636;" class="all-signs single-sign">
+								<div class="all-signs-text">
+									<b style="font-weight: normal;">Смотреть все</b><br>
+									<span>(1)</span>
+								</div>
+							</a>		
+						</div>
+										</div>	
+				</div>
+			</div>
+
+
+
+			
+
+			<div class="row">
+				<div class="col-md-12">
+					<h2><a href="https://znakdv.ru/catalog/ulichnye-vyveski/">Уличные вывески</a></h2>
+				</div>
+			</div>
+
+			<div class="my-double-scroll">
+				<div class="sign-group">
+					<div class="row">
+
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/ulichnye-vyveski/adresnaya-tablichka-iz-kompozitnogo-materiala-format-5/" id="bx_3943306537_1364">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/96d/96d2c99c8a17b4b7818b6678605f33f5.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Адресная табличка из композитного материала, формат 5									</div>
+									<div class="sign-gost">1.1-1.2, 1.5-1.33, 2.3.1-2.3.7, 2.4									</div>
+									<div class="sign-price">
+																				<b>950 <span style="" wa-subtypes="" wa-id="23" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/ulichnye-vyveski/adresnaya-tablichka-iz-kompozitnogo-materiala-format-5/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/ulichnye-vyveski/adresnaya-tablichka-iz-kompozitnogo-materiala-format-4/" id="bx_3943306537_1363">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/bd6/bd67e42fc89312ab582e92dbf84b2447.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Адресная табличка из композитного материала, формат 4									</div>
+									<div class="sign-gost">1.1-1.2, 1.5-1.33, 2.3.1-2.3.7, 2.4									</div>
+									<div class="sign-price">
+																				<b>850 <span style="" wa-subtypes="" wa-id="24" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/ulichnye-vyveski/adresnaya-tablichka-iz-kompozitnogo-materiala-format-4/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/ulichnye-vyveski/adresnaya-tablichka-iz-kompozitnogo-materiala-format-3/" id="bx_3943306537_1362">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/37b/37b2c2814f94df387a5738493efba2bc.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Адресная табличка из композитного материала, формат 3									</div>
+									<div class="sign-gost">1.1-1.2, 1.5-1.33, 2.3.1-2.3.7, 2.4									</div>
+									<div class="sign-price">
+																				<b>900 <span style="" wa-subtypes="" wa-id="25" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/ulichnye-vyveski/adresnaya-tablichka-iz-kompozitnogo-materiala-format-3/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/ulichnye-vyveski/adresnaya-tablichka-iz-kompozitnogo-materiala-format-1/" id="bx_3943306537_1038">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/85b/85b924bf39f56002651ea37ad714d206.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Адресная табличка из композитного материала, формат 1									</div>
+									<div class="sign-gost">1.1-1.2, 1.5-1.33, 2.3.1-2.3.7, 2.4									</div>
+									<div class="sign-price">
+																				<b>750 <span style="" wa-subtypes="" wa-id="26" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/ulichnye-vyveski/adresnaya-tablichka-iz-kompozitnogo-materiala-format-1/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		
+							<div class="single-sign js-url-data" data-url="/catalog/ulichnye-vyveski/adresnaya-tablichka-iz-kompozitnogo-materiala-format-2/" id="bx_3943306537_1037">
+								<div class="sign-img-container">
+									<img src="/upload/iblock/05a/05a5216ae586cfd9bed83cc63adc1d6c.png" alt="">
+								</div>
+								<div class="single-sign-descr">
+									<div class="sign-name">
+										Адресная табличка из композитного материала, формат 2									</div>
+									<div class="sign-gost">1.1-1.2, 1.5-1.33, 2.3.1-2.3.7, 2.4									</div>
+									<div class="sign-price">
+																				<b>900 <span style="" wa-subtypes="" wa-id="27" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">руб</span>.</b>
+									</div>
+								</div>
+								<a href="https://znakdv.ru/catalog/ulichnye-vyveski/adresnaya-tablichka-iz-kompozitnogo-materiala-format-2/">
+									<div class="btn-cat-order">
+																					Подробнее <i class="fa icon-learn-more" aria-hidden="true"></i>
+																			</div>
+								</a>								
+							</div>
+						</div>
+											<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+							<a href="https://znakdv.ru/catalog/ulichnye-vyveski/" style="text-decoration:none; display: block; color: #363636;" class="all-signs single-sign">
+								<div class="all-signs-text">
+									<b style="font-weight: normal;">Смотреть все</b><br>
+									<span>(5)</span>
+								</div>
+							</a>		
+						</div>
+										</div>	
+				</div>
+			</div>
+
+		</div>
+	</section>
+	
+
+
+
+<script>
+	$(document).ready(function(){		
+		$('.js-sumbit-reg-number-on-index input').keyup(function(){
+			var count = $(this).attr('maxlength');
+			var val = $(this).val();
+			
+			if(count == val.length){
+				$(this).next('input').focus();
+			}
+		});
+		
+		
+	    $('.my-new-number__input__numbers').bind("change keyup input click", function() {
+	        if (this.value.match(/[^0-9]/g)) {
+	            this.value = this.value.replace(/[^0-9]/g, '');
+	        }
+	    });
+	    $('.my-new-number__input__region').bind("change keyup input click", function() {
+	        if (this.value.match(/[^0-9]/g)) {
+	            this.value = this.value.replace(/[^0-9]/g, '');
+	        }
+	    });
+	
+	    $('.my-new-number__input__words').bind("change keyup input click", function() {
+		    if($(this).hasClass('words-eng')){
+		        if (this.value.match(/[^a-zA-Z\s]/g)) {
+		            this.value = this.value.replace(/[^a-zA-Z\s]/g, '');
+		        }
+		    }else{
+		        if (this.value.match(/[^а-яА-Я\s]/g)) {
+		            this.value = this.value.replace(/[^а-яА-Я\s]/g, '');
+		        }
+		    }
+	    });
+
+	
+
+		$('.js-sumbit-reg-number-on-index').on('submit', function(){
+			$('.js-sumbit-reg-number-on-index input').removeClass('has-error');
+			var n1, n2, n3, n4, id, i, n, data, bool;
+			i = 0;
+			id = $(this).find('.js-item-id').val();
+			bool = true;
+			data = '?id='+id;
+			$(this).find('input').each(function(){
+				if(!$(this).hasClass('js-item-id')){
+					i++;
+					n = $(this).val(); 
+					if(n.length != $(this).attr('maxlength')){
+						$(this).addClass('has-error'); 
+						$(this).focus();
+						bool = false;
+						return false;
+					}else{
+						data = data + '&n'+i+'='+n;
+					}
+				}	
+			});
+			
+			//return false;
+			if(bool){
+				if($('.js-checkbox-complect').is(':checked')){data = data + '&complect=Y';}
+				var url = '/ajax/addToBasket.php'+data;
+				$.get(url,function(data){
+					
+					var count = $('.account-cart-amount').html();
+					count++;
+					$('.account-cart-amount').html(count);
+				});
+				
+				$(this).find('button').hide();
+				$(this).find('.js-go-to-basket').show();
+			}
+
+
+			return false;
+		});
+	});
+</script>
+
+
+
+
+
+<script src="/js/jquery.onepage-scroll.min.js"></script> 
+<link rel="stylesheet" href="https://znakdv.ru/css/onepage-scroll.css?cahce_v=1.0.0">
+
+<script>
+$(document).ready(function() {
+  $('.double-scroll').doubleScroll();
+});
+ (function( $ ) {
+ 	
+ 	jQuery.fn.doubleScroll = function(userOptions) {
+	
+		// Default options
+		var options = {
+			contentElement: undefined, // Widest element, if not specified first child element will be used
+			scrollCss: {                
+				'overflow-x': 'auto',
+				'overflow-y': 'hidden'
+			},
+			contentCss: {
+				'overflow-x': 'auto',
+				'overflow-y': 'hidden'
+			},
+			onlyIfScroll: true, // top scrollbar is not shown if the bottom one is not present
+			resetOnWindowResize: false, // recompute the top ScrollBar requirements when the window is resized
+			timeToWaitForResize: 30 // wait for the last update event (usefull when browser fire resize event constantly during ressing)
+		};
+	
+		$.extend(true, options, userOptions);
+	
+		// do not modify
+		// internal stuff
+		$.extend(options, {
+			topScrollBarMarkup: '<div class="doubleScroll-scroll-wrapper" style="height: 20px;"><div class="doubleScroll-scroll" style="height: 20px;"></div></div>',
+			topScrollBarWrapperSelector: '.doubleScroll-scroll-wrapper',
+			topScrollBarInnerSelector: '.doubleScroll-scroll'
+		});
+
+		var _showScrollBar = function($self, options) {
+
+			if (options.onlyIfScroll && $self.get(0).scrollWidth <= $self.width()) {
+				// content doesn't scroll
+				// remove any existing occurrence...
+				$self.prev(options.topScrollBarWrapperSelector).remove();
+				return;
+			}
+		
+			// add div that will act as an upper scroll only if not already added to the DOM
+			var $topScrollBar = $self.prev(options.topScrollBarWrapperSelector);
+			
+			if ($topScrollBar.length == 0) {
+				
+				// creating the scrollbar
+				// added before in the DOM
+				$topScrollBar = $(options.topScrollBarMarkup);
+				$self.before($topScrollBar);
+
+				// apply the css
+				$topScrollBar.css(options.scrollCss);
+				$self.css(options.contentCss);
+
+				// bind upper scroll to bottom scroll
+				$topScrollBar.bind('scroll.doubleScroll', function() {
+					$self.scrollLeft($topScrollBar.scrollLeft());
+				});
+
+				// bind bottom scroll to upper scroll
+				var selfScrollHandler = function() {
+					$topScrollBar.scrollLeft($self.scrollLeft());
+				};
+				$self.bind('scroll.doubleScroll', selfScrollHandler);
+			}
+
+			// find the content element (should be the widest one)	
+			var $contentElement;		
+			
+			if (options.contentElement !== undefined && $self.find(options.contentElement).length !== 0) {
+				$contentElement = $self.find(options.contentElement);
+			} else {
+				$contentElement = $self.find('>:first-child');
+			}
+			
+			// set the width of the wrappers
+			$(options.topScrollBarInnerSelector, $topScrollBar).width($contentElement.outerWidth());
+			$topScrollBar.width($self.width());
+			$topScrollBar.scrollLeft($self.scrollLeft());
+			
+		}
+	
+		return this.each(function() {
+			
+			var $self = $(this);
+			
+			_showScrollBar($self, options);
+			
+			// bind the resize handler 
+			// do it once
+			if (options.resetOnWindowResize) {
+			
+				var id;
+				var handler = function(e) {
+					_showScrollBar($self, options);
+				};
+			
+				$(window).bind('resize.doubleScroll', function() {
+					// adding/removing/replacing the scrollbar might resize the window
+					// so the resizing flag will avoid the infinite loop here...
+					clearTimeout(id);
+					id = setTimeout(handler, options.timeToWaitForResize);
+				});
+
+			}
+
+		});
+
+	}
+
+}( jQuery ));
+	
+	
+</script>
+
+	<section class="promo-banners">
+		<div class="container-fluid">
+			<h2 class="title-banners-promo">Крутые возможности и предложения «<span style="" wa-subtypes="" wa-id="28" wa-type="NAME" class="WebAnnotator_NAME">Знак ДВ</span>»</h2>
+			
+			<div class="xs-scroll-v double-scroll xs-scroll-banner-index">
+				<div class="xs-scroll-v-inner">
+					<div class="row">
+				<div class="promo-banners-container">
+				<div class="banner1 banner">
+					<div class="b1name">Сувенирные знаки</div>	
+					<div class="b1text">Сделай классный подарок<br>дорогому тебе человеку</div>
+					<a href="https://znakdv.ru/catalog/suvenirnaya-produktsiya/suvenirnyy-nomer/"><div class="b1btn"><b>Конструктор номера</b></div></a>
+					<img src="/local/templates/znak_dv_main/img/b1pic.png" alt="">
+				</div>
+				<div class="banner2 banner">
+					<div class="b2name">Дорожные знаки<br>от 1 200 <span style="" wa-subtypes="" wa-id="29" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">рублей</span></div>	
+					<a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/"><div class="b2btn"><b><i class="fa fa-list" aria-hidden="true"></i> Подробнее</b></div></a>
+				</div>			
+				<div class="banner3 banner">
+					<div class="b3name">Дорожные знаки<br>от 1 200 <span style="" wa-subtypes="" wa-id="30" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">рублей</span></div>	
+					<a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/"><div class="b3btn"><b><i class="fa fa-envelope-o" aria-hidden="true"></i> Подробнее</b></div></a>
+					<div class="b3text">Отправьте заявку,<br>прикрепив файл<br>со списком товаров,<br>или просто<br>
+					<a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/">свяжитесь с нами</a></div>
+				</div>
+				</div>
+				<div class="promo-banners-container">
+
+				<div class="banner4 banner">
+					<div class="b4name">Стань партнером<br>«<span style="" wa-subtypes="" wa-id="31" wa-type="NAME" class="WebAnnotator_NAME">Знак ДВ</span>»</div>	
+						<a href="#" data-toggle="modal" data-target="#call">
+							<div class="b6btn">
+							<b>Узнать подробнее</b>
+							</div>
+						</a>
+					<div class="b4text">Автосервисам,<br>автомаркетам,<br>автомойкам
+					</div>
+				</div>
+				<div class="banner5 banner">
+					<div class="b5name">Печать<br>рекламных<br>баннеров</div>	
+					<a href="#" data-toggle="modal" data-target="#call">
+						<div class="b5btn">
+							<b>Узнать цены</b>
+						</div>
+					</a>
+					<div class="b5text">Дешевле и быстрее,<br>чем у рекламных<br>агентств
+					</div>
+					<img src="/local/templates/znak_dv_main/img/b5pic.png" alt="">
+				</div>
+				<div class="banner6 banner">
+					<div class="b6name">Открой производство<br>знаков</div>	
+					<a href="https://znakdv.ru/cooperation/">
+						<div class="b6btn">
+							<b>Подробнее</b>
+						</div>
+					</a>
+					<div class="b6text">Возможности создания<br>либо расширения<br>вашего бизнеса
+					</div>
+				</div>
+				</div>
+			</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about-company">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="about-company-text">
+						<h2>О компании</h2>
+						<p>«<span style="" wa-subtypes="" wa-id="32" wa-type="NAME" class="WebAnnotator_NAME">Знак ДВ</span>» – это крупный производственный холдинг, который уже более 
+10 лет специализируется на выпуске государственных регистрационных знаков транспортных средств установленного образца. </p>
+						<p>С ростом мощностей и объемов выпуска росла и наша экспертиза. 
+На сегодняшний день специалисты «<span style="" wa-subtypes="" wa-id="33" wa-type="NAME" class="WebAnnotator_NAME">Знак ДВ</span>» готовы предложить широчайший спектр автомобильных номеров и дорожных знаков, 
+а также объектов визуальной идентификации и рекламы (режимники, вывески, адресные указатели, домовые таблички, широкоформатные баннера) и пр. </p>
+						<div class="row">
+							<div class="col-sm-12 new-text-abount-index">
+								<p>
+			 						<b>Мы всегда на связи</b>
+								</p>
+								<p>Напишите нам в удобный мессенджер  						
+									<a href="http://wa.me/79247300202" target="_blank"><img src="/img/whatsapp.png"></a>
+			 						<a href="viber://chat?number=+79247300202" target="_blank"><img src="/img/viber.png"></a>
+<!-- 			 						<a href="http://t.me/+79247300202" target="_blank"><img src="/img/telegram.png"></a> -->
+								</p>
+								<p>Задайте вопрос по телефону <a href="tel:+74232948707" style="text-decoration: none;" class="xs-display-block"><span style="" wa-subtypes="" wa-id="34" wa-type="PHONE" class="WebAnnotator_PHONE">(423) </span><b style="font-size: 25px;"><span style="" wa-subtypes="" wa-id="34" wa-type="PHONE" class="WebAnnotator_PHONE">294-87-07</span></b></a>, <a href="tel:+79247300202" style="text-decoration: none; margin-left: 10px;"><nobr><b style="font-size: 25px;"><span style="" wa-subtypes="" wa-id="35" wa-type="PHONE" class="WebAnnotator_PHONE">+7 924 730-02-02</span></b></nobr></a></p>
+								<p>Или отправьте письмо на e-mail <a href="mailto:info@znakdv.ru"><b><span style="" wa-subtypes="" wa-id="36" wa-type="EMAIL" class="WebAnnotator_EMAIL">info@znakdv.ru</span></b></a></p>
+								<br><br>
+								<p><b>Наш адрес</b></p>
+								<p><span style="" wa-subtypes="" wa-id="37" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">Приморский край, г. Владивосток, ул. Нефтеветка, 7в</span> (<a href="#">посмотреть на карте</a>)</p>
+							</div>
+						</div>
+
+							<img class="img-responsive about-company-man hidden-sm hidden-xs" src="/local/templates/znak_dv_main/img/about-man.png" alt="">
+					
+					</div>
+				</div>
+				<div class="col-md-6 hidden-sm hidden-xs">
+		
+				</div>
+			</div>
+	
+		</div>
+	</section>
+	<section class="advantages">
+		<div class="container-fluid">
+			<div class="xs-scroll-v double-scroll xs-scroll-v-advantages">
+				<div class="xs-scroll-v-inner">
+
+					<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12 xs-col-for-scroll">
+					<div class="advantages-card">
+						<h3>Собственное производство</h3>
+						<p>Мы являемся производителем
+						и постоянным  поставщиком 
+						государственных  регистрационных  
+						знаков для нужд ГИБДД областей 
+						и регионов Дальнего востока
+						</p>
+						<i class="advantages-card-bg icon-icon1"></i>
+						<i class="advantages-card-bg- advantages-card-bg1-"></i>
+					</div>					
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 xs-col-for-scroll">
+					<div class="advantages-card">
+						<h3>Гарантия соответствия ГОСТ </h3>
+						<p>Продукция по качеству, техническим параметрам и срокам эксплуатации отвечает соответствующим ГОСТам и ТУ
+						</p>
+						<i class="advantages-card-bg icon-icon2"></i>
+					</div>					
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 xs-col-for-scroll">
+					<div class="advantages-card">
+						<h3>Работаем напрямую с поставщиками</h3>
+						<p>Работаем напрямую с поставщиками материалов и комплектующих
+						</p>
+						<i class="advantages-card-bg icon-icon3"></i>
+					</div>					
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 xs-col-for-scroll">
+					<div class="advantages-card">
+						<h3>Уважительный подход к задачам клиентов</h3>
+						<p>Неизменным остаётся наше желание работать, предлагая клиентам услуги и товары стабильно высокого качества
+						</p>
+						<i class="advantages-card-bg icon-icon4"></i>
+					</div>					
+				</div>
+			</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<h2 style="font-size: 50px;
+color: #363636;
+margin-top: 39px;
+margin-bottom: 25px;
+	margin-left: 15px;" class="xs-hidden">Мы в инстаграме</h2>
+		<div style="height: 240px; overflow: hidden;" class="xs-hidden"><iframe style="width: 100%; height: 654.333px;" src="/inwidget/index.php?adaptive=true&amp;skin=modern-blue" data-inwidget="" scrolling="no" frameborder="no"></iframe></div>
+
+		
+		
+	</section>
+
+
+
+<section class="misk" style=" margin-top: -20px;margin-bottom: -10px;">
+	<h3>Остались вопросы? Свяжись с нами по телефону <b><a href="tel:+7%20%28423%29%20200%2002%2002"><span style="" wa-subtypes="" wa-id="1" wa-type="PHONE" class="WebAnnotator_PHONE">+7 (423) 200 02 02</span></a></b>,<br>
+		напишите на e-mail <b><a href="mailto:info@znakdv.ru"><span style="" wa-subtypes="" wa-id="2" wa-type="EMAIL" class="WebAnnotator_EMAIL">info@znakdv.ru</span></a></b><br>
+		или закажи бесплатный обратный звонок
+		<br>
+		<form method="post" class="js-bottom-form">
+			<input placeholder="Введите ваш номер" required="" type="text"> <button type="submit" class="btn-add-review">Перезвоните мне</button>
+		</form>
+	</h3>
+	 
+ </section>
+ 
+	<!-- Фиксированный скрол -->
+
+<!--
+<script>
+$(document).ready(function() {
+  $('.double-scroll').doubleScroll();
+});
+ (function( $ ) {
+ 	
+ 	jQuery.fn.doubleScroll = function(userOptions) {
+	
+		// Default options
+		var options = {
+			contentElement: undefined, // Widest element, if not specified first child element will be used
+			scrollCss: {                
+				'overflow-x': 'auto',
+				'overflow-y': 'hidden'
+			},
+			contentCss: {
+				'overflow-x': 'auto',
+				'overflow-y': 'hidden'
+			},
+			onlyIfScroll: true, // top scrollbar is not shown if the bottom one is not present
+			resetOnWindowResize: false, // recompute the top ScrollBar requirements when the window is resized
+			timeToWaitForResize: 30 // wait for the last update event (usefull when browser fire resize event constantly during ressing)
+		};
+	
+		$.extend(true, options, userOptions);
+	
+		// do not modify
+		// internal stuff
+		$.extend(options, {
+			topScrollBarMarkup: '<div class="doubleScroll-scroll-wrapper" style="height: 20px;"><div class="doubleScroll-scroll" style="height: 20px;"></div></div>',
+			topScrollBarWrapperSelector: '.doubleScroll-scroll-wrapper',
+			topScrollBarInnerSelector: '.doubleScroll-scroll'
+		});
+
+		var _showScrollBar = function($self, options) {
+
+			if (options.onlyIfScroll && $self.get(0).scrollWidth <= $self.width()) {
+				// content doesn't scroll
+				// remove any existing occurrence...
+				$self.prev(options.topScrollBarWrapperSelector).remove();
+				return;
+			}
+		
+			// add div that will act as an upper scroll only if not already added to the DOM
+			var $topScrollBar = $self.prev(options.topScrollBarWrapperSelector);
+			
+			if ($topScrollBar.length == 0) {
+				
+				// creating the scrollbar
+				// added before in the DOM
+				$topScrollBar = $(options.topScrollBarMarkup);
+				$self.before($topScrollBar);
+
+				// apply the css
+				$topScrollBar.css(options.scrollCss);
+				$self.css(options.contentCss);
+
+				// bind upper scroll to bottom scroll
+				$topScrollBar.bind('scroll.doubleScroll', function() {
+					$self.scrollLeft($topScrollBar.scrollLeft());
+				});
+
+				// bind bottom scroll to upper scroll
+				var selfScrollHandler = function() {
+					$topScrollBar.scrollLeft($self.scrollLeft());
+				};
+				$self.bind('scroll.doubleScroll', selfScrollHandler);
+			}
+
+			// find the content element (should be the widest one)	
+			var $contentElement;		
+			
+			if (options.contentElement !== undefined && $self.find(options.contentElement).length !== 0) {
+				$contentElement = $self.find(options.contentElement);
+			} else {
+				$contentElement = $self.find('>:first-child');
+			}
+			
+			// set the width of the wrappers
+			$(options.topScrollBarInnerSelector, $topScrollBar).width($contentElement.outerWidth());
+			$topScrollBar.width($self.width());
+			$topScrollBar.scrollLeft($self.scrollLeft());
+			
+		}
+	
+		return this.each(function() {
+			
+			var $self = $(this);
+			
+			_showScrollBar($self, options);
+			
+			// bind the resize handler 
+			// do it once
+			if (options.resetOnWindowResize) {
+			
+				var id;
+				var handler = function(e) {
+					_showScrollBar($self, options);
+				};
+			
+				$(window).bind('resize.doubleScroll', function() {
+					// adding/removing/replacing the scrollbar might resize the window
+					// so the resizing flag will avoid the infinite loop here...
+					clearTimeout(id);
+					id = setTimeout(handler, options.timeToWaitForResize);
+				});
+
+			}
+
+		});
+
+	}
+
+}( jQuery ));
+	
+	
+</script>
+-->
+
+
+</main>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<h3><span style="" wa-subtypes="" wa-id="3" wa-type="NAME" class="WebAnnotator_NAME">Знак ДВ</span></h3>
+				<ul>
+					<li><a href="https://znakdv.ru/about/">О компании</a></li>
+					<!--li><a href="#">Прайс-лист</a></li-->
+<!-- 					<li><a href="/actions/">Акции</a></li> -->
+					<!--li><a href="#">Видео</a></li-->
+<!-- 					<li><a href="/cooperation/">Ищем партнеров</a></li> -->
+					<li><a href="https://znakdv.ru/contacts/">Контакты</a></li>
+					<li><a href="https://znakdv.ru/posts/">Статьи</a></li>
+					<li><a href="https://znakdv.ru/cooperation/">Сотрудничество</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<h3>Каталог продукции</h3>
+				<ul>
+					<li><a href="https://znakdv.ru/catalog/registratsionnye-nomera/">Регистрационные номера</a></li>
+					<li><a href="https://znakdv.ru/catalog/znaki-opasnosti/">Знаки опасности</a></li>
+					<li><a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/">Все для дорожных работ</a></li>
+					<li><a href="https://znakdv.ru/catalog/ulichnye-vyveski/">Уличные вывески</a></li>
+					<li><a href="https://znakdv.ru/catalog/suvenirnaya-produktsiya/">Сувенирная продукция</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<h3>&nbsp;</h3>
+				<ul>
+					<li>
+						<span style="color: #fff;">Портал</span> <a href="http://allznak.ru/site/login/" target="_blank">AllZnak.ru</a>
+					</li>
+				</ul>
+<!--
+				<h3>Вопрос-ответ</h3>
+				<ul>
+					<li><a href="#">Полезная информация</a></li>
+					<li><a href="#">Доставка</a></li>
+				</ul>
+-->
+			</div>				
+			<div class="col-md-3 col-sm-6 col-xs-12 xs-text-center">
+				<!--h3>Подписаться на новости</h3>
+				<form action="">
+					<input type="text" placeholder="Ваш e-mail">
+					<button><i class="fa fa-bell-o" aria-hidden="true"></i>
+					</button>
+				</form-->
+				<h3 class="ig-fl">Подписывайтесь на<br>наш Instagram</h3>
+				<a href="https://www.instagram.com/znakdv/" class="ig-fl" target="_blank"><i class="fa fa-instagram-cus" aria-hidden="true"></i></a>
+				<div style="clear: both;"><img src="/local/templates/znak_dv_main/img/znakdv-bw.svg" alt=""></div>
+			</div>	
+		</div>
+		<div class="row footer-bottom">
+			<div class="col-md-9 col-sm-6">
+				
+			</div>
+			<div class="col-md-3 col-sm-6 text-center footer-logo">
+<!--
+				<div class="row copyraty-development">
+					<div class="col-xs-3">
+						<img src="/img/logo-conceptlab-2.png">
+					</div>
+					<div class="col-xs-9" style=" line-height: 120%;text-align: left;color: #fff;padding-left: 0px;">Разработка&nbsp;сайта&nbsp;—<br><a href="http://conceptlab.pro" target="_blank">Conceptlab.pro</a></div>
+				</div>
+-->
+	
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+
+<div class="modal fade" id="thnx">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body" style="padding: 15px 100px;">
+	    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="height: 30px;"><span aria-hidden="true" style=" font-size: 50px;font-weight: 100;">×</span></button>
+
+		<div class="form-sended text-center">
+			<h3>Спасибо!<br>Ваша заявка успешно отправлена.</h3>
+			<p class="after-text">Мы свяжемся с вами в ближайшее время!</p>
+		</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- HTML-код модального окна -->
+<div id="CatalogModalBox" class="modal fade">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle-o" aria-hidden="true"></i>
+</button>
+      </div>
+      <div class="modal-body">
+		<div class="search-query-container hidden-xs">
+			<input placeholder="Поиск среди 20 000 товаров" class="search-query" type="search">
+			<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12 my-custom-col-for-catalog">
+						<ul>
+							<li class="pop-ico-container"><div style="background-image: url(/upload/iblock/b6a/b6a0863b6e154251b678dc3c4ca6fafc.png)"></div></li><li><a href="https://znakdv.ru/catalog/registratsionnye-nomera/" class="pop-col-head">Регистрационные номера</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 my-custom-col-for-catalog">
+						<ul>
+							<li class="pop-ico-container"><div style="background-image: url(/upload/iblock/f6f/f6f936a1dee7279129630353a39fba31.png)"></div></li><li><a href="https://znakdv.ru/catalog/vsye-dlya-dorozhnykh-rabot/" class="pop-col-head">Всё для дорожных работ</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 my-custom-col-for-catalog">
+						<ul>
+							<li class="pop-ico-container"><div style="background-image: url(/upload/iblock/693/693aaf04d97375902fc9c1ee30577508.png)"></div></li><li><a href="https://znakdv.ru/catalog/dopog-znaki-opasnosti/" class="pop-col-head">ДОПОГ Знаки опасности</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 my-custom-col-for-catalog">
+						<ul>
+						<li class="pop-ico-container">
+							<div style="background-image: url(/upload/iblock/088/088e3548f2ec1367ce7c624988354e3f.png)"></div>
+						</li>
+						<li><a href="https://znakdv.ru/catalog/ulichnye-vyveski/" class="pop-col-head">Уличные вывески</a></li>
+						</ul>
+					</div>
+
+				
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 my-custom-col-for-catalog">
+						<ul>
+					<li class="pop-ico-container"><div style="background-image: url(/upload/iblock/8c5/8c5b36a58cab448886f7883461549ac5.png)"></div></li><li><a href="https://znakdv.ru/catalog/suvenirnaya-produktsiya/" class="pop-col-head">Сувенирная продукция</a></li></ul>
+					</div>
+			</div>
+
+      </div>
+      </div>
+      <div class="modal-footer hidden-xs">
+        <img src="/img/page1.png" alt="">
+        <h2>Уже есть сформированный список?</h2>
+        <p>Отправьте заявку, прикрепив файл со списком товаров, или просто <a href="#" class="js-link-open-modal" data-toggle="modal" data-target="#call">свяжитесь с нами</a> и наш специалист даст Вам подробную консультацию и ответит  на все интересующие Вас вопросы.</p>
+		<a href="#" class="js-open-modal-order" data-toggle="modal" data-target="#orderCustomOnCatalog">
+			<div class="send-btn">
+				Отправить заявку&nbsp;
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+			</div>
+		</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- HTML-код модального окна -->
+
+
+
+
+<div class="modal fade" id="orderCustomOnCatalog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg-no" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style=" font-size: 50px;font-weight: 100;">×</span></button>
+        <h3 class="modal-title text-center" id="myModalLabel">Заявка на изготовление<br>по готовому списку</h3>
+      </div>
+      <div class="modal-body">
+      	<form action="/ajax/sendList.php" method="post" enctype="multipart/form-data">
+	      	<div class="row">
+		      	<div class="col-sm-12">
+		      		<div class="form-group">
+						<textarea name="comment" class="form-control" placeholder="Ваш комментарий" style="height: 105px;"></textarea>
+					</div>
+		      	</div>
+		      	<div class="col-sm-4">
+		      		<div class="form-group">
+						<input class="form-control" name="name" placeholder="Представьтесь" required="true" type="text">
+					</div>
+		      	</div>
+		      	<div class="col-sm-4">
+		      		<div class="form-group">
+						<input class="form-control" name="phone" placeholder="Номер телефона" required="true" type="text">
+					</div>
+		      	</div>
+		      	<div class="col-sm-4">
+			      	<div style="padding-top: 12px;"></div>
+					<span class="attach"><input name="file" type="file"></span>
+		      	</div>
+	      	</div>
+	      	<input name="back" value="/" type="hidden">
+			<div class="text-center"><button type="submit" class="btn-add-review" style="padding: 14px 38px;border-radius: 5px;margin-bottom: 0px;margin-top: 11px;">Отправить</button></div>
+      	</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="call">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border-bottom: none;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="height: 30px;"><span aria-hidden="true" style=" font-size: 50px;font-weight: 100;">×</span></button>
+        <h3 class="modal-title text-center js-hide-title-before-send-form" id="myModalLabel">Заказать обратный звонок</h3>
+      </div>
+      <div class="modal-body" style="padding: 15px 100px;">
+      	<form action="" method="post" class="js-send-form">
+	      	<div class="cooperation" style="padding: 0px !important; background: transparent !important;">
+	      		<div class="form-group css-required">
+					<input name="name" class="form-control" placeholder="Представьтесь" required="true" type="text">
+				</div>
+	      	</div>
+	      	<div class="cooperation" style="padding: 0px !important; background: transparent !important;">
+	      		<div class="form-group css-required">
+					<input name="phone" class="form-control" placeholder="Контактный телефон" required="true" type="text">
+				</div>
+	      	</div>
+			<div class="text-center"><button type="submit" class="btn-add-review" style="padding: 14px 38px;border-radius: 5px;margin-bottom: 0px;margin-top: 11px;">Жду звонка</button></div>
+      	</form>
+		<div class="form-sended js-form-sended text-center" style="display: none; position: relative;top: -35px;">
+			<h3>Спасибо!<br>Ваша заявка успешно отправлена.</h3>
+			<p class="after-text">Мы свяжемся с вами в ближайшее время!</p>
+		</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+	
+	$(document).ready(function(){
+		
+		
+		$('#orderCustomOnCatalog').on('shown.bs.modal', function () {
+		  $('#CatalogModalBox').modal('hide');
+		});
+		$('#call').on('shown.bs.modal', function () {
+		  $('#CatalogModalBox').modal('hide');
+		});
+/*
+		$('.js-open-modal-order').on('click', function(){
+
+			$('#CatalogModalBox').modal('hide');
+			//$('#orderCustomOnCatalog').modal('show');
+
+			
+			//return false;
+		});
+*/
+		
+		
+		$('.modal').on('hide.bs.modal', function () {
+		  $('body').css('padding-right', '0px');
+		});
+
+		$(window).scroll(function() {
+			var bottomLine = $('.js-top-menu').offset().top + $('.js-top-menu').outerHeight();
+			var scrolled = $(window).scrollTop(); 
+			var firstScrollUp = false; 
+			var firstScrollDown = false; 
+			
+			if ( scrolled > 0) {
+				if(scrolled > bottomLine){
+					if($('.js-fixed-menu').hasClass('bool-fixed')){
+						
+					}else{
+						$('.js-fixed-menu').animate({top: '0'}, 500);
+						$('.js-fixed-menu').addClass('bool-fixed');
+					}
+				}else{
+					$('.js-fixed-menu').css('top', '-87px');
+					$('.js-fixed-menu').removeClass('bool-fixed');
+					$('.js-hover-on-i-menu').hide();
+				}
+			}
+		});
+		
+		
+		$('.js-open-submenu').on('click', function(){
+			$('.js-hover-on-i-menu').slideToggle();
+		});
+		
+		$('#menu-bars').on('click', function(){
+			if($('.js-xs-menu').is(":visible")){
+				$('.js-xs-menu').hide();
+				$('body').removeClass('modal-open');
+				$('#menu-bars.top-bars .icon-burger').removeAttr( 'style' );
+			}else{
+				$('.js-xs-menu').show();
+				$('body').addClass('modal-open');
+				$('#menu-bars.top-bars .icon-burger').css('background-image','url("/img/close-menu.png")');
+			}
+			
+			
+			
+			return false;
+		});
+		
+		
+		$(".js-send-form").submit(function() {
+			var theform = $(this).closest("form");
+			url = '/ajax/send.php';
+			$.post(url, theform.serialize(),function(data) {
+				if( data == 'ok'){
+					$('.js-form-sended').show();
+					$(".js-send-form").hide();
+					$('.js-hide-title-before-send-form').hide();
+					
+					$(".js-send-form input").val('');
+					$(".js-send-form textarea").val('');
+					$(".js-send-form textarea").html('');
+					
+					
+					
+				}
+			});
+			return false;
+		});
+	
+		$('#call').on('hidden.bs.modal', function (e) {
+					$('.js-form-sended').hide();
+					$(".js-send-form").show();
+		});
+		
+		
+		$('.js-bottom-form').on('submit', function(){
+			var phone = $('.js-bottom-form input').val();
+
+			url = '/ajax/send.php?phone='+phone;
+			$.get(url,function(data) {
+				if( data == 'ok'){
+					$('.js-bottom-form input').val('');
+					$('#thnx').modal('show');
+				}
+			});
+
+			
+			
+			return false;
+		});
+		
+				
+		
+		$('.js-url-data').on('click', function(){
+		    var href = $(this).data('url');
+		    
+		    location=href;
+		    return false;
+	    });
+
+
+	});
+	
+</script>
+
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter41630104 = new Ya.Metrika({
+                id: 41630104,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true
+            });
+        } catch (e) {}
+    });
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function() {
+            n.parentNode.insertBefore(s, n);
+        };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else {
+        f();
+    }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>
+    <div>
+        <img src="https://mc.yandex.ru/watch/41630104" style="position:absolute; left:-9999px;" alt=""/>
+    </div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+ <script>
+(function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-88913816-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 962570758;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/962570758/?guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+
+<div class="title-search-result"></div><div class="title-search-result"></div></body><wa-color id="WA-color-0" bg="#33CCFF" fg="#000000" class="WebAnnotator_ADDRESS" type="ADDRESS"></wa-color><wa-color id="WA-color-1" bg="#FF0000" fg="#000000" class="WebAnnotator_INN" type="INN"></wa-color><wa-color id="WA-color-2" bg="#33FF33" fg="#000000" class="WebAnnotator_KPP" type="KPP"></wa-color><wa-color id="WA-color-3" bg="#CC66CC" fg="#000000" class="WebAnnotator_OGRN" type="OGRN"></wa-color><wa-color id="WA-color-4" bg="#FF9900" fg="#000000" class="WebAnnotator_REG_CBR" type="REG_CBR"></wa-color><wa-color id="WA-color-5" bg="#99FFFF" fg="#000000" class="WebAnnotator_PHONE" type="PHONE"></wa-color><wa-color id="WA-color-6" bg="#FF6666" fg="#000000" class="WebAnnotator_EMAIL" type="EMAIL"></wa-color><wa-color id="WA-color-7" bg="#66FF99" fg="#000000" class="WebAnnotator_LEGAL_NAME" type="LEGAL_NAME"></wa-color><wa-color id="WA-color-8" bg="#3333FF" fg="#FFFFFF" class="WebAnnotator_NAME" type="NAME"></wa-color><wa-color id="WA-color-9" bg="#660000" fg="#FFFFFF" class="WebAnnotator_REGIONS" type="REGIONS"></wa-color><wa-color id="WA-color-10" bg="#006600" fg="#FFFFFF" class="WebAnnotator_RATE" type="RATE"></wa-color><wa-color id="WA-color-11" bg="#663366" fg="#FFFFFF" class="WebAnnotator_CURRENCY" type="CURRENCY"></wa-color><wa-title style="display:none;">Знак-ДВ</wa-title></html>

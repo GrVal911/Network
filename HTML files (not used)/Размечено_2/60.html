@@ -1,0 +1,1009 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="bx-core bx-no-touch bx-no-retina bx-firefox fa-events-icons-ready" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru"><head>
+	<link rel="shortcut icon" href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/favicon.ico" type="image/x-icon">
+
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+
+	<script src="https://mc.yandex.ru/metrika/tag.js" async="" type="text/javascript"></script><script integrity="sha384-P5stg3UxXNqLo2ynKp8LkbP+sAFJef6sTlvM9IpjenpkwWLpvRhhtADWEkZPfA1u" crossorigin="anonymous" src="https://www.gstatic.com/recaptcha/releases/qc5B-qjP0QEimFYUxcpWJy5B/recaptcha__ru.js" async="" type="text/javascript"></script><script src="https://use.fontawesome.com/9a08aba0c8.js"></script><link rel="stylesheet" media="all" href="https://use.fontawesome.com/9a08aba0c8.css">
+
+		
+						
+						
+		
+										<!--[if IE]>
+      <link href="/css/bootstrap-ie8.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3,respond@1.4.2"></script>
+    <![endif]-->
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="Электронные платежи, оплата государственных услуг, ЭЛПЛАТ, оплата штрафов, оплата гибдд, оплата госпошлин, оплата налогов, оплата судебных задолженностей">
+<meta name="description" content="Электронные платежи - оплачивайте штрафы и пошлины ГИБДД, судебные задолженности ФНС и ФССП с минимальной комиссией">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/bitrix/js/main/core/css/core.min.css?14793874662854" type="text/css" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/bitrix/js/main/core/css/core_popup.min.css?150631649312954" type="text/css" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/css/bootstrap.min.css?1534309544150996" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/css/awesome-bootstrap-checkbox.min.css?15343095447195" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/css/bootstrap-toggle.min.css?15343095441590" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/css/dataTables.bootstrap4.min.css?15343095444814" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/css/typeaheadjs.css?15343095441922" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/css/bootstrap-combobox.css?15343095441074" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/css/jquery.fancybox.min.css?153430954410424" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/components/elplat/elplat.auth/.default/style.min.css?1534309544424" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/components/bitrix/catalog.section.list/.default/style.css?15343095447305" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/components/bitrix/catalog.section.list/inner/style.css?15343095447305" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/components/bitrix/main.userconsent.request/.default/user_consent.min.css?15343095442900" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/components/bitrix/breadcrumb/.default/style.min.css?1534309544467" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/components/bitrix/news.list/type_method_footer/style.css?1534309544150" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/template_styles.css?153544728247483" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/bitrix/css/reaspekt/reaspekt.geobase/style.css?1487656781974" type="text/css" data-template-style="true" rel="stylesheet">
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'MAIN_USER_CONSENT_REQUEST_TITLE':'Согласие пользователя','MAIN_USER_CONSENT_REQUEST_BTN_ACCEPT':'Принимаю','MAIN_USER_CONSENT_REQUEST_BTN_REJECT':'Не принимаю','MAIN_USER_CONSENT_REQUEST_LOADING':'Загрузка..','MAIN_USER_CONSENT_REQUEST_ERR_TEXT_LOAD':'Не удалось загрузить текст соглашения.'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'ELPLAT_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1608810303','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'a5b1103037c53e948589fc1fb438bfad'});</script>
+
+
+<script type="text/javascript" src="/bitrix/js/main/jquery/jquery-1.8.3.min.js?147938746693636"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core.min.js?150631649375575"></script>
+<script type="text/javascript" src="/bitrix/js/reaspekt/reaspekt.geobase/script.js?14901584844663"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core.min.js?150631649375575"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_popup.min.js?150631649340472"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ajax.min.js?149810925121435"></script>
+
+
+<script type="text/javascript" src="/local/templates/elplat/components/bitrix/main.userconsent.request/.default/user_consent.min.js?15343095446923"></script>
+
+	<title>Электронные платежи, оплатить штрафы ГИБДД, оплатить налоги, оплатить госпошлину и другие государственные услуги | Электронные платежи эл-плат.рф</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<style> @-webkit-keyframes loadingoverlay_animation__rotate_right { to { -webkit-transform : rotate(360deg); transform : rotate(360deg); } } @keyframes loadingoverlay_animation__rotate_right { to { -webkit-transform : rotate(360deg); transform : rotate(360deg); } } @-webkit-keyframes loadingoverlay_animation__rotate_left { to { -webkit-transform : rotate(-360deg); transform : rotate(-360deg); } } @keyframes loadingoverlay_animation__rotate_left { to { -webkit-transform : rotate(-360deg); transform : rotate(-360deg); } } @-webkit-keyframes loadingoverlay_animation__fadein { 0% { opacity   : 0; -webkit-transform : scale(0.1, 0.1); transform : scale(0.1, 0.1); } 50% { opacity   : 1; } 100% { opacity   : 0; -webkit-transform : scale(1, 1); transform : scale(1, 1); } } @keyframes loadingoverlay_animation__fadein { 0% { opacity   : 0; -webkit-transform : scale(0.1, 0.1); transform : scale(0.1, 0.1); } 50% { opacity   : 1; } 100% { opacity   : 0; -webkit-transform : scale(1, 1); transform : scale(1, 1); } } @-webkit-keyframes loadingoverlay_animation__pulse { 0% { -webkit-transform : scale(0, 0); transform : scale(0, 0); } 50% { -webkit-transform : scale(1, 1); transform : scale(1, 1); } 100% { -webkit-transform : scale(0, 0); transform : scale(0, 0); } } @keyframes loadingoverlay_animation__pulse { 0% { -webkit-transform : scale(0, 0); transform : scale(0, 0); } 50% { -webkit-transform : scale(1, 1); transform : scale(1, 1); } 100% { -webkit-transform : scale(0, 0); transform : scale(0, 0); } } </style></head>
+	<body>
+	
+	<div id="panel"></div>
+	
+	<div id="topline">		
+	
+		<div class="container">
+		
+				<div class="row">
+
+	<div class="col-1 col-md logoreturn text-left p-0 ">
+			<!-- Скрыл -->
+				</div>
+
+	<div class="col-5 col-md text-right p-0">
+		<span class="">
+			<strong>
+				<a href="mailto:info@el-plat.ru" class="link-secondary"><i class="fa fa-envelope"></i> <span style="" wa-subtypes="" wa-id="3" wa-type="EMAIL" class="WebAnnotator_EMAIL">help@el-plat.ru</span></a>
+			</strong>
+		</span>
+	</div>
+
+	<div class="col-6 col-md text-right p-0">
+		<span class="">
+			<strong>
+				<a href="tel:*2717" class="link-secondary"><i class="fa fa-phone"></i>*2717</a>
+				<a href="tel:83412601501" class="link-secondary" style="margin-left:2em"><i class="fa fa-phone"></i><span style="" wa-subtypes="" wa-id="4" wa-type="PHONE" class="WebAnnotator_PHONE">8 (3412) 601-501</span></a>
+			</strong>
+		</span>
+	</div>
+</div>		 
+		</div>
+	</div>
+
+<!--<hr style="margin-bottom:0">-->
+ 
+
+<div id="topmenuwrapper1">	
+	<div class="opc active">
+		<div class="container pr-0">
+		<div class="row w-100 align-items-start">
+				<nav class="navbar navbar-toggleable-md navbar-light w-100">
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Навигация">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				
+						<div id="logo" class="col-2 logo">
+						<a href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/" class="navbar-brand"><img src="/local/templates/elplat/images/logo.svg" alt="Электронные платежи | эл-плат.рф"></a>
+							<!-- 
+							<div class="logotext">
+								Платежный оператор							</div>
+							-->
+						</div>
+					
+						<div class="col-6 float-left">
+    						
+	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		<ul id="topmenu" class="navbar-nav ml-auto">
+
+									 <li class="nav-item"><a href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/support/elplat/" class="btn">кошелёк «ЭЛПЛАТ»</a> </li>
+					
+		
+		</ul>
+	</div>
+						</div>
+						
+						<div class="col-12 col-md-4 float-md-right pr-0">
+						
+<div class="bx-system-auth-form" style="padding-top:0px;">
+ 
+
+<a href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/profile/" class="btn btn-outline-secondary" style="float:right;" data-toggle="modal" data-target="#login-modal">
+<div class="row">
+	<div class="col ml-1 mr-1 pr-2 logotip"></div>
+
+	<div class="col ml-0 mr-1 pl-0">
+		<i class="fa fa-sign-in" aria-hidden="true"></i>
+		<span class="hidden-sm-down">Вход в кошелёк</span>
+	</div>
+</div>
+</a>
+
+
+
+<div class="modal fade show" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+		<div class="loginmodal-container">
+			<p class="h4">Вход в кошелёк "ЭЛПЛАТ"</p><br>
+		<form name="system_auth_form" class="system_auth_form" method="post" target="_top" action="" autocomplete="off">
+		<input name="type" value="auth" type="hidden">
+			<div class="form-group">
+				<div class="row">
+					<div class="col-12 col-md-5 pl-0">
+						<input name="USER_PHONE" class="form-control input-lg" id="USER_PHONE" autocomplete="off" placeholder="Телефон" type="text">
+					</div>
+					<div class="col-12 col-md-7 pl-0 pr-0">
+						<small>номер Вашего мобильного телефона является одновременно номером кошелька</small>
+					</div>
+				</div>
+				
+				<div class="mt-2"></div>
+				
+				<div class="row">
+					<div class="col-12 col-md-5 pl-0">
+						<input class="form-control input-lg USER_CODE" autocomplete="off" name="USER_CODE" placeholder="Пин-код" type="password">
+					</div>
+					<div class="col-12 col-md-7 pl-0 pr-0">
+						<small>при каждой операции пополнения или списания с кошелька на мобильный телефон приходит СМС</small>
+					</div>
+				</div>
+				
+				<div class="row">
+					<input name="USER_SALT" value="1608810303" type="hidden">
+				</div>
+			</div>
+		
+			<div>
+				<button type="submit" name="Login" class="btn btn-primary">Войти <i class="fa fa-angle-double-right"></i></button>
+				<a href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/elplat/popolnenie/" class="btn btn-primary mt-2 mt-md-0" style="opacity:1; color:white">Создать кошелёк <i class="fa fa-angle-double-right"></i></a>
+			</div>
+
+		
+		</form></div>
+			
+
+		
+					</div>
+	</div>
+  </div>
+  
+  <script src="/local/templates/elplat/js/md5.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		/*
+		$("[name=Login]").click(function(){
+			var salt = 1608810303;
+			var md5pass = md5(salt + $(this).closest('.system_auth_form').find(".USER_CODE").val());
+			$(".USER_CODE").val(md5pass);
+		});
+		*/
+	});
+</script>
+		  
+</div>
+						</nav></div>
+			
+				
+			</div>
+		</div>
+
+	</div>	
+
+
+
+<div id="contentwr">
+<div id="nowback" st="" yle="">
+<div id="now" style="padding-top: 20px; padding-bottom: 20px;">
+
+<div class="container">
+<div class="row hide-stuff">
+	<div class="col-md-12">
+		<center>
+			<!-- <div class="h2">Воспользуйтесь прямо сейчас</div> -->
+			<div class="">
+    			<!--div class="h2 ">УДОБНЫЕ ПЛАТЕЖИ <br> БАНКОВСКОЙ КАРТОЙ ЛЮБОГО БАНКА <br> И ЭЛЕКТРОННЫМ КОШЕЛЬКОМ ЭЛПЛАТ</div-->
+    			<div class="h2 ">ПОПОЛНЕНИЕ КОШЕЛЬКА "<span style="" wa-subtypes="" wa-id="5" wa-type="NAME" class="WebAnnotator_NAME">ЭЛПЛАТ</span>"</div>
+    			<p>Пополнение Электронного кошелька "<span style="" wa-subtypes="" wa-id="6" wa-type="NAME" class="WebAnnotator_NAME">ЭЛПЛАТ</span>" производится в соответствии с <a href="https://www.el-plat.ru/upload/tarif/tariffs-site.pdf">ТАРИФАМИ <span style="" wa-subtypes="" wa-id="7" wa-type="LEGAL_NAME" class="WebAnnotator_LEGAL_NAME">ООО ПНКО ЭЛПЛАТ</span></a></p>
+    			<!--p>
+    				На нашем сайте Вы можете проверить, найти и оплатить любую задолженности перед бюджетом, а также осуществить платежи  за различные виды услуг. Все бюджетные платежи, совершенные на нашем сайте, мгновенно отображаются в Государственной информационной системе о государственных и муниципальных платежах (ГИС ГМП).
+    			</p-->
+			</div>
+		</center>
+	</div>
+</div>
+<center>
+<table border="0">
+	<tbody><tr>
+		<td colspan="2" style="padding-top: 10px;" align="center">
+			<!--b><u>Оплачивайте</b></u> любые платежи <b><u>без комиссии</u></b> в мобильном приложении <b><u>ЭЛПЛАТ ОНЛАЙН</u></b-->
+			Для совершения платежей посредством кошелька "<span style="" wa-subtypes="" wa-id="8" wa-type="NAME" class="WebAnnotator_NAME">ЭЛПЛАТ</span>" мы можете установить мобильное приложение "<span style="" wa-subtypes="" wa-id="9" wa-type="NAME" class="WebAnnotator_NAME">ЭЛПЛАТ-ОНЛАЙН</span>"
+			<br>
+			Совершайте платежи в мобильном приложении "<span style="" wa-subtypes="" wa-id="10" wa-type="NAME" class="WebAnnotator_NAME">ЭЛПЛАТ-ОНЛАЙН</span>" без комиссии!
+		</td><td>
+	</td></tr>
+	<tr>
+		<td colspan="2" align="center">
+			<a href="https://play.google.com/store/apps/details?id=ru.elplat.elplat2"><img src="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/images/google-play-badge.png" height="80"></a>
+			<img src="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/images/el-plat_app.png" style="padding-bottom: 5px;" height="100">
+			<a href="https://apps.apple.com/ru/app/%D1%8D%D0%BB%D0%BF%D0%BB%D0%B0%D1%82-%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD/id1485845162" style="padding-left: 13px;"><img src="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/images/Download_on_the_App_Store_Badge_RU_RGB_blk_100317.svg" height="54"></a>
+		</td>
+	</tr>
+</tbody></table>
+</center>
+
+
+				<div id="accordion" class="bhoechie-tab-container">
+		            
+                 <div class="row">
+	<div class="col-md-3 bhoechie-tab-menu">
+		<div id="tabs-0" class="list-group responsive hidden-xs-down hidden-sm-down">
+							
+				<a href="#card" style="height:69px;" class="list-group-item align-middle active" id="bx_1847241719_9">
+				<h5>Пополнение кошелька «<span style="" wa-subtypes="" wa-id="11" wa-type="NAME" class="WebAnnotator_NAME">ЭЛПЛАТ</span>»</h5>
+					<!-- div class="row">
+						<div class="col-3 col-md-3"><img class="svg btn-link" src="" alt="Пополнение кошелька «ЭЛПЛАТ»" /></div>
+						<div class="col-9 col-md-9"><h5>Пополнение кошелька «ЭЛПЛАТ»</h5></div>
+				  </div -->
+				</a>	
+				
+						</div><div aria-multiselectable="true" id="collapse-tabs-0" class="panel-group responsive hidden-md-up"><div class="panel panel-default list-group-item align-middle"><div class="panel-heading"><a href="#collapse-card" data-parent="#collapse-tabs-0" data-toggle="collapse" class="accordion-toggle collapsed list-group-item align-middle">
+				<h5>Пополнение кошелька «ЭЛПЛАТ»</h5>
+					<!-- div class="row">
+						<div class="col-3 col-md-3"><img class="svg btn-link" src="" alt="Пополнение кошелька «ЭЛПЛАТ»" /></div>
+						<div class="col-9 col-md-9"><h5>Пополнение кошелька «ЭЛПЛАТ»</h5></div>
+				  </div -->
+				</a></div><div class="panel-collapse collapse" id="collapse-card"></div></div></div>
+	</div>
+	<div class="col-md-9 bhoechie-tab responsive hidden-xs-down hidden-sm-down">			<div class="bhoechie-tab-content active" id="card">
+							<ul class="nav nav-tabs desctoptabs" role="tablist" style="padding-top:0px;">
+				
+				<li class="nav-item">
+					<a href="#elplat" class="nav-link active" id="s_elplat" role="tab" data-toggle="tab">Электронный кошелёк <span style="" wa-subtypes="" wa-id="12" wa-type="NAME" class="WebAnnotator_NAME">ЭЛПЛАТ</span></a>
+				</li>			
+							</ul>
+			<div class="tab-content formtabcontent">
+							
+				<h3 class="d_active tab_drawer_heading" rel="elplat">Электронный кошелёк ЭЛПЛАТ</h3>
+				<div role="tabpanel" class="tab-pane active" id="elplat">
+                    
+<p>перед использованием кошелька рекомендуем <a href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/support/elplat/" target="_blank">ознакомиться</a></p>
+<p><i>Для того, чтобы создать кошелек необходимо его пополнить. Для этого укажите номер вашего телефона, сумму пополнения и адрес электронной почты, куда будет отправлена квитанция об оплате</i></p>
+	<form novalidate="true" role="form" data-toggle="validator" id="elplatform2" action="/ajax/payment/elplat.php" method="post">
+		<input name="type" value="elplat" type="hidden">
+						
+		<div class="form-group row">
+			<label for="inputFieldFio" class="col-md-3 col-form-label">ФИО</label>
+			<div class="col-md-4">	
+				<input name="fio" autocomplete="off" required="" class="form-control input-lg" id="inputFieldFio" aria-describedby="inputFieldHelp" placeholder="Введите фамилию, имя, отчество" pattern="^[А-Яа-я]{1,} [А-Яа-я ]{1,}$" type="text">
+				<small class="glyphicon form-control-feedback"></small>
+			</div>
+			<div class="col-md-5">	
+				<small>ФИО заполняется только кириллицей</small>
+			</div>
+		</div>
+		
+		<div class="form-group row hidefield">
+			<label for="inputFieldDR" class="col-md-3 col-form-label">Дата рождения</label>
+			<div class="col-md-4">	
+				<input name="dr" autocomplete="off" class="form-control input-lg" id="inputFieldDR" aria-describedby="inputFieldHelp" placeholder="00.00.0000" pattern="^[0-9\s]{2,}.[0-9\s]{2,}.[0-9\s]{4,}$" type="text">
+				<small class="glyphicon form-control-feedback"></small>
+			</div>
+		</div>
+		
+		
+		<div class="form-group row hidefield">
+			<label for="inputFieldMR" class="col-md-3 col-form-label">Место рождения</label>
+			<div class="col-md-4">	
+				<input name="mr" autocomplete="off" class="form-control input-lg" id="inputFieldMR" aria-describedby="inputFieldHelp" placeholder="Введите место рождения" type="text">
+				<small class="glyphicon form-control-feedback"></small>
+			</div>
+		</div>
+		
+		
+		<div class="form-group row">
+			<label for="inputFieldPhone" class="col-md-3 col-form-label">Номер телефона</label>
+			<div class="col-md-4">	
+				<input name="phone" autocomplete="off" required="" value="+7__________" class="form-control input-lg" id="inputFieldPhone" aria-describedby="inputFieldHelp" placeholder="+7__________" pattern="^\+79[0-9]{9}$" type="tel">
+				<small class="glyphicon form-control-feedback"></small>
+			</div>
+			<div class="col-md-5">	
+				<small>номер Вашего мобильного телефона является одновременно номером кошелька</small>
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<label for="inputFieldSumma" class="col-md-3 col-form-label">Сумма</label>
+			<div class="col-md-4">			
+				<input name="summa" required="" class="form-control input-lg" id="inputFieldSummaElplat" aria-describedby="inputFieldHelp" type="text">
+				<small class="glyphicon form-control-feedback"></small>
+			</div>
+			<div class="col-md-5">	
+				<small>при каждой операции пополнения или списания с кошелька ПИН личного кабинета меняется</small>
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<label for="inputFieldEMAIL" class="col-md-3 col-form-label">E-mail</label>
+			<div class="col-md-4">	
+				<input name="email" required="" class="form-control input-lg" id="inputFieldEMAIL" aria-describedby="inputFieldHelp" type="text">
+				<small class="glyphicon form-control-feedback"></small>
+			</div>
+		</div>
+		<label data-bx-user-consent="{&quot;id&quot;:1,&quot;sec&quot;:&quot;ib3e21&quot;,&quot;autoSave&quot;:true,&quot;actionUrl&quot;:&quot;\/bitrix\/components\/bitrix\/main.userconsent.request\/ajax.php&quot;,&quot;replace&quot;:{&quot;button_caption&quot;:&quot;\u041f\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043a\u043e\u0448\u0435\u043b\u0435\u043a&quot;}}" class="main-user-consent-request">
+	<input value="Y" name="tr" type="checkbox">
+	<a>Нажимая "Пополнить кошелек", я подтверждаю, что ознакомлен и согласен с условиями оферты</a>
+</label>
+<script type="text/html" data-bx-template="main-user-consent-request-loader">
+	<div class="main-user-consent-request-popup">
+		<div class="main-user-consent-request-popup-cont">
+			<div data-bx-head="" class="main-user-consent-request-popup-header"></div>
+			<div class="main-user-consent-request-popup-body">
+				<div data-bx-loader="" class="main-user-consent-request-loader">
+					<svg class="main-user-consent-request-circular" viewBox="25 25 50 50">
+						<circle class="main-user-consent-request-path" cx="50" cy="50" r="20" fill="none" stroke-width="1" stroke-miterlimit="10"></circle>
+					</svg>
+				</div>
+				<div data-bx-content="" class="main-user-consent-request-popup-content">
+					<div class="main-user-consent-request-popup-textarea-block">
+						<textarea data-bx-textarea="" class="main-user-consent-request-popup-text"></textarea>
+					</div>
+					<div class="main-user-consent-request-popup-buttons">
+						<span data-bx-btn-accept="" class="main-user-consent-request-popup-button main-user-consent-request-popup-button-acc">Y</span>
+						<span data-bx-btn-reject="" class="main-user-consent-request-popup-button main-user-consent-request-popup-button-rej">N</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>		<div class="row">
+			<div class="col-md-4">	
+				<!-- a href="javascript:void(0);" onclick="$('#elplatform2').submit();return false;" class="btn btn-primary btn-lg">Пополнить кошелек</a -->
+				<button type="submit" name="s" class="btn btn-primary btn-lg disabled">Пополнить кошелек <span id="infoelplat"></span> <i class="fa fa-angle-double-right"></i></button>
+			</div>
+		 </div>
+	</form>
+	
+	
+                  </div>			
+				</div>											</div>			
+				</div>
+</div>        </div>
+		
+		</div>
+</div>
+</div>
+
+
+
+<div class="waveorangeback"></div>	
+		<!--div id="mainnews">
+			<!--div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<center>
+							<div class="h2">О КРЕДИТНОЙ ОРГАНИЗАЦИИ</div>
+						</center>
+						<br>
+						<p align="justify">
+    						ООО ПНКО «ЭЛПЛАТ» осуществляет банковские операции на основании Лицензии Центрального Банка
+    						Российской Федерации от 30 сентября 2016г. № 3535-К. Кредитной организацией исполняются переводы
+    						без открытия банковского счета на основании распоряжений физических лиц по перечислению денежных средств
+    					    в бюджет Российской Федерации с соблюдением требований Налогового Кодекса РФ и Федерального закона от от
+    						27 июня 2011г. №161-ФЗ "О национальной платежной системе". 
+    					</p>
+						<p align="justify">
+							 ПНКО «ЭЛПЛАТ» присутствует в 15 регионах Российской Федерации, где осуществляет расчетные услуги по переводам денежных средств физических лиц. 
+						</p>
+					</div>
+				</div>
+				<!-- 
+				                -->
+				<!--center><a href="https://www.el-plat.ru/about/" class="btn btn-lg btn-primary" target="_blank">Подробнее</a></center>
+				<br>
+			</div>
+		</div-->
+		
+		<!--div class="waveback"></div-->
+
+		<!--div id="ourpartners">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<center>
+							<div class="h1">Чем оплатить</div>
+							<p>Платежи на нашем сайте совершаются посредством банковских пластиковых карт следующих платежных систем:</p> 
+							<div class="row">
+							<div class="col-4">
+    								<img style="width:65px; height: 51px;" src="/local/templates/elplat/images/mir.svg" alt="Электронные платежи | эл-плат.рф">
+    							</div>
+    							<div class="col-4">
+    								<img style="width:65px; height: 39px;" src="/local/templates/elplat/images/mastercard.svg" alt="Электронные платежи | эл-плат.рф">
+    							</div>
+    							<div class="col-4">
+    								<img style="width:65px; height: 21px;" src="/local/templates/elplat/images/visa.svg" alt="Электронные платежи | эл-плат.рф">
+    							</div>
+    						</div>
+						</center>
+					</div>
+					<div class="col-md-12">
+						<center>
+							<p>а также Электронным кошельком "ЭЛПЛАТ"<p>
+							<a href="https://xn----8sb5abtu5e.xn--p1ai/support/elplat/">
+								<img style="width:200px; height: 100px;" src="/local/templates/elplat/images/logo.svg" alt="Электронные платежи | эл-плат.рф">
+							</a>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+
+
+<div class="range range-xs-center offset-top-40 row">
+<div class="col-12 col-md-6 height-fill">
+<article class="icon-box">
+<div class="divider"></div>
+<div class="box-body">
+<p class="text-gray-05">Использование  для оплаты банковских карт гарантированно безопасно и соответствует всем действующим российским и международным стандартам <a href="https://www.el-plat.ru/bezopasnost/">безопасности</a>.</p>
+</div>
+</article>
+</div>
+<div class="col-12 col-md-6 height-fill">
+<article class="icon-box">
+<div class="divider"></div>
+<div class="box-body">
+<p class="text-gray-05">Комиссия при оплате банковской картой зависит от вида оплачиваемой услуги, информация о комиссиях и лимитах платежей находится <a href="https://www.el-plat.ru/tarifs/" target="_blank">здесь</a>.</p>
+</div>
+</article>
+</div>
+</div>
+
+
+
+			</div>
+		</div-->
+
+</div>
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-12">
+												
+						<div id="copyright" style="margin-top:0">
+		Оператор по переводу денежных средств:<br>
+	<span style="" wa-subtypes="" wa-id="13" wa-type="LEGAL_NAME" class="WebAnnotator_LEGAL_NAME">ООО ПНКО "ЭЛПЛАТ" </span>Лицензия Банка России №<span style="" wa-subtypes="" wa-id="14" wa-type="REG_CBR" class="WebAnnotator_REG_CBR">3535-К</span> от 30.09.2016<br>
+	Адрес регистрации и местонахождения:<br>
+	<i class="fa fa-map-marker" style="visibility: visible;color:#ef7c00;"></i> <span style="" wa-subtypes="" wa-id="15" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">426009, г. Ижевск, ул. Совхозная, д.34</span><br>
+	<p>
+		<i class="fa fa-phone" style="visibility: visible;color:#ef7c00;"></i> <a href="tel:*2717">*2717</a>&nbsp;&nbsp;
+		<i class="fa fa-phone" style="visibility: visible;color:#ef7c00;"></i> <a href="tel:83412601501"><span style="" wa-subtypes="" wa-id="17" wa-type="PHONE" class="WebAnnotator_PHONE">8&nbsp;(3412)&nbsp;601-501</span></a>&nbsp;&nbsp;
+	<i class="fa fa-envelope-o" style="visibility: visible;color:#ef7c00;"></i> <a href="mailto:info@el-plat.ru"><span style="" wa-subtypes="" wa-id="16" wa-type="EMAIL" class="WebAnnotator_EMAIL">info@el-plat.ru</span></a></p>
+</div>
+<!--div id="disclaimer">
+	<div class="row">
+		
+	<div class="col-2 col-sm-2" style="align-items: center;display: flex;" id="bx_3218110189_198">
+		<img src="https://эл-плат.рф//upload/iblock/52d/Visa.png" alt="Visa" class="img-fluid">
+	</div>
+		
+	<div class="col-2 col-sm-2" style="align-items: center;display: flex;" id="bx_3218110189_199">
+		<img src="https://эл-плат.рф//upload/iblock/dd3/MasterCard_Logo.svg.png" alt="Mastercard" class="img-fluid">
+	</div>
+		
+	<div class="col-2 col-sm-2" style="align-items: center;display: flex;" id="bx_3218110189_200">
+		<img src="https://эл-плат.рф//upload/iblock/ff5/3212-naklejka-Nacionalnaya-platezhnaya-sistema-MIR.png" alt="Мир" class="img-fluid">
+	</div>
+</div>
+</div-->
+<div id="support" role="tablist" aria-multiselectable="true" class="hidden-xs-down">
+	<div class="card card-success" style="background-color:#f0ad4e;">
+		<div class="card-header questionblock" style="padding:2px;" role="tab" id="headingFaq">
+			<!--a data-toggle="collapse" data-parent="#support" href="#collapsemenufaq" aria-expanded="true" aria-controls="collapsemenufaq">Поддержка</a-->
+			<a href="#collapsemenufaq" data-toggle="collapse" data-parent="#support" aria-expanded="true" aria-controls="collapsemenufaq"><img src="/upload/support/expert-b185b4c5-1024x984.png" height="50"></a>
+		</div>
+		<div id="collapsemenufaq" class="collapse" role="tabpanel" aria-labelledby="headingFaq">
+			
+  
+<ul class="list-group list-group-flush">
+<li class="list-group-item">
+	<!--a href="/support/chasto-zadavaemye-voprosy/"><i class="fa fa-question-circle" aria-hidden="false"></i> Часто задаваемые вопросы</a-->
+	<a href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/support/chasto-zadavaemye-voprosy/"><i class="fa fa-question-circle" aria-hidden="false"></i> Часто задаваемые вопросы</a>
+</li>	
+<li class="list-group-item">
+	<!--a href="/support/elplat/"><i class="fa fa-info-circle" aria-hidden="true"></i> Электронный кошелёк «ЭЛПЛАТ»</a-->
+	<a href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/support/elplat/"><i class="fa fa-info-circle" aria-hidden="true"></i> Электронный кошелёк «ЭЛПЛАТ»</a>
+</li>	
+<li class="list-group-item">
+	<!--a href="https://www.el-plat.ru/upload/docs/%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D1%80%D0%B0%D1%81%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B7%D0%B8%D0%B9%20%D0%9F%D0%9D%D0%9A%D0%9E%20%D0%AD%D0%9B%D0%9F%D0%9B%D0%90%D0%A2.pdf"><i class="fa fa-info-circle" aria-hidden="true"></i> Порядок рассмотрения претензий </a-->
+	<a href="https://www.el-plat.ru/upload/docs/%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D1%80%D0%B0%D1%81%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B7%D0%B8%D0%B9%20%D0%9F%D0%9D%D0%9A%D0%9E%20%D0%AD%D0%9B%D0%9F%D0%9B%D0%90%D0%A2.pdf" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i> Порядок рассмотрения претензий </a>
+</li>	
+<li class="list-group-item">
+	<!--a href="/support/napisat-soobschenie/"><i class="fa fa-envelope" aria-hidden="true"></i> Написать сообщение</a-->
+	<a href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/support/napisat-soobschenie/"><i class="fa fa-envelope" aria-hidden="true"></i> Написать сообщение</a>
+</li>	
+<li class="list-group-item">
+	<!--a href="https://www.el-plat.ru/bezopasnost/"><i class="fa fa-info-circle" aria-hidden="true"></i> Безопасность</a-->
+	<a href="https://www.el-plat.ru/bezopasnost/" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i> Безопасность</a>
+</li>	
+<!--li class="list-group-item"><a onclick="return lh_inst.lh_openchatWindow()" href="#open_chat"><i class="fa fa-comments" aria-hidden="true"></i> Онлайн-чат</a></li-->
+</ul>
+		</div>
+	</div>
+</div>
+						<br>
+					</div>
+					<div class="col-md-6 col-12">
+												
+						<div id="copyright" style="margin-top:0">
+		Оператор сервиса: <span style="" wa-subtypes="" wa-id="19" wa-type="LEGAL_NAME" class="WebAnnotator_LEGAL_NAME">ООО "ЭЛПЛАТ"</span><br>
+		Адрес регистрации и местонахождения:<br>
+		<i class="fa fa-map-marker" style="visibility: visible;color:#ef7c00;"></i> <span style="" wa-subtypes="" wa-id="18" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">426009, г. Ижевск, ул. Совхозная, д.34</span><br>
+		<p>
+			<i class="fa fa-phone" style="visibility: visible;color:#ef7c00;"></i> <a href="tel:*2717">*2717</a>&nbsp;&nbsp;
+			<i class="fa fa-phone" style="visibility: visible;color:#ef7c00;"></i><span style="" wa-subtypes="" wa-id="20" wa-type="PHONE" class="WebAnnotator_PHONE"> </span><a href="tel:+73412601501"><span style="" wa-subtypes="" wa-id="20" wa-type="PHONE" class="WebAnnotator_PHONE">(3412)&nbsp;601&nbsp;501</span></a>&nbsp;&nbsp;
+		<i class="fa fa-envelope-o" style="visibility: visible;color:#ef7c00;"></i> <a href="mailto:help@el-plat.ru"><span style="" wa-subtypes="" wa-id="21" wa-type="EMAIL" class="WebAnnotator_EMAIL">help@el-plat.ru</span></a></p>
+		
+</div>
+						<br>
+					</div>
+					<!--div class="footermenu col-md-3 col-6 hidden-xs-down">
+						
+						
+					</div>
+					<div class="footermenu col-md-3 col-6 hidden-xs-down">
+						
+						
+					</div-->
+				</div>
+				<!-- Тут скрыл 
+<a href="https://www.el-plat.ru/"><i class="fa fa-reply-all"></i><span class="hidden-xs-down"> на сайт ПНКО «Элплат»</span></a>
+ -->			</div>
+		</footer>
+
+		<!-- 
+		<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+		<script type="text/javascript" src='https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js'></script>
+		<script type="text/javascript" src='https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js'></script>
+		<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+		<script type="text/javascript" src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+		<script type="text/javascript" src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+		 -->
+		 
+		<script type="text/javascript" src="/local/templates/elplat/js/CDN_connect/jquery.min.js"></script>
+		<script type="text/javascript" src="/local/templates/elplat/js/CDN_connect/jquery-ui.js"></script>
+		<script type="text/javascript" src="/local/templates/elplat/js/CDN_connect/tether.min.js"></script>
+		<script type="text/javascript" src="/local/templates/elplat/js/CDN_connect/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/local/templates/elplat/js/CDN_connect/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="/local/templates/elplat/js/CDN_connect/dataTables.bootstrap4.min.js"></script>
+		<script type="text/javascript" src="/local/templates/elplat/js/CDN_connect/bootstrap-toggle.min.js"></script>
+		<script type="text/javascript" src="/local/templates/elplat/js/CDN_connect/validator.min.js"></script>
+		<script type="text/javascript" src="/local/templates/elplat/js/CDN_connect/SmoothScroll.min.js"></script>
+		
+		<script type="text/javascript" src="/local/templates/elplat/js/jquery.mask.js"></script>
+		
+		<script src="/local/templates/elplat/js/inputmask/inputmask.js"></script>
+		
+		<script src="/local/templates/elplat/js/inputmask/inputmask.phone.extensions.js"></script>
+		<script src="/local/templates/elplat/js/inputmask/inputmask.numeric.extensions.js"></script>
+		<script src="/local/templates/elplat/js/inputmask/inputmask.regex.extensions.js"></script>
+		<script src="/local/templates/elplat/js/inputmask/jquery.inputmask.js"></script>
+		<script src="/local/templates/elplat/js/jquery.fancybox.min.js"></script>
+
+		<script type="text/javascript" src="/local/templates/elplat/js/accounting.js"></script>
+		<script type="text/javascript" src="/local/templates/elplat/js/utils.js"></script>
+		<script type="text/javascript" src="/local/templates/elplat/js/typeahead.js"></script>
+		<script type="text/javascript" src="/local/templates/elplat/js/typeahead.jquery.min.js"></script>
+		<script type="text/javascript" src="/local/templates/elplat/js/jivosite.js"></script>
+				<script type="text/javascript" src="/local/templates/elplat/js/jivosite.js"></script>
+		
+		<script type="text/javascript" src="/local/templates/elplat/js/loadingoverlay.min.js"></script>
+		
+		
+		<script type="text/javascript" src="/local/templates/elplat/js/bootstrap-combobox.js"></script>
+		
+		<script type="text/javascript" src="/local/templates/elplat/js/responsive-tabs.js"></script>
+		
+		<script type="text/javascript" src="/local/templates/elplat/js/iframeResizer.min.js"></script> 
+		
+		<script type="text/javascript" src="/local/templates/elplat/js/main.js?1608810303"></script>
+		<script src="/local/templates/elplat/js/jquery.comiseo.daterangepicker.js" type="text/javascript"></script>
+		<link href="https://%D1%8D%D0%BB-%D0%BF%D0%BB%D0%B0%D1%82.%D1%80%D1%84/local/templates/elplat/css/jquery.comiseo.daterangepicker.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="/local/templates/elplat/js/bootstrap-datepicker.ru.js" charset="UTF-8"></script>
+		
+		<script type="text/javascript">
+		
+		
+		$('.datepicker').datepicker({
+			format: 'yyyy-mm-dd',
+			language:"ru",
+			endDate:'d'
+        }).on('changeDate', function(ev){
+					$('.datepicker').datepicker('hide');
+				});;
+
+		jQuery(function($) {
+			if (/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())) {
+				$('body').css('opacity', '1.0') 
+			}
+		})
+</script>
+		
+		<script type="text/javascript">
+  (function($) {
+      fakewaffle.responsiveTabs(['xs', 'sm'], ['md']);
+  })(jQuery);
+  
+  function showform(value){
+					$("#accordion").show();
+					$('.bhoechie-tab-content, .list-group-item').removeClass('active');
+					var id = $("#s_"+value).closest('.bhoechie-tab-content').attr('id');
+					$("a[href='#"+id+"']").addClass('active');
+					$("#"+value).closest('.bhoechie-tab-content').addClass('active');
+					 $("#s_"+value).trigger('click');
+				}
+				
+</script>
+
+		<script type="text/javascript">  
+		
+
+			/* <![CDATA[ */
+			$(document).ready(function(){
+				
+				$('.DataTable').DataTable({
+        "order": [[ 0, "desc" ]],
+		"language": {
+                "url": "/local/templates/elplat/js/Russian.json"
+            },
+			 "searching": false,
+			 "iDisplayLength": 50,
+			 "lengthMenu": [50, 100]
+    } );
+	
+				
+				
+				 $().UItoTop({easingType:'easeOutQuart',containerClass:'ui-to-top'});
+
+				//Inputmask.extendDefaults({ androidHack: "rtfm" });
+				 //$("#phone, #inputFieldPhone, #USER_PHONE").inputmask({"mask": "+7 (999) 999-99-99" }); //specifying options
+				 $("#phone, #inputFieldPhone, #USER_PHONE").inputmask({"mask": "+79999999999" }); //specifying options
+				// Inputmask.extendDefaults({ androidHack: "rtfm" });
+				 $("#inputFieldDR").inputmask({"mask": "99.99.9999"}); //дата рождения
+				 $("#passp").inputmask({"mask": "9999 999999"}); //specifying options
+				 $("#bik").inputmask({"mask": "999999999"}); //specifying options
+				 $("#rs").inputmask({"mask": "99999999999999999999"}); //specifying options
+				 $("#krs").inputmask({"mask": "99999999999999999999"}); //specifying options
+				 $("#summa, #inputFieldSumma").inputmask({'autoUnmask': true});	
+				 //$(".maskvu").inputmask({"mask": "99 99 9999"}); //specifying options
+				 
+
+				$("input[name=PERSONAL_BIRTHDAY").inputmask({"mask": "99.99.9999"});
+				$("input[name=UF_PASSPORT]").inputmask({"mask": "9999 999999"});
+				$("input[name=UF_SNILS]").inputmask({"mask": "999-999-999 99"});
+
+				 $("input[name=uin]").inputmask({"mask": "aaaaaaaaaaaaaaaaaaaa[aaaaa]"}); //specifying options
+				 $("input[name=vu], input[name=sor]").inputmask("99 ff 999999"); //specifying options
+				
+				/*var field = $('input[name=uin]');
+				field.keyup(function(e){
+				  field.val(function(i, val){
+					return val.toUpperCase();
+				  });
+				});*/
+			
+				$(".openjivo").click(function (){
+					jivo_api.open();
+				});
+				
+				/* if in drawer mode */
+				$(".tab_drawer_heading").click(function() {
+				  
+				  $(".tab-pane").addClass('fade').removeClass('active');
+				  var d_activeTab = $(this).attr("rel"); 
+				 
+				 $("#"+d_activeTab).removeClass('fade').addClass('active');
+				  
+				  $(".tab_drawer_heading").removeClass("d_active");
+				  $(this).addClass("d_active");
+				  
+				  $("ul.tabs li").removeClass("active");
+				  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+				});
+				
+				
+				
+				
+				/*var substringMatcher = function(strs) {
+				  return function findMatches(q, cb) {
+					var matches, substringRegex;
+
+					// an array that will be populated with substring matches
+					matches = [];
+
+					// regex used to determine if a string contains the substring `q`
+					substrRegex = new RegExp(q, 'i');
+
+					// iterate through the pool of strings and for any string that
+					// contains the substring `q`, add it to the `matches` array
+					$.each(strs, function(i, str) {
+					  if (substrRegex.test(str)) {
+						matches.push(str);
+					  }
+					});
+
+					cb(matches);
+				  };
+				};
+
+				var states = $.get('/ajax/search.php', { query: query }, function (data) {
+							return process(data);	
+						});
+
+				$('#the-basics .typeahead').typeahead({
+				  hint: true,
+				  highlight: true,
+				  minLength: 1
+				},
+				{
+				  name: 'states',
+				  source: substringMatcher(states)
+				});*/
+
+				/*$(".searching").typeahead({ 
+					source:function (query, process){
+						 return $.get('/ajax/search.php', { query: query }, function (data) {
+							return process(data);	
+						});
+					},
+					minLength: 2,
+					//displayKey: 'label',
+				});*/
+				
+				
+				//полный поиск
+				$(".searching").typeahead({
+					  hint: true,
+					  highlight: true,
+					  minLength: 2
+					},
+					{  
+					displayKey: 'label',
+					source: function (query, processSync, processAsync) {
+					   return $.post('/ajax/search.php', { request: query, type:$(this).attr('data-type') },
+							 function (response) {
+								 console.log(response);
+								  return processAsync(response);
+								},
+							 'json'
+							 );
+					  },
+					  limit: 15
+					  
+				});
+				
+				$(".searching").on('typeahead:selected', function (e, datum) {
+					showform(datum.value);
+				});
+				
+				
+				
+				
+				// applied typeahead to the text input box
+				  $('#fio').typeahead({
+					  hint: true,
+					  highlight: true,
+					  minLength: 2
+					}, {  
+					displayKey: 'fio',
+					source: function (query, processSync, processAsync) {
+						console.log(getdata('dataformcontact'));
+						processSync(getdata('dataformcontact'));
+					   return getdata('dataformcontact');
+					  },
+					  limit: 15,
+					  templates: {
+							suggestion: function (data) {
+								return '<p><span  class="float-left">' + data.fio + '</span><a class="float-right btn" href=\'javascript:void(0);\' onclick=\'dellocaldata("'+data.fio+'");\' title="Удалить" ><i class="fa fa-trash-o" aria-hidden="true"></i></p>';
+							}
+						}					  
+					}
+				);
+				
+				
+				 $('#fio').on('typeahead:selected', function (e, datum) {
+					if($("#phone").val() == ''){
+						$("#phone").val(datum.phone);
+					}
+					$("#email").val(datum.email);
+					$("#regionform").val(datum.region);
+					//alert(datum.region);
+					$("#regionform option[value="+datum.region+"]").attr('selected', 'selected')
+					$('#regionform').data('combobox').refresh();
+					$("#address").val(datum.address);
+					$('#paymentform , #paymentformcheck').validator('validate');
+				});
+
+				
+				
+				//адрес
+				$("#address").typeahead({
+					  hint: true,
+					  highlight: true,
+					  minLength: 2
+					},
+					{  
+					source: function (query, processSync, processAsync) {
+					   return $.post('/ajax/address.php', { request: query, region:$("#regionform").val() },
+							 function (response) {
+								 console.log(response);
+								  return processAsync(response);
+								},
+							 'json'
+							 );
+					  },
+					  limit: 15
+					  
+				});
+				
+				
+				
+				
+				
+				$('.vu').hide();
+				$("input[name=radio_shtr]").change(function(){
+					$('.shtrinput').hide();	
+					$('.'+$(this).val()).show();	
+				});
+				  $("#vupopover").popover({
+					title: '',
+					html : true,
+					content: '<img src="https://el-plat.ru/img/Shtraf/vu.jpg">',
+					trigger: 'hover',
+					placement: 'right'
+				  });
+				  
+				  
+				  $("#stspopover").popover({
+					title: '',
+					html : true,
+					content: '<img width="200" src="https://el-plat.ru/img/Shtraf/sts.jpg">',
+					trigger: 'hover',
+					placement: 'right'
+				  });
+  
+				$('#formshtr').validator().on('submit', function (e) {
+					  if (e.isDefaultPrevented()) {
+						  console.log(1);
+						// handle the invalid form...
+					  } else {
+						  console.log(2);
+						// everything looks good!
+					  }
+				})
+
+			});
+			/* ]]> */
+		</script>
+
+
+
+
+		<script type="text/javascript">
+			iFrameResize();
+
+		</script>
+		
+
+<script type="text/javascript">
+/*
+var LHCChatOptions = {};
+LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500};
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
+var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
+po.src = '//эл-плат.рф/lhc/index.php/rus/chat/getstatus/(click)/internal/(position)/api/(ma)/br/(top)/350/(units)/pixels/(leaveamessage)/true/(disable_pro_active)/true/(theme)/1?r='+referrer+'&l='+location;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+*/
+</script>
+
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" data-toggle="modal" data-keyboard="false">
+ <div class="modal-dialog">
+ 
+ <div class="modal-content" id="ModalWait">
+	<div class="modal-body"><i class="fa fa-circle-o-notch fa-spin"></i> Идет обработка данных...</div>
+ </div>
+ <div class="modal-content" id="ModalPart">
+      <div class="modal-header">
+        <h5 class="modal-title">Вы совершаете неавторизованный платеж</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Максимальная сумма неавторизованного платежа 15 000 руб.</p>
+		<p>Мы автоматически разделили Ваш платеж на <span class="part"></span></p>
+		<p>Текущий платеж на сумму <span class="partsumma"></span> руб.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="PartButton">Оплатить</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+	
+ <div class="modal-content" id="ModalMain">
+ 
+ 
+	<div class="modal-body">
+	
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+		
+		
+      <center><iframe src="" style="width:600px;height:620px;" scrolling="yes" frameborder="0"></iframe></center>
+	</div>
+	</div>
+	</div>
+</div>
+<!-- Тут надо после Yandex.Metrika counter добавить закрытите комментария -->
+<!-- Yandex.Metrika counter  <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter46148973 = new Ya.Metrika({ id:46148973, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/46148973" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- 111 -->
+	
+
+
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter50303313 = new Ya.Metrika2({
+                    id:50303313,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/50303313" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --><a href="#" style="display: block;" id="toTop"><span id="toTopHover"></span><i class="fa fa-angle-up"></i></a><iframe aria-hidden="true" style="opacity: 0 ! important; width: 0px ! important; height: 0px ! important; position: absolute ! important; left: 100% ! important; bottom: 100% ! important; border: 0px none ! important;" title="ym-native-frame" name="ym-native-frame" frameborder="0"></iframe></body><wa-color id="WA-color-0" bg="#33CCFF" fg="#000000" class="WebAnnotator_ADDRESS" type="ADDRESS"></wa-color><wa-color id="WA-color-1" bg="#FF0000" fg="#000000" class="WebAnnotator_INN" type="INN"></wa-color><wa-color id="WA-color-2" bg="#33FF33" fg="#000000" class="WebAnnotator_KPP" type="KPP"></wa-color><wa-color id="WA-color-3" bg="#CC66CC" fg="#000000" class="WebAnnotator_OGRN" type="OGRN"></wa-color><wa-color id="WA-color-4" bg="#FF9900" fg="#000000" class="WebAnnotator_REG_CBR" type="REG_CBR"></wa-color><wa-color id="WA-color-5" bg="#99FFFF" fg="#000000" class="WebAnnotator_PHONE" type="PHONE"></wa-color><wa-color id="WA-color-6" bg="#FF6666" fg="#000000" class="WebAnnotator_EMAIL" type="EMAIL"></wa-color><wa-color id="WA-color-7" bg="#66FF99" fg="#000000" class="WebAnnotator_LEGAL_NAME" type="LEGAL_NAME"></wa-color><wa-color id="WA-color-8" bg="#3333FF" fg="#FFFFFF" class="WebAnnotator_NAME" type="NAME"></wa-color><wa-color id="WA-color-9" bg="#660000" fg="#FFFFFF" class="WebAnnotator_REGIONS" type="REGIONS"></wa-color><wa-color id="WA-color-10" bg="#006600" fg="#FFFFFF" class="WebAnnotator_RATE" type="RATE"></wa-color><wa-color id="WA-color-11" bg="#663366" fg="#FFFFFF" class="WebAnnotator_CURRENCY" type="CURRENCY"></wa-color><wa-title style="display:none;">Электронные платежи, оплатить штрафы ГИБДД, оплатить налоги, оплатить госпошлину и другие государственные услуги | Электронные платежи эл-плат.рф</wa-title></html>
+<!-- Yandex.Metrika counter -->

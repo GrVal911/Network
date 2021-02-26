@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html style="" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang=""><!--<![endif]--><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+  <meta charset="utf-8">
+
+  <!-- <meta name='yandex-verification' content='4691a29c8c220450' /> -->
+  <!-- <meta name="google-site-verification" content="uPEdzwAKZ45LfWyKEUa52gABmxhvi7mVSoG-CyyNRvI" /> -->
+
+  
+    <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Быстрозайм">
+  <meta property="og:title" content="Быстро Займ. Получите деньги легко и быстро!">
+  <meta name="og:description" content="Быстро Займ. Получите деньги легко и быстро!">
+  <meta property="og:url" content="">
+  <meta property="og:locale" content="ru_RU">
+    <meta property="og:image:width" content="968">
+  <meta property="og:image:height" content="504">
+
+    <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Быстро Займ. Получите деньги легко и быстро!">
+  <meta name="twitter:description" content="Быстро Займ. Получите деньги легко и быстро!">
+    <meta name="twitter:url" content="">
+  <meta name="twitter:domain" content="rbzaym.ru">
+  <meta name="twitter:site" content="@">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/favicons/manifest.json">
+  <link rel="mask-icon" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/favicons/safari-pinned-tab.svg" color="#ff0000">
+  <link rel="shortcut icon" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/favicons/favicon.ico">
+  <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+  <link rel="stylesheet" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/css/jquery.jgrowl.min.css">  
+  <link rel="stylesheet" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/fonts/ultimapro/stylesheet.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/owl.carousel/assets/owl.carousel.css">
+  <link rel="stylesheet" href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/assets/css/main.css?v=1.0.30">
+
+  <script src="https://www.google-analytics.com/analytics.js" async="" type="text/javascript"></script><script integrity="sha384-vO4YJBjX/z64dUGb+EeLsqWpsAdsQkZ6TJHXtoXzjwHf0TzzkwpSemcLV83kdc3j" crossorigin="anonymous" src="https://www.gstatic.com/recaptcha/releases/r8jtf1oixV0IGff4hgB4EzDF/recaptcha__ru.js" async="" type="text/javascript"></script><script src="https://mc.yandex.ru/metrika/watch.js" async="" type="text/javascript"></script><script src="https://www.google-analytics.com/analytics.js" async=""></script><script src="http://bitrix.info/ba.js" async="" type="text/javascript"></script><script src="/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8"></script>
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+  <script src="/assets/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script src="/assets/js/jquery.jgrowl.min.js"></script>
+  <script src="/assets/js/jquery.scrollTo-min.js"></script>
+  <script src="/assets/js/jquery.maskedinput.min.js"></script>
+  <script src="/assets/js/vivus.min.js"></script>
+  <script src="/assets/owl.carousel/owl.carousel.min.js"></script>
+  <script src="/assets/js/jquery.sticky-kit.min.js"></script>
+  <script src="/assets/js/jquery.mousewheel.min.js"></script>
+  <script src="/assets/js/main.js?v=1.0.30"></script>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="займ, займ иркутск, займ в новосибирске, займ в братске, займы, быстрый займ, быстро займ, быстрозайм, взять кредит, взять займ, микрозайм,получить срочно деньги,  микрофинансирование, микрофинансовая организация, деньги до зарплаты, в долг, занять денги иркутск, займы до зарплаты, кредит, по паспорту">
+<meta name="description" content="Быстро Займ. Получите деньги легко и быстро!">
+<link href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/bitrix/cache/css/s8/zaym-lp-2017/template_60ada4459407ae2500485c72fa18bf3b/template_60ada4459407ae2500485c72fa18bf3b.css?16106810318527" type="text/css" data-template-style="true" rel="stylesheet">
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "3eddd762dc6a43a505cb4cdc4038aadf"]); _ba.push(["host", "xn----8sbbzlsjpik1h.xn--p1ai"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+  <title>Быстро Займ. Получите деньги легко и быстро!</title>
+
+<script src="https://www.google.com/recaptcha/api.js" async="" defer="defer"></script>
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+<body class="lp-template">
+
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="LP">
+
+  <div class="LP-header LP-header--fixed">
+    <div class="container">
+      <a href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/" class="LP-header__logo">Быстрозайм</a>
+		<a href="http://r24.rbzaym.ru/company/adres/" style="margin: 7px 0 0 30px; float:left" class="button button--h25 button--red">Наши офисы</a>
+		<span class="LP-header__addr"><span style="" wa-subtypes="" wa-id="93" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">664005 г. Иркутск ул. Профсоюзная 10/2</span></span>
+      <!-- <a href="javascript:void(0);" class="LP-header__callme">Заказать звонок</a> -->
+      <div class="top-line__callme top-callme hidden-sm hidden-xs pull-right">
+
+
+        <a href="javascript:void(0);" onclick="yaCounter46854225.reachGoal('request_call');gtag('event','onclick', { 'event_category' :'request_call'});" class="button button--h25 button--red top-callme__toggle action__top-callme--toggle">Заказать звонок</a>
+        <div class="top-callme__form">
+          <form name="callme" action="/ajax/callme.php" data-ajax="Y" method="POST">
+            <div class="top-callme__line">
+              <div style="z-index: 1;" class="__input __input--h50"><input class="input input--h50 input--fw js-masked-mobile req" name="PHONE" placeholder="" type="text"><div class="__placeholder"><span>Телефон<span class="required__sign red">*</span></span></div></div>
+            </div>
+            <div class="top-callme__line">
+              <div style="z-index: 1;" class="__input __input--h50"><input class="input input--h50 input--fw req" name="NAME" placeholder="" type="text"><div class="__placeholder"><span>Ваше имя<span class="required__sign red">*</span></span></div></div>
+            </div>
+            <div class="top-callme__line">
+              <button onclick="yaCounter44268749.reachGoal('zvonok');" type="submit" name="SEND" value="Y" class="button button--fw button--h50">Перезвоните мне</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+      <a href="tel:88002503025" class="LP-header__phone"><span style="" wa-subtypes="" wa-id="94" wa-type="PHONE" class="WebAnnotator_PHONE">8 (800) 250-30-25</span></a>
+    </div>
+  </div>
+<div class="LP-index-banner">
+  <div class="index-banner-form">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-6">
+  <form action="/order/" name="start-order" method="POST">
+
+
+<div class="start-order__box">
+    <div class="start-order__line">
+    <div class="start-order__select start-order-select">
+      <div class="start-order-select__current">
+        <input placeholder="" name="PRODUCT_ID" value="62687" type="hidden">
+        <input placeholder="" name="PRODUCT" value="p369" type="hidden">
+        <div class="start-order-select__percent"><span style="" wa-subtypes="" wa-id="95" wa-type="RATE" class="WebAnnotator_RATE">1%</span></div>
+        <div class="start-order-select__value">Займ на карту банка</div>
+      </div>
+      <div class="start-order-select__options">
+                  <div class="start-order-select__option" data-id="62687" data-value="p369" data-text="Займ на карту банка" data-percent="1%">
+            <div class="start-order-select__percent">1%</div>
+            <div class="start-order-select__value">Займ на карту банка</div>
+            <div class="start-order-select__description">Сумма от 3000 до 30000 руб. на срок от 7 до 30 дней. Единовременное погашение.</div>
+          </div>
+                  <div class="start-order-select__option" data-id="62690" data-value="p368" data-text="Займ наличными" data-percent="1%">
+            <div class="start-order-select__percent">1%</div>
+            <div class="start-order-select__value">Займ наличными</div>
+            <div class="start-order-select__description">Сумма от 3000 до 30000 руб. на срок от 7 до 30 дней. Единовременное погашение.</div>
+          </div>
+              </div>
+    </div>
+  </div>
+  <div class="start-order__line">
+    <div id="slider-sum" class="start-order__slider start-order-slider clearfix">
+      <div class="start-order-slider__title">Сумма займа</div>
+      <div class="start-order-slider__input">
+        <input placeholder="" class="w6" name="SUM" value="3000" type="text"> Р
+      </div>
+      <div class="start-order-slider__slider">
+          <div class="jq-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div style="width: 100%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-max"></div><span style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span></div>
+      </div>
+      <div class="start-order-slider__extremums">
+        <div class="start-order-slider__extremum-min">3000 Р</div>
+        <div class="start-order-slider__extremum-max">30000 Р</div>
+      </div>
+    </div>
+  </div>
+  <div class="start-order__line">
+    <div id="slider-time" class="start-order__slider start-order-slider clearfix">
+      <div class="start-order-slider__title">На срок</div>
+      <div class="start-order-slider__input">
+        <input placeholder="" class="w3" name="TIME" value="7" type="text"> дней
+      </div>
+      <!--<div class="start-order-slider__slider">
+        <div class="jq-slider"></div>
+      </div>
+      <div class="start-order-slider__extremums">
+        <div class="start-order-slider__extremum-min"></div>
+        <div class="start-order-slider__extremum-max"></div>
+      </div>-->
+    </div>
+  </div>
+  <div class="start-order__line clearfix">
+    <!--<div class="start-order__total">
+      <span class="start-order__total-desc">К возврату</span> 
+      <span class="start-order-date"></span>
+      <span class="start-order-total"></span>
+      <input type="hidden" name="TOTAL" value="">
+    </div>-->
+    <div class="start-order__total--w2 h2-info__description">
+Комиссии при погашении займа в офисах компании отсутствуют.
+	  </div>
+      <div class="start-order__button">
+        <button onclick="ym(46854225, 'reachGoal', 'request_credit'); gtag('event','onclick', { 'event_category' :'request_credit'});" class="button" type="submit" name="SEND" value="Y">Получить займ</button>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<script>
+$(document).ready(function(){
+
+var PRODUCTS = {
+        p369: {
+        name: "Займ на карту банка",
+        type: "ONE_TIME",
+        period: 1,
+        sum_ext: [3000, 30000],
+        sum_step: 1000,
+        time_ext: [7, 30],
+        time_step: 1,
+        percent_steps: [0.01], // [0.018, 0.014]
+        steps_percent: [1000], // [2000, 15100]
+        full_percent_time: 30,
+        desc: "",
+        sum_desc: "",
+        time_desc: "",
+        bottom_desc: "К возврату",
+      },
+        p368: {
+        name: "Займ наличными",
+        type: "ONE_TIME",
+        period: 1,
+        sum_ext: [3000, 30000],
+        sum_step: 1000,
+        time_ext: [7, 30],
+        time_step: 1,
+        percent_steps: [0.01], // [0.018, 0.014]
+        steps_percent: [1000], // [2000, 15100]
+        full_percent_time: 30,
+        desc: "",
+        sum_desc: "",
+        time_desc: "",
+        bottom_desc: "К возврату",
+      },
+        };
+
+startOrderSliders(PRODUCTS['p369']);
+
+$("body").on("change", ".start-order__select input[name='PRODUCT']", function(){
+  var product = $(this).val();
+  startOrderSliders(PRODUCTS[product]);
+});
+
+$("body").on("change", ".start-order-slider input", function(){
+  URcalc();
+});
+
+function startOrderSliders(product) {
+  $("#slider-sum .jq-slider").slider({
+    range: "max",
+    value: product["sum_ext"][0],
+    min: product["sum_ext"][0],
+    max: product["sum_ext"][1],
+    step: product["sum_step"],
+    slide: function( event, ui ) {
+      $("#slider-sum input").val( ui.value ).change();
+      URcalc();
+    }
+  });
+  $("body").on("change", "#slider-sum input", function(){
+    $("#slider-sum .jq-slider").slider('value', $(this).val() );
+  });
+  $("#slider-sum input").val(((product["sum_ext"][0] < 3000)?3000:product["sum_ext"][0])).change();
+  $("#slider-sum .start-order-slider__extremum-min").text(product["sum_ext"][0] + " Р");
+  $("#slider-sum .start-order-slider__extremum-max").text(product["sum_ext"][1] + " Р");
+
+  if( product["time_ext"].length > 2 ) {
+    $("#slider-time .jq-slider").slider({
+      range: "max",
+      min: 0,
+      max: product["time_ext"].length - 1, // Set "max" attribute to array length
+      value: 0,
+      step: 1,
+      slide: function(event, ui) {
+        $("#slider-time input").val( product["time_ext"][ui.value] ).change();
+        URcalc();
+      }
+    });
+  } else {
+    $("#slider-time .jq-slider").slider({
+      range: "max",
+      min: product["time_ext"][0],
+      max: product["time_ext"][1],
+      value: product["time_ext"][0],
+      step: product["time_step"],
+      slide: function( event, ui ) {
+        $("#slider-time input").val( ui.value ).change();
+        URcalc();
+      }
+    });
+  }
+  $("body").on("change", "#slider-time input", function(){
+    var value = $(this).val();
+    if( product["time_ext"].length > 2 ) {
+      var sliderValueKey = 0;
+      $(product["time_ext"]).each(function(index){
+        if($(this) <= value) {
+          sliderValueKey = index;
+        }
+      });
+      $("#slider-time .jq-slider").slider('value', sliderValueKey );
+    } else {
+      $("#slider-time .jq-slider").slider('value', value );
+    }
+  });
+  $("#slider-time input").val(product["time_ext"][0]).change();
+  $("#slider-time .start-order-slider__extremum-min").text(product["time_ext"][0] + " " + declOfNum(product["time_ext"][0], ['день', 'дня', 'дней']));
+  $("#slider-time .start-order-slider__extremum-max").text(product["time_ext"][product["time_ext"].length - 1] + " " + declOfNum(product["time_ext"][product["time_ext"].length - 1], ['день', 'дня', 'дней']));
+  URcalc();
+}
+
+// Калькулятор
+function URcalc() {
+  var total = 0;
+  var per = 0;
+  var nPays = 0;
+  var sum = $("#slider-sum input").val();
+  var time = $("#slider-time input").val();
+  var product = $(".start-order__select input[name='PRODUCT']").val();
+  var period = PRODUCTS[product]["period"]; // Платеж каждые 14 дней
+  var bottom_desc = PRODUCTS[product]["bottom_desc"];
+
+  var toDate = new Date();
+  toDate.setDate(toDate.getDate() + parseInt(time));
+  var dd = toDate.getDate();
+  var mm = toDate.getMonth() + 1;
+  var y = toDate.getFullYear();
+  $(".start-order-date").text("до " + ((dd < 10)?"0"+dd:dd) + "." + ((mm < 10)?"0"+mm:mm) + "." + y);
+
+  for (var i = PRODUCTS[product]["steps_percent"].length - 1; i >= 0; i--) {
+    if(sum >= PRODUCTS[product]["steps_percent"][i]) {
+      per = PRODUCTS[product]["percent_steps"][i];
+      break;
+    }
+  }
+
+  $(".start-order-select__current .start-order-select__percent").text( ((per * 100).toFixed(3) * 1).toString() + "%" );
+
+  if (time >= PRODUCTS[product]["full_percent_time"]) time = PRODUCTS[product]["time_ext"][PRODUCTS[product]["time_ext"].length - 1];
+
+  total = ~~sum + ~~sum*per*time; // Сумма долга или Сумма очередного платежа
+  // totalTotal = total; // Общая сумма долга // – не используется пока
+  
+  if( PRODUCTS[product]["type"] == "EQUAL" ) {
+    nPays = parseInt(time / period);
+    everyPay = parseFloat(sum * (per * period * Math.pow((1 + per * period), nPays)) / (Math.pow((1 + per * period), nPays) - 1));
+    bottom_desc = nPays + " " + declOfNum(nPays, ['платеж', 'платежа', 'платежей']) + " по";
+    total = (everyPay*1).toFixed(0);
+    // totalTotal = total * nPays;
+  }
+  $(".start-order__total-desc").text( bottom_desc );
+  $(".start-order-total").text( ((total*1).toFixed(0) * 1).toString() + " Р");
+  $(".start-order__total input[name='TOTAL']").val( ((total*1).toFixed(0) * 1).toString() ).change();
+
+  if($(".start-order__summery").length) {
+    $("#start-order__summery__product").text(PRODUCTS[product]["name"]);
+    $("#start-order__summery__sum").text( ((sum*1).toFixed(0) * 1).toString() );
+    $("#start-order__summery__time").text(time);
+    $("#start-order__summery__desc").text(bottom_desc);
+    $("#start-order__summery__total").text( ((total*1).toFixed(0) * 1).toString() );
+  }
+
+}
+
+
+  URcalc();
+
+});
+</script>
+
+
+
+
+
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="LP-index-banner__items owl-carousel hidden-xs hidden-sm owl-theme owl-loaded owl-text-select-on">
+       <!-- <div class="LP-index-banner__item" style="background: url('/assets/img/lp/slides-1--06-04-2018.jpg') no-repeat center center; background-size: cover;">
+      <div class="LP-index-banner__box">
+        <div class="LP-index-banner__box-title">Займы<br>в Красноярске</div>
+        <div class="LP-index-banner__box-list">
+          <div class="LP-index-banner__box-list-item">
+            <div class="LP-index-banner__box-list-icon">
+              <img src="/assets/img/lp/slide-1-icon-1.svg" alt="">
+            </div>
+            <div class="LP-index-banner__box-list-text">оформление<br>за 15 минут</div>
+          </div>
+          <div class="LP-index-banner__box-list-item">
+            <div class="LP-index-banner__box-list-icon">
+              <img src="/assets/img/lp/slide-1-icon-2.svg" alt="">
+            </div>
+            <div class="LP-index-banner__box-list-text">более 60 офисов<br>в 20 городах</div>
+          </div>
+          <div class="LP-index-banner__box-list-item">
+            <div class="LP-index-banner__box-list-icon">
+              <img src="/assets/img/lp/slide-1-icon-3.svg" alt="">
+            </div>
+            <div class="LP-index-banner__box-list-text">без залога и справок<br>о зарплате</div>
+          </div>
+          <div class="LP-index-banner__box-list-item">
+            <div class="LP-index-banner__box-list-icon">
+              <img src="/assets/img/lp/slide-1-icon-4.svg" alt="">
+            </div>
+            <div class="LP-index-banner__box-list-text">пенсионерам<br>всегда одобрено</div>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+
+	  
+    
+
+	
+
+	
+
+	
+
+
+    <!--<div class="LP-index-banner__item" style="background: url('/assets/img/z15112017-2.jpg') no-repeat center center; background-size: cover;">
+      <div class="LP-index-banner__green-box" style="margin-top: 20px;">
+                <div class="LP-index-banner__green-box-title">Одобряем<br>9 из 10!</div>
+              </div>
+    </div>-->
+      <div class="owl-stage-outer"><div style="transform: translate3d(-7680px, 0px, 0px); transition: all 0s ease 0s; width: 15360px;" class="owl-stage"><div style="width: 1920px; margin-right: 0px;" class="owl-item cloned"><div class="LP-index-banner__item" style="background: transparent url(&quot;/assets/img/lp/newslide3-wide.jpg&quot;) no-repeat scroll right center / cover ; height: 832px;">
+      <div class="LP-index-banner__green-box" style="margin-top: -60px;">
+        <div class="LP-index-banner__green-box-subtitle">Всегда поможем!</div>
+        <div class="LP-index-banner__green-box-title">Исполнить<br>желания</div>
+        <div class="LP-index-banner__green-box-button">
+          <a href="http://r38.rbzaym.ru/microcard/" onclick="yaCounter46854225.reachGoal('RF_MORE');" class="button button--h40 button--transparent-white" target="_blank">Узнать подробнее</a>
+        </div>
+      </div>
+    </div></div><div style="width: 1920px; margin-right: 0px;" class="owl-item cloned"><div class="LP-index-banner__item" style="background: transparent url(&quot;/assets/img/lp/newslide4-wide.jpg&quot;) no-repeat scroll right center / cover ; height: 832px;">
+      <div class="LP-index-banner__green-box" style="margin-top: -60px;">
+        <div class="LP-index-banner__green-box-subtitle">Всегда поможем!</div>
+        <div class="LP-index-banner__green-box-title">Дарить радость<br>близким</div>
+        <div class="LP-index-banner__green-box-button">
+          <a href="http://r38.rbzaym.ru/microcard/" onclick="yaCounter46854225.reachGoal('RF_MORE');" class="button button--h40 button--transparent-white" target="_blank">Узнать подробнее</a>
+        </div>
+      </div>
+    </div></div><div style="width: 1920px; margin-right: 0px;" class="owl-item"><div class="LP-index-banner__item" style="background: transparent url(&quot;/assets/img/lp/newslide1-wide.jpg&quot;) no-repeat scroll right center / cover ; height: 832px;">
+      <div class="LP-index-banner__green-box" style="margin-top: -60px;">
+        <div class="LP-index-banner__green-box-subtitle">Всегда поможем!</div>
+        <div class="LP-index-banner__green-box-title">Осуществить<br>мечту</div>
+        <div class="LP-index-banner__green-box-button">
+          <a href="http://r38.rbzaym.ru/microcard/" onclick="yaCounter46854225.reachGoal('RF_MORE');" class="button button--h40 button--transparent-white" target="_blank">Узнать подробнее</a>
+        </div>
+      </div>
+    </div></div><div style="width: 1920px; margin-right: 0px;" class="owl-item"><div class="LP-index-banner__item" style="background: transparent url(&quot;/assets/img/lp/newslide2-wide.jpg&quot;) no-repeat scroll right center / cover ; height: 832px;">
+      <div class="LP-index-banner__green-box" style="margin-top: -60px;">
+        <div class="LP-index-banner__green-box-subtitle">Всегда поможем!</div>
+        <div class="LP-index-banner__green-box-title">Купить самое<br>необходимое</div>
+        <div class="LP-index-banner__green-box-button">
+          <a href="http://r38.rbzaym.ru/microcard/" onclick="yaCounter46854225.reachGoal('RF_MORE');" class="button button--h40 button--transparent-white" target="_blank">Узнать подробнее</a>
+        </div>
+      </div>
+    </div></div><div style="width: 1920px; margin-right: 0px;" class="owl-item active"><div class="LP-index-banner__item" style="background: transparent url(&quot;/assets/img/lp/newslide3-wide.jpg&quot;) no-repeat scroll right center / cover ; height: 832px;">
+      <div class="LP-index-banner__green-box" style="margin-top: -60px;">
+        <div class="LP-index-banner__green-box-subtitle">Всегда поможем!</div>
+        <div class="LP-index-banner__green-box-title">Исполнить<br>желания</div>
+        <div class="LP-index-banner__green-box-button">
+          <a href="http://r38.rbzaym.ru/microcard/" onclick="yaCounter46854225.reachGoal('RF_MORE');" class="button button--h40 button--transparent-white" target="_blank">Узнать подробнее</a>
+        </div>
+      </div>
+    </div></div><div style="width: 1920px; margin-right: 0px;" class="owl-item"><div class="LP-index-banner__item" style="background: transparent url(&quot;/assets/img/lp/newslide4-wide.jpg&quot;) no-repeat scroll right center / cover ; height: 832px;">
+      <div class="LP-index-banner__green-box" style="margin-top: -60px;">
+        <div class="LP-index-banner__green-box-subtitle">Всегда поможем!</div>
+        <div class="LP-index-banner__green-box-title">Дарить радость<br>близким</div>
+        <div class="LP-index-banner__green-box-button">
+          <a href="http://r38.rbzaym.ru/microcard/" onclick="yaCounter46854225.reachGoal('RF_MORE');" class="button button--h40 button--transparent-white" target="_blank">Узнать подробнее</a>
+        </div>
+      </div>
+    </div></div><div style="width: 1920px; margin-right: 0px;" class="owl-item cloned"><div class="LP-index-banner__item" style="background: transparent url(&quot;/assets/img/lp/newslide1-wide.jpg&quot;) no-repeat scroll right center / cover ; height: 832px;">
+      <div class="LP-index-banner__green-box" style="margin-top: -60px;">
+        <div class="LP-index-banner__green-box-subtitle">Всегда поможем!</div>
+        <div class="LP-index-banner__green-box-title">Осуществить<br>мечту</div>
+        <div class="LP-index-banner__green-box-button">
+          <a href="http://r38.rbzaym.ru/microcard/" onclick="yaCounter46854225.reachGoal('RF_MORE');" class="button button--h40 button--transparent-white" target="_blank">Узнать подробнее</a>
+        </div>
+      </div>
+    </div></div><div style="width: 1920px; margin-right: 0px;" class="owl-item cloned"><div class="LP-index-banner__item" style="background: transparent url(&quot;/assets/img/lp/newslide2-wide.jpg&quot;) no-repeat scroll right center / cover ; height: 832px;">
+      <div class="LP-index-banner__green-box" style="margin-top: -60px;">
+        <div class="LP-index-banner__green-box-subtitle">Всегда поможем!</div>
+        <div class="LP-index-banner__green-box-title">Купить самое<br>необходимое</div>
+        <div class="LP-index-banner__green-box-button">
+          <a href="http://r38.rbzaym.ru/microcard/" onclick="yaCounter46854225.reachGoal('RF_MORE');" class="button button--h40 button--transparent-white" target="_blank">Узнать подробнее</a>
+        </div>
+      </div>
+    </div></div></div></div><div class="owl-controls"><div class="owl-nav"><div style="display: none;" class="owl-prev">prev</div><div style="display: none;" class="owl-next">next</div></div><div class="owl-dots" style=""><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+</div>
+
+  <div class="LP-footer LP-footer--gradient LP-footer--fixed">
+    <div class="container">
+      <div class="LP-footer__copyright">© 2019 Свидетельство Центрального Банка России № <span style="" wa-subtypes="" wa-id="96" wa-type="REG_CBR" class="WebAnnotator_REG_CBR">651403525005172 </span>от 20.05.2014г.<br>
+        <span style="" wa-subtypes="" wa-id="97" wa-type="LEGAL_NAME" class="WebAnnotator_LEGAL_NAME">ООО МКК "Быстро-займ"</span> ОГРН <span style="" wa-subtypes="" wa-id="98" wa-type="OGRN" class="WebAnnotator_OGRN">1143850015363</span></div>
+      <div class="LP-footer__developer">Дизайн сайта — <a href="http://stylusag.ru/" target="_blank">СТИЛУС</a></div>
+      <div class="LP-footer__links">
+        <a href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/docs.php" class="fancybox fancybox.ajax noborder">Документы</a>
+		  <a href="http://%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE-%D0%B7%D0%B0%D0%B9%D0%BC.%D1%80%D1%84/upload/iblock/ef2/pamyatka_zaemshchika_o_standartakh_raboty_zashifrovan_.pdf" class="noborder" style="margin-left:20px;">Информация о неуплате займа</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86218414-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46854225 = new Ya.Metrika({
+                    id:46854225,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/46854225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-151102926-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151102926-1');
+</script>
+
+
+</body><wa-color id="WA-color-0" bg="#33CCFF" fg="#000000" class="WebAnnotator_ADDRESS" type="ADDRESS"></wa-color><wa-color id="WA-color-1" bg="#FF0000" fg="#000000" class="WebAnnotator_INN" type="INN"></wa-color><wa-color id="WA-color-2" bg="#33FF33" fg="#000000" class="WebAnnotator_KPP" type="KPP"></wa-color><wa-color id="WA-color-3" bg="#CC66CC" fg="#000000" class="WebAnnotator_OGRN" type="OGRN"></wa-color><wa-color id="WA-color-4" bg="#FF9900" fg="#000000" class="WebAnnotator_REG_CBR" type="REG_CBR"></wa-color><wa-color id="WA-color-5" bg="#99FFFF" fg="#000000" class="WebAnnotator_PHONE" type="PHONE"></wa-color><wa-color id="WA-color-6" bg="#FF6666" fg="#000000" class="WebAnnotator_EMAIL" type="EMAIL"></wa-color><wa-color id="WA-color-7" bg="#66FF99" fg="#000000" class="WebAnnotator_LEGAL_NAME" type="LEGAL_NAME"></wa-color><wa-color id="WA-color-8" bg="#3333FF" fg="#FFFFFF" class="WebAnnotator_NAME" type="NAME"></wa-color><wa-color id="WA-color-9" bg="#660000" fg="#FFFFFF" class="WebAnnotator_REGIONS" type="REGIONS"></wa-color><wa-color id="WA-color-10" bg="#006600" fg="#FFFFFF" class="WebAnnotator_RATE" type="RATE"></wa-color><wa-color id="WA-color-11" bg="#663366" fg="#FFFFFF" class="WebAnnotator_CURRENCY" type="CURRENCY"></wa-color><wa-title style="display:none;">Быстро Займ. Получите деньги легко и быстро!</wa-title></html>

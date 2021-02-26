@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<title>Контакты</title>
+<!-- base href="http://vsmpo.ru/" -->
+<meta name="description" content="Контакты">
+<meta name="keywords" content="Контакты">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="http://vsmpo.ru/design/css/styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="http://vsmpo.ru/design/css/jquery.gallery.css">
+<link rel="stylesheet" type="text/css" href="http://vsmpo.ru/design/highslide/highslide.css">
+
+<!--[if IE 6]>
+<script src="design/js/png.js"></script>
+<script>
+	DD_belatedPNG.fix('div, a, img, *');
+</script>
+<style type="text/css">
+
+BODY { behavior:url("design/js/csshover.htc");}
+
+</style>
+<![endif]-->
+
+<script src="http://mc.yandex.ru/metrika/watch.js" async="" type="text/javascript"></script><script src="//www.google-analytics.com/analytics.js" async=""></script><script src="design/js/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="design/js/jquery.gallery.js"></script>
+<script type="text/javascript" src="design/highslide/highslide-with-gallery.js"></script>
+
+
+    <script type="text/javascript">
+    	hs.graphicsDir = 'design/highslide/graphics/';
+    	hs.align = 'center';
+    	hs.transitions = ['expand', 'crossfade'];
+    	hs.wrapperClassName = 'dark borderless floating-caption';
+    	hs.fadeInOut = true;
+    	hs.dimmingOpacity = .75;
+
+    	// Add the controlbar
+    	if (hs.addSlideshow) hs.addSlideshow({
+    		//slideshowGroup: 'group1',
+    		interval: 5000,
+    		repeat: false,
+    		useControls: true,
+    		fixedControls: 'fit',
+    		overlayOptions: {
+    			opacity: .6,
+    			position: 'bottom center',
+    			hideOnMouseOut: true
+    		}
+    	});
+    </script>
+
+    <script type="text/javascript">
+      $(function() {
+        var galleries = $('.ad-gallery').adGallery();
+        $('#switch-effect').change(
+          function() {
+            galleries[0].settings.effect = $(this).val();
+            return false;
+          }
+        );
+        $('#toggle-slideshow').click(
+          function() {
+            galleries[0].slideshow.toggle();
+            return false;
+          }
+        );
+      });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+    	$(".acc-box h3").eq(0).addClass("active");
+    	$(".acc-box div").eq(0).show();
+
+    	$(".acc-box h3").click(function(){
+    		$(this).next("div").slideToggle("slow")
+    		.siblings("div:visible").slideUp("slow");
+    		$(this).toggleClass("active");
+    		$(this).siblings("h3").removeClass("active");
+    		return false;
+    	});
+
+    });
+    </script>
+<!-- Google analitics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49056508-1', 'vsmpo.ru');
+  ga('send', 'pageview');
+
+</script>
+<!-- /Google analitics -->
+
+
+<script type="text/javascript" src="design/js/cufon-yui.js"></script>
+<script type="text/javascript" src="design/js/DaxCondensed_400.font.js"></script>
+<script src="design/js/my_script.js" type="text/javascript"></script>
+<script src="design/js/swfobject.js" type="text/javascript"></script>
+<script src="design/js/cusel-min.js" type="text/javascript"></script>
+<script type="text/javascript" src="design/js/cusel-min2.js"></script>
+<style type="text/css">.highslide img {cursor: url(design/highslide/graphics/zoomin.cur), pointer !important;}.highslide-viewport-size {position: fixed; width: 100%; height: 100%; left: 0; top: 0}</style></head>
+<body>
+<div class="main-container">
+<!-- Header -->
+<div class="header">
+	<div class="logo"><a href="http://vsmpo.ru/ru"><img src="design/images/logo.gif" alt="" height="105" width="305"></a>
+		<div class="lang-box"><a href="#" class="act">ru</a> <a href="http://vsmpo.ru/en/pages/Kontakti">eng</a></div>
+	</div>
+	<div class="lang-box"><a href="#" class="act">ru</a> <a href="http://vsmpo.ru/en/pages/Kontakti">eng</a></div>
+	<div class="h-right">
+        <form onsubmit="window.location='http://vsmpo.ru/ru/search/'+encodeURIComponent(encodeURIComponent(this.keyword.value)); return false;" name="search" method="get" action="index.php">
+		<p>
+            <a href="http://vsmpo.ru/ru/pages/sitemap">Карта сайта</a>
+            <a href="http://vsmpo.ru/ru/feedback">Обратная связь</a>
+            <input name="module" value="Search" type="hidden">
+            <input onblur="if (this.value=='') this.value='поиск...';" onfocus="if (this.value=='поиск...') this.value='';" name="keyword" value="поиск..." type="text">
+        </p>
+        </form>
+		<div class="mmenu">
+			<ul>
+                                            <li class="first "><a href="http://vsmpo.ru/ru/pages/O_Korporacii">О Корпорации</a></li>
+                                                          <li class=""><a href="http://vsmpo.ru/ru/pages/Investoram">Инвесторам</a></li>
+                                                          <li class=""><a href="http://vsmpo.ru/ru/pages/Proizvodstvo">Производство</a></li>
+                                                          <li class=""><a href="http://vsmpo.ru/ru/pages/Produkcija">Продукция</a></li>
+                                                          <li class=""><a href="http://vsmpo.ru/ru/pages/Presscentr">Пресс-центр</a></li>
+                                                          <li class=""><a href="http://vsmpo.ru/ru/pages/Karera">Карьера</a></li>
+                                                          <li class="act"><a href="http://vsmpo.ru/ru/pages/Kontakti">Контакты</a></li>
+                                                          <li class=""><a href="http://vsmpo.ru/ru/pages/Tenderi">Тендеры</a></li>
+                          			</ul>
+		</div>
+
+	</div>
+</div>
+<!-- /Header -->
+
+<div class="navbar"><a href="http://vsmpo.ru/ru">Главная</a>
+        <span><img src="design/images/arr.gif" alt="#"></span> Контакты
+    </div>
+
+<!-- Content -->
+<div class="content">
+<table class="carcass">
+	<tbody><tr>
+		<td class="leftbar">
+		<!-- Left menu -->
+		<div class="leftmenu-top">&nbsp;</div>
+		<div class="leftmenu">
+			<ul>
+            
+                                    <li class="first "><a href="http://vsmpo.ru/ru/pages/kontakty_dochernih_kompanii">Дочерние компании</a></li>
+                
+            			</ul>
+		</div>
+		<div class="leftmenu-bot">&nbsp;</div>
+		<!-- /Left menu -->
+
+		<div class="main-link">
+        ﻿<ul>  
+<li><a href="http://vsmpo.ru/doc_e/korr/korr.jpg"><img src="design/images/konk.png" alt=""></a> <a href="http://vsmpo.ru/doc_e/korr/korr.jpg">Горячая линия</a></li>  
+<li><a href="http://vsmpo.ru/ru/pages/Produkcija"><img src="design/images/list_ico.gif" alt=""></a> <a href="http://vsmpo.ru/ru/pages/Produkcija">Наши предложения</a></li>
+<li><a href="http://www.vsmpo.ru/ru/pages/Tenderi"><img src="design/images/torgi_ico.gif" alt=""></a> <a href="http://www.vsmpo.ru/ru/pages/Tenderi">Тендеры</a></li>
+<li><a href="http://vsmpo.ru/ru/pages/Tipovie_formi_dogovorov"><img src="design/images/dog_ico.gif" alt=""></a> <a href="http://vsmpo.ru/ru/pages/Tipovie_formi_dogovorov">Формы договоров</a></li>
+</ul>
+
+		</div>
+		</td>
+		<td class="centerbar">
+
+			<div class="images-box">
+				<div><a><img src="design/images/sections/static.jpg" alt="#"></a></div>
+			</div>
+
+			<h2>Контакты</h2>
+
+			<div class="vistavka-box">
+                <div class="mtable"><table><tbody><tr><td style="text-align: center;" colspan="2"><p>Телефон: <span style="" wa-subtypes="" wa-id="20" wa-type="PHONE" class="WebAnnotator_PHONE">+7 (34345) 6-23-66</span><br>Факс: <span style="" wa-subtypes="" wa-id="46" wa-type="PHONE" class="WebAnnotator_PHONE">+7 (34345) 5-15-40</span><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,sans-serif; color: #1f497d; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ansi-language: RU; mso-fareast-language: RU; mso-bidi-language: AR-SA;"> </span><br>e-mail:&nbsp;<span><span style="font-size: small;"><span style="color: #000000;"><span style="font-family: Calibri;">&nbsp;<a href="mailto:info@vsmpo-avisma.ru?subject=%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%BE%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20www.vsmpo.ru"><span style="" wa-subtypes="" wa-id="21" wa-type="EMAIL" class="WebAnnotator_EMAIL">info@</span><span lang="EN-US"><span style="" wa-subtypes="" wa-id="21" wa-type="EMAIL" class="WebAnnotator_EMAIL">vsmpo</span></span><span style="" wa-subtypes="" wa-id="21" wa-type="EMAIL" class="WebAnnotator_EMAIL">-</span><span lang="EN-US"><span style="" wa-subtypes="" wa-id="21" wa-type="EMAIL" class="WebAnnotator_EMAIL">avisma</span></span><span style="" wa-subtypes="" wa-id="21" wa-type="EMAIL" class="WebAnnotator_EMAIL">.</span><span lang="EN-US"><span style="" wa-subtypes="" wa-id="21" wa-type="EMAIL" class="WebAnnotator_EMAIL">ru</span></span></a></span></span></span></span><a href="http://vsmpo.ru/ru/feedback" title="отправить письмо"><br></a><span style="" wa-subtypes="" wa-id="22" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">624760, Россия, Свердловская область, Верхняя Салда, ул. Парковая 1</span>. &nbsp; &nbsp; &nbsp;</p></td></tr><tr class="ot"><td valign="top"><p style="text-align: center;"><strong>Дирекция по маркетингу и сбыту</strong><br>тел: <span style="" wa-subtypes="" wa-id="23" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34345 62947</span><br>факс: <span style="" wa-subtypes="" wa-id="42" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34345 21437</span></p></td><td valign="top"><p style="text-align: center;"><strong>Дирекция&nbsp; по снабжению</strong><br>тел: <span style="" wa-subtypes="" wa-id="25" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34345 60032</span><br>факс: <span style="" wa-subtypes="" wa-id="41" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34345 24736</span> </p></td></tr><tr><td valign="top"><p style="text-align: center;"><strong>Дирекция по правовым вопросам</strong><br>тел: <span style="" wa-subtypes="" wa-id="27" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34345 62858 </span><br>тел: <span style="" wa-subtypes="" wa-id="28" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34242 93898</span><br>факс: <span style="" wa-subtypes="" wa-id="43" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34242 93999 </span></p></td><td style="text-align: center;" valign="top"><p><strong>Дирекция по связям с общественностью</strong><br>тел:&nbsp; <span style="" wa-subtypes="" wa-id="26" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34345 60098</span><br>факс: <span style="" wa-subtypes="" wa-id="40" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34345 62300 </span></p><p>&nbsp;</p></td></tr><tr class="ot"><td valign="top"><p style="text-align: center;"><strong>Дирекция по вопросам<br>контрольно-ревизионной деятельности</strong><br>тел: <span style="" wa-subtypes="" wa-id="36" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34345 63825</span><br>факс: <span style="" wa-subtypes="" wa-id="44" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34345 61200</span><br><a href="http://vsmpo.ru/ru/tenders/feedback" title="Отправить жалобу в ДКРД">Отправить жалобу в ДКРД</a> </p></td><td valign="top"><p style="text-align: center;"><strong>Управление безопасности <span style="" wa-subtypes="" wa-id="30" wa-type="NAME" class="WebAnnotator_NAME">ВСМПО</span></strong><strong><strong><br></strong>тел: <span style="" wa-subtypes="" wa-id="37" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34345 62097</span><br>факс: <span style="" wa-subtypes="" wa-id="45" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34345 56506</span></strong></p><p style="text-align: center;"><strong><a href="http://vsmpo.ru/ru/pages/UJEB_obratnaja_svjaz" title="Отправить сообщение в УЭБ">Отправить сообщение в УБ</a><span> </span></strong></p></td></tr>
+<tr><td valign="top"><p style="text-align: center;"><strong><strong>Представительство <span style="" wa-subtypes="" wa-id="31" wa-type="NAME" class="WebAnnotator_NAME">Корпорации ВСМПО-АВИСМА </span>в <span style="" wa-subtypes="" wa-id="32" wa-type="REGIONS" class="WebAnnotator_REGIONS">Москве</span></strong><br></strong><span><span>Тел./факс: <span style="" wa-subtypes="" wa-id="33" wa-type="PHONE" class="WebAnnotator_PHONE">+ 7 (495) 580-53-91</span></span><br><span><span style="" wa-subtypes="" wa-id="35" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">119435, г. Москва, пер. Большой Саввинский, д. 2-4-6, стр. 13</span></span></span></p></td><td style="text-align: center;" valign="top">&nbsp; <strong>Управление безопасности <span style="" wa-subtypes="" wa-id="29" wa-type="NAME" class="WebAnnotator_NAME">АВИСМА</span></strong><strong><strong><br></strong></strong><p style="text-align: center;"><strong>тел: <span style="" wa-subtypes="" wa-id="34" wa-type="PHONE" class="WebAnnotator_PHONE">+7 34242 93111</span></strong><strong><strong><br></strong></strong></p><p style="text-align: center;"><strong><strong><a href="http://vsmpo.ru/ru/pages/UJEB_obratnaja_svjaz" title="Отправить сообщение в УЭБ">Отправить сообщение в УБ</a></strong></strong></p></td></tr></tbody></table></div>
+			</div>
+
+
+		</td>
+	</tr>
+</tbody></table>
+</div>
+<!-- /Content -->
+
+</div>
+
+    <!-- Footer -->
+    <div id="footer">
+    <div class="footer">
+    	<div class="f-left">
+        ﻿<p>© <span style="" wa-subtypes="" wa-id="38" wa-type="NAME" class="WebAnnotator_NAME">Корпорация ВСМПО-АВИСМА</span>, 2003-2020.</p>
+<p>Ссылка на сайт <a href="http://vsmpo.ru/">www.vsmpo.ru</a> обязательна.
+<text style="float: right;">
+<a href="http://www.e-disclosure.ru/portal/company.aspx?id=1641">Страница <span style="" wa-subtypes="" wa-id="39" wa-type="LEGAL_NAME" class="WebAnnotator_LEGAL_NAME">ПАО «Корпорация ВСМПО-АВИСМА» </span>на сайте информационного агентства</a></text>
+</p>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter17332519 = new Ya.Metrika({id:17332519, enableAll: true});
+        } catch(e) { }
+    });
+    
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div>
+<img src="//mc.yandex.ru/watch/17332519" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+    	</div>
+    	<div class="f-right">
+    		<!--<a href="http://siteactiv.ru/"><img src="design/images/active_logo.gif" alt="#" /></a> <a href="http://siteactiv.ru/">подробнее о проекте</a>-->
+    	</div>
+    </div>
+    </div>
+    <!-- /Footer -->
+    
+    <div style="padding: 0px; border: medium none; margin: 0px; position: absolute; left: 0px; top: 0px; width: 100%; z-index: 1001; direction: ltr;" class="highslide-container"><a href="javascript:;" style="position: absolute; top: -9999px; opacity: 0.75; z-index: 1;" title="Click to cancel" class="highslide-loading">Loading...</a><div style="display: none;"></div><div style="padding: 0px; border: medium none; margin: 0px; visibility: hidden;" class="highslide-viewport highslide-viewport-size"></div><table style="padding: 0px; border: medium none; margin: 0px; visibility: hidden; position: absolute; border-collapse: collapse; width: 0px;" cellspacing="0"><tbody style="padding: 0px; border: medium none; margin: 0px;"><tr style="padding: 0px; border: medium none; margin: 0px; height: auto;"><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://vsmpo.ru/design/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px 0px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://vsmpo.ru/design/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px -40px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://vsmpo.ru/design/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll -20px 0px; height: 20px; width: 20px;"></td></tr><tr style="padding: 0px; border: medium none; margin: 0px; height: auto;"><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://vsmpo.ru/design/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px -80px; height: 20px; width: 20px;"></td><td class="drop-shadow highslide-outline" style="padding: 0px; border: medium none; margin: 0px; position: relative;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://vsmpo.ru/design/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll -20px -80px; height: 20px; width: 20px;"></td></tr><tr style="padding: 0px; border: medium none; margin: 0px; height: auto;"><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://vsmpo.ru/design/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px -20px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://vsmpo.ru/design/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px -60px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://vsmpo.ru/design/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll -20px -20px; height: 20px; width: 20px;"></td></tr></tbody></table></div></body><wa-color id="WA-color-0" bg="#33CCFF" fg="#000000" class="WebAnnotator_ADDRESS" type="ADDRESS"></wa-color><wa-color id="WA-color-1" bg="#FF0000" fg="#000000" class="WebAnnotator_INN" type="INN"></wa-color><wa-color id="WA-color-2" bg="#33FF33" fg="#000000" class="WebAnnotator_KPP" type="KPP"></wa-color><wa-color id="WA-color-3" bg="#CC66CC" fg="#000000" class="WebAnnotator_OGRN" type="OGRN"></wa-color><wa-color id="WA-color-4" bg="#FF9900" fg="#000000" class="WebAnnotator_REG_CBR" type="REG_CBR"></wa-color><wa-color id="WA-color-5" bg="#99FFFF" fg="#000000" class="WebAnnotator_PHONE" type="PHONE"></wa-color><wa-color id="WA-color-6" bg="#FF6666" fg="#000000" class="WebAnnotator_EMAIL" type="EMAIL"></wa-color><wa-color id="WA-color-7" bg="#66FF99" fg="#000000" class="WebAnnotator_LEGAL_NAME" type="LEGAL_NAME"></wa-color><wa-color id="WA-color-8" bg="#3333FF" fg="#FFFFFF" class="WebAnnotator_NAME" type="NAME"></wa-color><wa-color id="WA-color-9" bg="#660000" fg="#FFFFFF" class="WebAnnotator_REGIONS" type="REGIONS"></wa-color><wa-color id="WA-color-10" bg="#006600" fg="#FFFFFF" class="WebAnnotator_RATE" type="RATE"></wa-color><wa-color id="WA-color-11" bg="#663366" fg="#FFFFFF" class="WebAnnotator_CURRENCY" type="CURRENCY"></wa-color><wa-title style="display:none;">Контакты</wa-title></html>

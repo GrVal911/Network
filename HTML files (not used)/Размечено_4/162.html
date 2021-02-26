@@ -1,0 +1,1148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!--Слайдер Owl Carousel2-->
+        <link rel="stylesheet" href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+        
+        <!-- Yandex.Metrika counter -->
+<script src="https://mc.yandex.ru/metrika/tag.js" async=""></script><script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(54498106, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/54498106" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+        <script src="/static/js/jquery-3.4.1.min.js"></script>
+        <script src="/static/js/popper.min.js"></script>
+        <script src="/static/js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+        <script src="/static/css/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+        <!-- end load Bootstrap -->
+
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+        <!--Знак рубля-->
+        <link rel="stylesheet" href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/b-rub_arial/stylesheet.css">
+
+        <script>var csrftoken= jQuery("[name=csrfmiddlewaretoken]").val();;</script>
+
+        <!--Стили для запуска-->
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/base.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/mobile.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/tablet.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/desktop.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/topPanel.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/logoPanel.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/navMenu.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/cardProd.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/basket.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/radioBtn.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/slider.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/own.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/brand.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/mobilemenu.css" rel="stylesheet" type="text/css">
+        <link href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/static/css/hint.css" rel="stylesheet" type="text/css">
+
+        <title>Городская аптека - лекарства, товары для здоровья в Смоленске по выгодным ценам</title>
+        <meta name="Keywords" content="Городская аптека Смоленск лекарства таблетки препараты БАД косметика детское питание инструкции по применению забронировать медикаменты">
+        <meta name="Description" content="Городская аптека — большой выбор лекарств и товаров для здоровья. Выгодные цены. Удобный поиск и заказ с самовывозом — г. Смоленск, Смоленская область">
+        <meta name="Author" content="ИТ-мозаика">
+        <meta name="Copyright" content="(C) Copyright 2018, Фарм–Инновации">
+        <meta name="Publisher-URL" content="http://городскаяаптека.рф">
+        <meta property="og:site_name" content="Городская аптека">
+        <meta property="og:url" content="https://apteka.ru/">
+<!--        <meta property="og:title" content="Городская аптека - поиск и заказ лекарств и товаров для здоровья, онлайн-аптека">-->
+        <meta property="og:title" content="Городская аптека - лекарства, товары для здоровья в Смоленске по выгодным ценам">
+        <meta property="og:locale" content="ru_RU">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Городская аптека — большой выбор лекарств и товаров для здоровья. Выгодные цены. Удобный поиск и заказ с самовывозом — г. Смоленск, Смоленская область">
+        <meta property="og:image" content="/static/img/log/logo.png">
+
+        <style type="text/css">
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                outline: none;
+            }
+
+            body, html {
+                height: 100%;
+            }
+
+            .wrapper {
+                min-height: 100vh;
+            }
+
+            footer {
+                min-height: 80px;
+                /* чтобы футер не схлапывался в нулевую высоту когда в нем пусто */
+                height: 320px;
+                margin-top: -320px;
+            }
+        </style>
+ <script>
+      function throw_message(str) {
+          $('#error_message').html(str);
+          $("#error_box").fadeIn(500).delay(3000).fadeOut(500);
+      }
+  </script>
+<!--Messages -->
+
+
+<!--Таймер обратного отсчета-->
+<script>
+    function getTimeRemaining(endtime) {
+        var a=endtime.split(" ");
+        var d=[a[1],a[2],a[3]];
+        var t1=a[4].split(":");
+
+        var date = new Date();
+        date.setUTCFullYear(d[2],(d[0]-1),d[1]);
+        date.setUTCHours(t1[0],t1[1],t1[2], 0);
+
+        var t = date.getTime() - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+</script>
+
+<!--Таймер обратного отсчета-->
+<script>
+    function getTimeRemaining(endtime) {
+        var a=endtime.split(" ");
+        var d=[a[1],a[2],a[3]];
+        var t1=a[4].split(":");
+
+        var date = new Date();
+        date.setUTCFullYear(d[2],(d[0]-1),d[1]);
+        date.setUTCHours(t1[0],t1[1],t1[2], 0);
+
+        var t = date.getTime() - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        //TO DO: посмотреть в будущем (спрашивать фразой товар дня)
+        if (clock == null) {return;};
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    
+</script>
+
+<!--Карусель для брендов-->
+<script>
+    function load_owl_carousel() {
+        var owl_carousel = $('#partner_carousel');
+        // определяем смогли ли найти обьект карусели и есть ли у него нужный метод
+        if (owl_carousel == null) {
+            return;
+        }
+        ;
+        if (owl_carousel.owlCarousel == undefined) {
+            return;
+        }
+        ;
+        owl_carousel.owlCarousel({
+            loop: true,
+            nav: true,
+            pagination: true,
+            responsiveClass: true,
+            navText: ["<i class='fa fa-chevron-left' aria-hidden='true'></i>", "<i class='fa fa-chevron-right' aria-hidden='true'></i>"],
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                576: {
+                    items: 3,
+                    nav: true
+                },
+                1200: {
+                    items: 6,
+                    nav: true
+                },
+            }
+        });
+    }
+    load_owl_carousel();
+</script>
+
+<script>
+    var controls = document.querySelectorAll('.controls');
+    for(var i=0; i<controls.length; i++){
+        controls[i].style.display = 'inline-block';
+    }
+    var slides = document.querySelectorAll('#slides .slide');
+    function run_slides(slides) {
+        if (slides.length == 0) {return;};
+        var currentSlide = 0;
+        var timeoutID;
+
+        function startTimer() {timeoutID = window.setInterval(nextSlide, 5000);}
+
+        startTimer();
+
+        function resetTimer() {
+            window.clearInterval(timeoutID);
+            startTimer();
+        }
+
+        function nextSlide() {
+            goToSlide(currentSlide + 1);
+        }
+
+        function previousSlide() {
+            goToSlide(currentSlide - 1);
+        }
+
+        function goToSlide(n) {
+            slides[currentSlide].className = 'slide';
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].className = 'slide showing';
+        }
+
+        var next = document.getElementById('next');
+        var previous = document.getElementById('previous');
+        next.onclick = nextSlide;
+        previous.onclick = previousSlide;
+        goToSlide(0);
+    }
+    run_slides(slides)
+
+</script>
+
+<script>
+    function csrfSafeMethod(method) {
+        // these HTTP methods do not require CSRF protection
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }
+    });
+</script>
+<script>
+        $(document).ready(function () {
+            burgerMenu('.burger-menu')
+            $('.add').on('click', function (e) {
+                e.preventDefault()
+                var product_id = $(this).attr('data-id')
+                var product_type = $(this).attr('type-prod')
+
+                var data = {
+                    product_id: product_id,
+                    product_type: product_type,
+                    csrfmiddlewaretoken: '6la30bpva550WvZiXw0PKAjid02gBGtrODar8Wo69jIMFSsFbYnstruQ5BThP5lt'
+                }
+                $.ajax({
+                    type: "POST",
+                    url: '/cart/add/',
+                    data: data,
+                    success: function (data) {
+                        var cart_total = data.cart_total;
+                        $("[id=cart_count]").text(cart_total);
+                    }
+                })
+            })
+        })
+</script>
+<script>
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        //TO DO: посмотреть в будущем (спрашивать фразой товар дня)
+        if (clock == null) {return;};
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+
+</script>
+
+<!--Карусель для брендов-->
+<script>
+    function load_owl_carousel() {
+        var owl_carousel = $('#partner_carousel');
+        // определяем смогли ли найти обьект карусели и есть ли у него нужный метод
+        if (owl_carousel == null) {
+            return;
+        }
+        ;
+        if (owl_carousel.owlCarousel == undefined) {
+            return;
+        }
+        ;
+        owl_carousel.owlCarousel({
+            loop: true,
+            nav: true,
+            pagination: true,
+            responsiveClass: true,
+            navText: ["<i class='fa fa-chevron-left' aria-hidden='true'></i>", "<i class='fa fa-chevron-right' aria-hidden='true'></i>"],
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                576: {
+                    items: 3,
+                    nav: true
+                },
+                1200: {
+                    items: 6,
+                    nav: true
+                },
+            }
+        });
+    }
+// слайдер
+
+    function run_slides(slides) {
+        if (slides.length == 0) {return;};
+        var currentSlide = 0;
+        var timeoutID;
+
+        function startTimer() {timeoutID = window.setInterval(nextSlide, 5000);}
+
+        startTimer();
+
+        function resetTimer() {
+            window.clearInterval(timeoutID);
+            startTimer();
+        }
+
+        function nextSlide() {
+            goToSlide(currentSlide + 1);
+        }
+
+        function previousSlide() {
+            goToSlide(currentSlide - 1);
+        }
+
+        function goToSlide(n) {
+            slides[currentSlide].className = 'slide';
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].className = 'slide showing';
+        }
+
+        var next = document.getElementById('next');
+        var previous = document.getElementById('previous');
+        next.onclick = nextSlide;
+        previous.onclick = previousSlide;
+        goToSlide(0);
+    }
+
+window.onload = function(){
+  load_owl_carousel();
+  var controls = document.querySelectorAll('.controls');
+  for(var i=0; i<controls.length; i++){
+      controls[i].style.display = 'inline-block';
+  }
+  var slides = document.querySelectorAll('#slides .slide');
+  run_slides(slides)
+  
+}
+</script>
+
+<script>
+    function csrfSafeMethod(method) {
+        // these HTTP methods do not require CSRF protection
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }
+    });
+</script>
+<script>
+        $(document).ready(function () {
+            $('.add').on('click', function (e) {
+                e.preventDefault()
+                var product_id = $(this).attr('data-id');
+                var product_type = $(this).attr('type-prod');
+                var quantity_input = $(this).find('#quantity_input')[0];
+                var quantity = 1;
+                if (quantity_input){quantity =quantity_input.value;}
+
+                var data = {
+                    product_id: product_id,
+                    product_type: product_type,
+                    quantity:quantity,
+                    csrfmiddlewaretoken: '6la30bpva550WvZiXw0PKAjid02gBGtrODar8Wo69jIMFSsFbYnstruQ5BThP5lt'
+                }
+                $.ajax({
+                    type: "POST",
+                    url: '/cart/add/',
+                    data: data,
+                    success: function (data) {
+                        var cart_total = data.cart_total;
+                        $("[id=cart_count]").text(cart_total);
+                    }
+                })
+            })
+        })
+</script>
+
+<script src="/static/js/burgerMenu.js"></script>
+
+<!--Кнопка "Подробнее" в описании товара-->
+<script src="/static/js/toggleButton.js"></script>
+<script>
+    function changeCity(value) {
+        // initialize start data
+        var CSRFTOKEN = jQuery("[name=csrfmiddlewaretoken]").val();
+
+
+        // helpers function
+        // функции для общения с сервером
+        function get_new_data(data){
+          data['csrfmiddlewaretoken'] = CSRFTOKEN;
+          return data;
+        }
+        var data = {'city':value};
+        $.ajax({type: "POST", url: '/change_city/', data: get_new_data(data), success:function (){document.location.reload(true);}})
+    }
+</script>
+<script>
+    var search_value ='';
+		function update_search(value, data, success_function, get_new_data){
+      if (search_value != value) {
+        return;
+      }
+
+      if (value == ''){success_function({result:[]}); return};
+      $.ajax({type: "POST", url: '/search/search_help/', data: get_new_data(data), success:success_function})
+		};
+    function helpSearch(value, searchOptions) {
+        // initialize start data
+        var CSRFTOKEN = jQuery("[name=csrfmiddlewaretoken]").val();
+
+
+        // helpers function
+        // функции для общения с сервером
+        function get_new_data(data){
+          data['csrfmiddlewaretoken'] = CSRFTOKEN;
+          return data;
+        }
+        var data = {'q':value};
+        var success_function = function(result){
+          $('#'+searchOptions).empty();
+          for (var i=0; i<Object.keys(result.result).length; i++){
+            var product = result['result'][Object.keys(result['result'])[i]];
+            var string_html = '' +
+                '<div style="width: 100%" class="container-fluid">' +
+                '   <a href="'+product.url+'" class="noIndentation row move">' +
+                '       <p class="col-lg-3 col-md-3 col-sm-3 noIndentation text-center" >' +
+                '           <img class="searchImg" src="'+product.image+'">'+
+                '       </p>' +
+                '       <p class="col-lg-9 col-md-9 col-sm-9 noIndentation">' +
+                '           <span class="searchName">'+product.name+'</span><br>' +
+                '           <span class="searchPrice">'+product.price+'</span>' +
+                '           <span class="b-rub"> Р</span>' +
+                '       </p>' +
+                '   </a>' +
+                '   <hr>' +
+                '</div>';
+            var div = $(string_html);
+            $('#'+searchOptions)[0].appendChild(div[0]);
+          }
+          var index_move=0;
+
+				document.getElementById('search').onkeyup = keyUp;
+				document.getElementById('searchMobile').onkeyup = keyUp;
+
+				function keyUp(e) {
+					var e = e || window.event;
+					switch (e.keyCode) {
+						case 40:
+							var selected = -1;
+							var spans = document.getElementById(searchOptions).getElementsByTagName('div');
+							for (i = 0; i <= spans.length; i++)
+								if (i in spans && spans[i].className == 'selected') {
+									spans[i].className = '';
+									selected = i;
+								}
+							selected++;
+							for (i = 0; i <= spans.length; i++)
+								if (i in spans && i == selected) {
+									spans[i].className = 'selected';
+								}
+							break;
+						case 38:
+							var spans = document.getElementById(searchOptions).getElementsByTagName('div');
+							var selected = spans.length;
+							for (i = 0; i <= spans.length; i++)
+								if (i in spans && spans[i].className == 'selected') {
+									spans[i].className = '';
+									selected = i;
+								}
+							selected--;
+							for (i = 0; i <= spans.length; i++)
+								if (i in spans && i == selected) {
+									spans[i].className = 'selected';
+								}
+							break;
+						case 13:
+							var spans = document.getElementById(searchOptions).getElementsByTagName('div');
+							for (i = 0; i <= spans.length; i++)
+								if (i in spans && spans[i].className == 'selected') {
+									window.location.href = spans[i].getElementsByTagName('a')[0].href;
+								}
+							break;
+						default:
+
+					}
+				}
+
+
+        };
+        search_value = value;
+        setTimeout(update_search, 600, value, data, success_function, get_new_data);
+    }
+  </script>
+    <title>Городская аптека - с заботой о Вашем здоровье!</title></head>
+
+    
+
+    <body>
+        <div class="wrapper">
+            <div class="wrapperM">
+                <!--Верхняя панель геолокации-->
+                <div class="headerGeo d-none d-sm-none d-md-none d-lg-inline-flex">
+                    <div class="myContainer">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-2 myCity">
+                                <span>
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+<!--                                    Выберите ваш город:-->
+                                </span>
+                                <select onchange="changeCity(this.options[this.selectedIndex].value)" class="linkGeo select--left " id="myid">
+                                    
+                                        <option selected="selected" value="1">г. Смоленск </option>
+                                    
+                                        <option value="2">г. Десногорск </option>
+                                    
+                                        <option value="3">г. Починок </option>
+                                    
+                                        <option value="4">г. Рославль </option>
+                                    
+                                        <option value="5">г. Рудня </option>
+                                    
+                                        <option value="7">г. Сафоново </option>
+                                    
+                                        <option value="8">г. Демидов </option>
+                                    
+                                        <option value="10">п. Шумячи </option>
+                                    
+                                        <option value="11">пгт. Монастырщина </option>
+                                    
+                                        <option value="13">п.Озерный </option>
+                                    
+                                        <option value="9">Смоленская обл. пгт. Верхнеднепровский </option>
+                                    
+                                </select>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 farmAdress text-center">
+                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                                <a href="http://info.%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/" target="_blank">Информационный портал</a>
+                            </div>
+                            <div class="col-sm-12 col-lg-4">
+                                <span class="textDec"><span style="" wa-subtypes="" wa-id="178" wa-type="PHONE" class="WebAnnotator_PHONE">+7(4812)39-28-28</span></span> Единая справочная служба
+                            </div>
+                            <div class="col-sm-12 col-lg-3 text-center farmAdress">
+                                <i class="fa fa-map-o" aria-hidden="true"></i>
+                                <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/info/">Адреса аптек</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Шапка-->
+                <div class="content">
+                    <div class="containerLogo" style="">
+                    <!-- <div class="containerLogo" style="background: #a3131a"> -->
+                        <div class="py-1 myContainer">
+                           <div class="row panelLogo">
+                               <!-- Меню для мобильной версии -->
+                               <div class="col-sm-1 d-none d-lg-none d-md-none d-sm-inline-block d-md-inline-block py-3">
+                                   <div class="burger-menu">
+                                       <a href="#" class="burger-menu__button">
+                                           <span class="burger-menu__lines"></span>
+                                       </a>
+                                       <nav class="burger-menu__nav">
+                                           <div class="burger-menu__link" style="margin-bottom: 6%;">
+                                                 <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                                 <select onchange="changeCity(this.options[this.selectedIndex].value)" class="select--left " id="myid">
+                                                  
+                                                     <option selected="selected" value="1">г. Смоленск </option>
+                                                  
+                                                     <option value="2">г. Десногорск </option>
+                                                  
+                                                     <option value="3">г. Починок </option>
+                                                  
+                                                     <option value="4">г. Рославль </option>
+                                                  
+                                                     <option value="5">г. Рудня </option>
+                                                  
+                                                     <option value="7">г. Сафоново </option>
+                                                  
+                                                     <option value="8">г. Демидов </option>
+                                                  
+                                                     <option value="10">п. Шумячи </option>
+                                                  
+                                                     <option value="11">пгт. Монастырщина </option>
+                                                  
+                                                     <option value="13">п.Озерный </option>
+                                                  
+                                                     <option value="9">Смоленская обл. пгт. Верхнеднепровский </option>
+                                                  
+                                                  </select>
+                                            </div>
+                                           
+                                           <p class="ml-4" style="margin-bottom: 4%;">
+                                               <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/cart/" class="burger-menu__link">
+                                                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                   <span class="mr-5" id="cart_count">0</span>
+                                                   <i class="fa fa-hand-o-right ml-5" aria-hidden="true"></i>
+                                                   <span>В корзину</span>
+                                               </a>
+                                           </p>
+                                           <p style="margin-bottom: 8%;">
+                                               <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/accounts/log-in/" class="burger-menu__link">
+                                                   <i class="fa fa-user"></i>
+                                                   <span>Вход</span>
+                                               </a>
+                                           </p>
+                                           <hr class="ml-4" style="border: 1px solid #fff; width: 90%;">
+                                           
+                                           <p style="margin-bottom: 8%;" class="mt-5">
+                                               <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/help/" class="burger-menu__link">
+                                                   <i class="fa fa-info" aria-hidden="true"></i>
+                                                   <span>Помощь покупателю</span>
+                                               </a>
+                                           </p>
+                                           <p style="margin-bottom: 8%;">
+                                               <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/info/" class="burger-menu__link">
+                                                   <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                   <span>Адреса аптек</span>
+                                               </a>
+                                           </p>
+                                           <p>
+                                           </p><p class="burger-menu__link" style="margin-top: 16%; text-align: center;  margin-right: 72px;">
+                                               <span>+7(4812)39-28-28</span><br>
+                                               Единая справочная служба
+                                           </p>
+                                           <p class="burger-menu__link" style="margin-top: 16%; margin-bottom: 4%; text-align: center;">
+                                               <a href="https://www.instagram.com/gorodskaya_apteka/" target="_blank" class="burger-menu__link mr-5"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                                               <a href="https://vk.com/gorodapteka67" target="_blank" class="burger-menu__link mr-5"><i class="fa fa-vk fa-2x" aria-hidden="true" style="margin-right: 0"></i></a>
+                                           </p>
+                                       </nav>
+                                       <div class="burger-menu__overlay"></div>
+                                   </div>
+                               </div>
+                               <!-- Логотип -->
+                               <!-- <div class="col-sm-7 col-lg-2 noIndentation"> -->
+                               <div class="col-sm-7 col-lg-3 noIndentation">
+                                   <div class="imgLogo">
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/">
+                                           <!-- <img src="/static/img/log/logo.png"/> -->
+                                           <img src="/static/img/new_year/NY-logo3.png">
+                                       </a>
+                                   </div>
+                               </div>
+                               <!--Строка поиска desktop-->
+                               <div class="d-none d-sm-none d-md-none d-lg-inline-flex col-lg-6 noIndentation">
+                                   <form action="/search/" method="POST" class="my-auto mx-auto" style="width: 70%;">
+                                       <input name="csrfmiddlewaretoken" value="6la30bpva550WvZiXw0PKAjid02gBGtrODar8Wo69jIMFSsFbYnstruQ5BThP5lt" type="hidden">
+                                       <div class="form-row search">
+                                           <div class="form-row">
+                                                <div class="col-12">
+                                                    <div class="input-group">
+                                                        <input oninput="helpSearch(document.getElementById('search').value, 'searchOptions')" id="search" name="q" class="move form-control" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="Я ищу..." type="text">
+                                                        <button type="submit" id="btn" class="">
+                                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                                        </button>
+                                                        <div style="position: relative">
+                                                          <div id="searchOptions">
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                       </div>
+                                   </form>
+                               </div>
+                               <!--Корзина-->
+                               <div class="my-auto col-lg-1 col-sm-3 no_indentation text-left ie_basket">
+                                   <div class="basket">
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/cart/">
+                                           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                           <span class="badge" id="cart_count">0</span>
+                                       </a>
+                                   </div>
+                               </div>
+                               <!--Авторизация/Регистрация-->
+                               
+                               <div class="my-auto mx-auto col-lg-2 col-sm-1 noIndentation loginReg text-right ie_login">
+                                   <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/accounts/log-in/">
+                                       <i class="fa fa-user"></i>
+                                   </a>
+                                   <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/accounts/log-in/" class="d-none d-sm-none d-md-none d-lg-inline-flex">
+                                       Вход
+                                   </a>
+                                   <span class="d-none d-sm-none d-md-none d-lg-inline-flex">/</span>
+                                   <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/accounts/sign-up/" class="d-none d-sm-none d-md-none d-lg-inline-flex">
+                                       Регистрация
+                                   </a>
+                               </div>
+                               
+                           </div>
+                            <!--Строка поиска mobile-->
+                            <div class="row panelLogo d-lg-none d-none d-sm-inline-block d-md-inline-block py-4">
+                                <form action="/search/" method="POST" class="my-auto mx-auto">
+                                    <input name="csrfmiddlewaretoken" value="6la30bpva550WvZiXw0PKAjid02gBGtrODar8Wo69jIMFSsFbYnstruQ5BThP5lt" type="hidden">
+                                    <div class="form-row search">
+                                        <div class="form-row">
+                                            <div class="col-auto">
+                                                <div class="input-group">
+                                                    <input oninput="helpSearch(document.getElementById('searchMobile').value, 'searchOptionsMobile')" id="searchMobile" name="q" class="move form-control" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="Я ищу..." type="text">
+                                                    <button type="submit" class="py-4">
+                                                        <i class="fa fa-search my-auto" aria-hidden="true"></i>
+                                                    </button>
+                                                    <div style="position: relative">
+                                                        <div id="searchOptionsMobile">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--Меню с категориями mobile-->
+                            <div class="row panelLogo d-lg-none d-none d-sm-inline-flex d-md-inline-flex py-2">
+                                <div class="col-sm-7">
+                                    <nav class="navbar-expand py-2">
+                                       <div class="collapse navbar-collapse main-nav mainNavMobile" id="navbarMobile">
+                                           <ul class="navbar-nav mr-auto">
+                                               <li class="dropdown">
+                                                   <a href="#" class="nav-link-menu menuMobile dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                       <img src="/static/img/menu/tile.png">
+                                                       Все категории
+                                                   </a>
+                                                   <!--Вложенное меню категорий-->
+                                                   <div class="dropdown-menu menuMobile">
+                                                     
+                                                     <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/vse/" class="dropdown-item">Все</a>
+                                                     
+                                                     
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/aktsii/" class="dropdown-item">Акции</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/aromaterapiia/" class="dropdown-item">Ароматерапия</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/biologicheski/" class="dropdown-item">Биологически активные добавки</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/borba-s-vrednymi/" class="dropdown-item">Борьба с вредными привычками</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/detskoe-pitanie/" class="dropdown-item">Детское питание</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/izdeliia/" class="dropdown-item">Изделия медицинского назначения</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/kontratseptivnye/" class="dropdown-item">Контрацептивные средства</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/kosmeticheskie/" class="dropdown-item">Косметические средства</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/lekarstvennye/" class="dropdown-item">Лекарственные средства</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/optika/" class="dropdown-item">Оптика</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/produkty-pitaniia/" class="dropdown-item">Продукты питания</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/sobstvennoe/" class="dropdown-item">Собственное производство</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/sredstva-zashchity-i/" class="dropdown-item">Средства защиты от насекомых,грызунов (инсектициды и репелленты)</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/tovary-dlia-mamy-i/" class="dropdown-item">Товары для мамы и малыша</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/tovary-neaptechnogo/" class="dropdown-item">Товары неаптечного ассортимента</a>
+                                                       
+                                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/tovary-sanitarii-i/" class="dropdown-item">Товары санитарии и личной гигиены</a>
+                                                       
+                                                   </div>
+                                               </li>
+                                           </ul>
+                                       </div>
+                                    </nav>
+                                </div>
+                                <div class="col-sm-5 text-right py-2">
+                                    <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/aktsii/" class="nav-link-sale saleMobile" <i="" aria-hidden="true">
+                                        Акции
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Меню с категориями для desktop-->
+            <div class="content bg-dark d-none d-sm-none d-md-none d-lg-inline-flex" style="width: 100%;">
+                <div class="py-1 myContainer">
+                   <nav class="navbar-expand p-2">
+                       <div class="collapse navbar-collapse main-nav" id="navbar">
+                           <ul class="navbar-nav mr-auto">
+                               <li class="dropdown">
+                                   <a href="#" class="nav-link-menu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       <i class="fa fa-bars" aria-hidden="true"></i>Все категории
+                                   </a>
+                                   <!--Вложенное меню категорий-->
+                                   <div class="dropdown-menu">
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/vse/" class="dropdown-item">Все</a>
+                                       
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/aktsii/" class="dropdown-item">Акции</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/aromaterapiia/" class="dropdown-item">Ароматерапия</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/biologicheski/" class="dropdown-item">Биологически активные добавки</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/borba-s-vrednymi/" class="dropdown-item">Борьба с вредными привычками</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/detskoe-pitanie/" class="dropdown-item">Детское питание</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/izdeliia/" class="dropdown-item">Изделия медицинского назначения</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/kontratseptivnye/" class="dropdown-item">Контрацептивные средства</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/kosmeticheskie/" class="dropdown-item">Косметические средства</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/lekarstvennye/" class="dropdown-item">Лекарственные средства</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/optika/" class="dropdown-item">Оптика</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/produkty-pitaniia/" class="dropdown-item">Продукты питания</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/sobstvennoe/" class="dropdown-item">Собственное производство</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/sredstva-zashchity-i/" class="dropdown-item">Средства защиты от насекомых,грызунов (инсектициды и репелленты)</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/tovary-dlia-mamy-i/" class="dropdown-item">Товары для мамы и малыша</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/tovary-neaptechnogo/" class="dropdown-item">Товары неаптечного ассортимента</a>
+                                       
+                                       <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/tovary-sanitarii-i/" class="dropdown-item">Товары санитарии и личной гигиены</a>
+                                       
+                                   </div>
+                               </li>
+                               <li>
+                                   <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/biologicheski/" class="nav-link-menu">
+                                       <img alt="" src="/static/img/menu/tabl.png">
+                                       Лекарства и БАДы
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/izdeliia/" class="nav-link-menu">
+                                       <img alt="" src="/static/img/menu/tonom.png">
+                                       Мед. техника
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/optika/" class="nav-link-menu">
+                                       <img alt="" src="/static/img/menu/optik.png" style="width: 23px;margin-top: -2px;">
+                                       Оптика
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/tovary-sanitarii-i/" class="nav-link-menu">
+                                       <img alt="" src="/static/img/menu/soap.png">
+                                       Гигиена
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/kosmeticheskie/" class="nav-link-menu">
+                                       <img alt="" src="/static/img/menu/beauty.png">
+                                       Красота и уход
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/sobstvennoe/" class="nav-link-menu">
+                                       <img alt="" src="/static/img/menu/making.png">
+                                       Собственное производство
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/aktsii/" class="nav-link-sale">
+                                       <i class="fa fa-gift" aria-hidden="true" style="font-size:1rem; margin-right: -8px;"></i>
+                                       Акции
+                                   </a>
+                               </li>
+                           </ul>
+                       </div>
+                   </nav>
+                </div>
+            </div>
+            <main>
+                
+<div class="content" xmlns="http://www.w3.org/1999/html">
+    <div class="py-3 myContainer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-12 col-lg-11 mx-auto">
+                    <p class="card-title">
+                        <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/aboutUs/">Контакты</a>
+                    </p>
+                    <div class="container-fluid">
+                        <div class="row" style="display: inline-flex; width: 100%">
+                            <div class="card col-lg-12 col-md-12 col-sm-12 profile-content mx-auto">
+                                <div class="col-lg-11 col-md-11 col-sm-11 helpBlock">
+                                    <p class="my-3">
+                                        <span><b><span style="" wa-subtypes="" wa-id="179" wa-type="PHONE" class="WebAnnotator_PHONE">+7(4812)39-28-28</span> Единая справочная служба</b></span>
+                                    </p>
+                                    <p class="my-3">
+                                        <span><b>Е-mail:&nbsp;<a href="mailto:shop@xn--80aaajfi6ad4aapgps6q.xn--p1ai" style="height:20px;width:none; display:contents"><span style="" wa-subtypes="" wa-id="180" wa-type="EMAIL" class="WebAnnotator_EMAIL">shop@городскаяаптека.рф</span></a></b></span>
+                                    </p>
+                                    <p class="my-3">
+                                        <span><b>Обратившись в единую справочную службу Вы можете:</b></span>
+                                    </p>
+                                    <ul class="ml-5">
+                                        <li>Уточнить статус Вашего заказа.</li>
+                                        <li>Получить консультацию о медикаментах и их наличии.</li>
+                                        <li>Сообщить о коррупционных правонарушениях, иных мошенничествах и злоупотреблениях.</li>
+                                        <li>Оставить свои пожелания.</li>
+                                        <li>Оформить Интернет-заказ.</li>
+                                    </ul>
+                                    <p>
+                                        <span><b>Адреса и контактную информацию аптек можно посмотреть по ссылке:
+                                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/info/" class="redColor"><i class="fa fa-map-marker" aria-hidden="true"></i>Адреса аптек</a>
+                                        </b></span>
+                                    </p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </main>
+        </div>
+        <footer class="footer">
+            <!--Подвал-->
+            <div class="container-fluid footer">
+                <div class="row myContainer">
+                    <div class="col-sm-6 col-md-6 col-lg-2 my-3">
+                        <small class="text-muted">
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/aboutUs/">О компании</a>
+                        </small>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/pressCenter/aboutCompany/">Пресс-центр</a>
+                        </p>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/about/partners/">Партнёры</a>
+                        </p>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/about/cooperation/">Сотрудничество</a>
+                        </p>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/about/Jobs/">Вакансии</a>
+                        </p>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/about/contacts/">Контакты</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 my-3">
+                        <small class="text-muted">
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/help/">Помощь покупателю</a>
+                        </small>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/helpRegistration/howToRegister/">Как зарегистрироваться</a>
+                        </p>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/helpOrder/addToCart/">Как сделать заказ</a>
+                        </p>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/helpPayment/cash/">Оплата</a>
+                        </p>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/helpPickup/pickup">Доставка</a>
+                        </p>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/helpRegistrationUrLic/">Регистрация юридического лица</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 my-3">
+                        <small class="text-muted">
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/information/">Информация для покупателя</a>
+                        </small>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/information/privicy_policy">Политика конфиденциальности</a>
+                        </p><p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/information/exchange_and_return">Обмен, возврат, обязательства покупателя</a>
+                        </p>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/information/discount_card">Дисконтные карты</a>
+                        </p>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/information/bonus_program">Бонусная программа</a>
+                        </p>
+                        <p>
+                            <a href="https://%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%D0%B0%D0%BF%D1%82%D0%B5%D0%BA%D0%B0.%D1%80%D1%84/footer/information/contract">Договор</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 my-3 footerSoc">
+                        <small>
+                            <p style="margin-top: 0">Единая справочная служба<br>
+                                </p><p class="noHover">
+                                    <i class="fa fa-phone" aria-hidden="true" style="margin-right: 8px;"></i>
+                                </p>
+                                <p style="margin-top: 6px;">
+                                    <a href="tel:+74812392828" class="mobilePhoneReference">+7 (4812) 39-28-28</a>
+                                    <span class="desktopPhoneReference"><span style="" wa-subtypes="" wa-id="181" wa-type="PHONE" class="WebAnnotator_PHONE">+7 (4812) 39-28-28</span></span>
+                                </p>
+                            <p></p>
+                        </small>
+                        <div>
+                            <span>Мы в социальных сетях</span>
+                            <div class="text-left" style="margin-top: 8px;">
+                                <a href="https://ok.ru/group/57578281107688" target="_blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/gorodskaya_apteka/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://vk.com/gorodapteka67" target="_blank"><i class="fa fa-vk" aria-hidden="true" style="margin-right: 0;"></i></a>
+                            </div>
+                        </div>
+                        <div class="googlePlay">
+                            <a href="https://play.google.com/store/apps/details?id=ru.indhealth.app" target="_blank">
+                                <img src="/static/img/footericons/gp.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Инф.часть подвала-->
+            <div class="container-fluid footerinfo">
+                <div class="row myContainer">
+                    <div class="col-sm-12 col-md-12 col-lg-2 no_indentation my-3">
+                        <div class="text-left">
+                            <small>© 2019, <span style="" wa-subtypes="" wa-id="185" wa-type="LEGAL_NAME" class="WebAnnotator_LEGAL_NAME">Общество с ограниченной ответственностью «Индустрия здоровья»</span>
+ОГРН <span style="" wa-subtypes="" wa-id="186" wa-type="OGRN" class="WebAnnotator_OGRN">1026701432977
+</span>ИНН <span style="" wa-subtypes="" wa-id="187" wa-type="INN" class="WebAnnotator_INN">6730046175
+</span>Юридический адрес <span style="" wa-subtypes="" wa-id="188" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">214018, г.Смоленск,  ул. Кирова, д.38</span><br>Все права защищены</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-8 text-justify no_indentation my-3">
+                        <small class="text-muted">
+                            <span>Территориальный орган Федеральной службы по надзору в сфере здравоохранения:
+<span style="" wa-subtypes="" wa-id="182" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">г.Смоленск, ул. Кашена, 1</span> тел <span style="" wa-subtypes="" wa-id="183" wa-type="PHONE" class="WebAnnotator_PHONE">8-4812-21-84-17</span>
+e-mail <span style="" wa-subtypes="" wa-id="184" wa-type="EMAIL" class="WebAnnotator_EMAIL">67reg.roszdravnadzor.ru
+                                </span><br><br>Организация не осуществляет дистанционную продажу лекарственных препаратов и БАД.
+                                Реализация указанной продукции запрещена действующим законодательством РФ.
+                                Бронирование осуществляется на условиях последующего выкупа препаратов в выбранном Вами аптечном пункте.
+                                <br><br>
+                                Цены в аптечных пунктах могут отличаться от цен, указанных на сайте.
+                            </span>
+                        </small>
+                    </div>
+                    <div class="col-md-2 d-none d-sm-none d-md-none d-lg-block no_indentation my-3">
+                        <div class="text-left">
+                            <span>Принимаем к оплате</span><br>
+                            <img src="/static/img/pay/mc.png">
+                            <img src="/static/img/pay/visa.png">
+                            <img src="/static/img/pay/mir.png"><br>
+                            <span>* в розничной сети</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footerinfo">
+                <div class="row myContainer">
+                    <div class="col-sm-12 col-md-12 col-lg-12 no_indentation my-3">
+                        <div class="text-center" style="font-size:1.5rem; color:#fff; font-weight:700">
+                           ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+
+
+  <div id="error_box" class="messageBox">
+      <p id="error_message">
+      </p>
+  </div>
+<iframe aria-hidden="true" style="opacity: 0 ! important; width: 0px ! important; height: 0px ! important; position: absolute ! important; left: 100% ! important; bottom: 100% ! important; border: 0px none ! important;" title="ym-native-frame" name="ym-native-frame" frameborder="0"></iframe><ym-measure style="display: block; top: 0px; right: 0px; bottom: 0px; left: 0px; height: 100vh; width: 100vw; position: fixed; transform: translate(0px, -100%); transform-origin: 0px 0px 0px;" class="ym-viewport"></ym-measure><ym-measure style="bottom: 100%; position: fixed; width: 100vw;" class="ym-zoom"></ym-measure></body><wa-color id="WA-color-0" bg="#33CCFF" fg="#000000" class="WebAnnotator_ADDRESS" type="ADDRESS"></wa-color><wa-color id="WA-color-1" bg="#FF0000" fg="#000000" class="WebAnnotator_INN" type="INN"></wa-color><wa-color id="WA-color-2" bg="#33FF33" fg="#000000" class="WebAnnotator_KPP" type="KPP"></wa-color><wa-color id="WA-color-3" bg="#CC66CC" fg="#000000" class="WebAnnotator_OGRN" type="OGRN"></wa-color><wa-color id="WA-color-4" bg="#FF9900" fg="#000000" class="WebAnnotator_REG_CBR" type="REG_CBR"></wa-color><wa-color id="WA-color-5" bg="#99FFFF" fg="#000000" class="WebAnnotator_PHONE" type="PHONE"></wa-color><wa-color id="WA-color-6" bg="#FF6666" fg="#000000" class="WebAnnotator_EMAIL" type="EMAIL"></wa-color><wa-color id="WA-color-7" bg="#66FF99" fg="#000000" class="WebAnnotator_LEGAL_NAME" type="LEGAL_NAME"></wa-color><wa-color id="WA-color-8" bg="#3333FF" fg="#FFFFFF" class="WebAnnotator_NAME" type="NAME"></wa-color><wa-color id="WA-color-9" bg="#660000" fg="#FFFFFF" class="WebAnnotator_REGIONS" type="REGIONS"></wa-color><wa-color id="WA-color-10" bg="#006600" fg="#FFFFFF" class="WebAnnotator_RATE" type="RATE"></wa-color><wa-color id="WA-color-11" bg="#663366" fg="#FFFFFF" class="WebAnnotator_CURRENCY" type="CURRENCY"></wa-color><wa-title style="display:none;">Городская аптека - лекарства, товары для здоровья в Смоленске по выгодным ценам</wa-title></html>
+<!--Messages -->

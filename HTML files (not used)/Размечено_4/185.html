@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-animate){display:none !important;}ng\:form{display:block;}</style>
+
+    <script src="/js/angular/angular.js" type="text/javascript"></script>
+    <script src="/js/angular/angular-base64.min.js" type="text/javascript"></script>
+    <script src="/js/angular/angular-route.min.js" type="text/javascript"></script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- base href="http://wokeda.ru/" --><title>WOK - Еда в коробочках. Быстрая доставка. Уссурийск.</title><meta name="generator" content="Eleanor CMS 0.9"><script type="text/javascript" src="js/jquery.min.js"></script><script type="text/javascript" src="js/core.js"></script><script type="text/javascript" src="js/lang-russian.js"></script><script type="text/javascript" src="js/menu_multilevel.js"></script><script type="text/javascript" src="js/block_archive.js"></script><script type="text/javascript" src="js/voting.js"></script><script type="text/javascript">/*<![CDATA[*/CORE.c_domain=".wokeda.ru";CORE.c_prefix="el";CORE.c_time="31536000";CORE.ajax_file="ajax.php";CORE.site_path="/";CORE.language="russian";CORE.head=[];//]]></script>
+
+    <script src="/js/jquery.color.min.js" type="text/javascript"></script>
+
+    <meta name="keyworlds" content="">
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://wokeda.ru/templates/wokeda/stylesheet/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="http://wokeda.ru/templates/wokeda//img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="http://wokeda.ru/templates/wokeda/stylesheet/stylesheet.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="http://wokeda.ru/templates/wokeda/stylesheet/jquery-ui-1.8.9.custom.css">
+
+    <!-- jQuery and Custom scripts -->
+<!--    <script src="js/jquery-1.5.2.min.js" type="text/javascript"></script>-->
+    <script src="templates/wokeda/js/jquery.cycle.lite.1.0.min.js" type="text/javascript"></script>
+    <script src="templates/wokeda/js/custom_scripts.js" type="text/javascript"></script>
+    <script src="templates/wokeda/js/jquery.roundabout.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="templates/wokeda/js/jquery-ui-1.8.9.custom.min.js"></script>
+    <script type="text/javascript" src="templates/wokeda/js/tabs.js"></script>
+    <script src="templates/wokeda/js/jquery.jcarousel.min.js" type="text/javascript"></script>
+    <!-- Tipsy -->
+    <script src="templates/wokeda/js/tipsy/jquery.tipsy.js" type="text/javascript"></script>
+    <link href="http://wokeda.ru/templates/wokeda/js/tipsy/css.tipsy.css" rel="stylesheet" type="text/css">
+    <script src="templates/wokeda/js/jquery.tweet.js" type="text/javascript"></script>
+    <link href="http://wokeda.ru/templates/wokeda/js/jquery.tweet.css" rel="stylesheet" type="text/css">
+
+    <script src="templates/wokeda/js/custom.js" type="text/javascript"></script>
+    <script src="templates/wokeda/js/simpleCart.min.js" type="text/javascript"></script>
+
+    <link href="http://wokeda.ru/templates/wokeda/stylesheet/message_default.css" rel="stylesheet" type="text/css">
+    <script src="templates/wokeda/js/message.js" type="text/javascript"></script>
+
+    <script src="templates/wokeda/js/app.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="//kitbit.net/kb.js" async=""></script><script type="text/javascript" src="https://tag.digitaltarget.ru/adcm.js" async=""></script><script type="text/javascript" src="//kitbit.net/s.js?u=http%3A%2F%2Fwokeda.ru%2F" async=""></script><script src="https://tag.digitaltarget.ru/processor.js?i=971712357018977"></script><script src="https://tag.digitaltarget.ru/extensions/extension_1086.js?i=353636025910733"></script></head>
+     <body class="page_bg ng-scope" ng-app="Wok" ng-controller="MainController"><script src="http://front.facetz.net/collect_pluso.js" async=""></script>
+
+<div class="ng-hide" style="display: none; left: 920px; top: 384px;" id="loading" ng-show="loading" ng-init="FreeDelivery=0"></div>
+
+<script type="text/javascript">//<![CDATA[
+    $(function(){
+        $("#loading").on("show",function(){
+            $(this).css({
+                left:Math.round(($(window).width()-$(this).width())/2),
+                top:Math.round(($(window).height()-$(this).height())/2)
+            });
+        }).triggerHandler("show");
+        $(window).resize(function(){
+            $("#loading").triggerHandler("show");
+        });
+
+    });//]]>
+</script>
+
+
+
+
+<!-- MAIN WRAPPER -->
+<div id="container">
+
+    <!-- SIDEFEATURES -->
+    <div id="sidefeatures">
+        <ul>
+            <li class="side_cart">
+                <span class="icon"></span>
+                <span class="amount-cart ng-binding">0</span>
+                <div style="display: none;" id="cart">
+                    <div class="heading">
+                        <h4>Ваш заказ</h4><span id="cart_total">Общая сумма:<span class="ng-binding">0</span>&nbsp;руб.</span>
+                    </div>
+                    <div class="content">
+                        <div class="cart-inside">
+                            <table class="cart">
+                                <tbody>
+
+                                    <!-- ngRepeat: sd in Shop.data.ProdList -->
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <table class="total">
+                            <tbody>
+                            <tr>
+                                <td align="right"><b>Общая сумма:</b></td>
+                                <td align="right"><span class="ng-pristine ng-valid ng-binding" ng-model="summ">0</span>&nbsp;руб.</td>
+                            </tr>
+                            <!--<tr>
+                                <td align="right"><b>Доставка</b></td>
+                                <td align="right"><span ng-model="delivery">{{Shop.delivery}}</span>&nbsp;руб.</td>
+                            </tr>-->
+                            <tr>
+                                <td align="right"><b>Всего</b>
+                                </td>
+                                <td align="right"><span class="ng-binding">0</span>&nbsp;руб.</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="checkout">
+                            <a class="button" href="http://wokeda.ru/order"><span>ЗАКАЗАТЬ</span></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>    <!-- END OF SIDEFEATURES -->
+
+<!-- HEADER -->
+<div id="header">
+    <div class="inner">
+        <ul class="main_menu menu_left"><li><a href="http://wokeda.ru/news">Новости</a></li><li><a href="http://wokeda.ru/pages/Nashe-kafe.html">Наше кафе</a></li><li><a href="http://wokeda.ru/">Главная</a></li></ul>        <div class="slogan">Еда <strong>в коробочках</strong></div>
+        <div id="logo">
+            <a href="http://wokeda.ru/">
+                <img src="templates/wokeda/image/logo3.png" alt="Spicylicious store" height="141" width="217">
+            </a>
+        </div>
+        <ul class="main_menu menu_right"><li><a href="http://wokeda.ru/pages/Dostavka.html">Доставка</a></li><li><a href="http://wokeda.ru/contacts">Контакты</a></li><li class="phone-top"><span style="" wa-subtypes="" wa-id="55" wa-type="PHONE" class="WebAnnotator_PHONE">8 (4234) 241-556</span>, <span style="" wa-subtypes="" wa-id="56" wa-type="PHONE" class="WebAnnotator_PHONE">8 914 073 26 44</span>, <span style="" wa-subtypes="" wa-id="57" wa-type="PHONE" class="WebAnnotator_PHONE">8 924 722 15 56</span></li></ul>        <div class="inst-top">
+            <a href="https://www.instagram.com/cafe_wok_uss/" target="_blank"><img src="/templates/wokeda/image/inst2018.png" <="" a="">
+        </a></div><a href="https://www.instagram.com/cafe_wok_uss/" target="_blank">
+        <div class="address-top"><span style="" wa-subtypes="" wa-id="58" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">улица Кирова 44б,</span><br><span style="" wa-subtypes="" wa-id="58" wa-type="ADDRESS" class="WebAnnotator_ADDRESS"> Торговая База «Фортуна».</span></div>
+
+
+        </a><div class="menu"><a href="https://www.instagram.com/cafe_wok_uss/" target="_blank"></a><ul id="topnav"><a href="https://www.instagram.com/cafe_wok_uss/" target="_blank"></a><li><a href="https://www.instagram.com/cafe_wok_uss/" target="_blank"></a><a href="http://wokeda.ru/category/naboryi-wok/">Наборы WOK</a></li><li><a href="http://wokeda.ru/category/wok-konstruktor/">WOK-конструктор</a></li><li><a href="http://wokeda.ru/category/rolly/">Роллы</a></li><li><a href="http://wokeda.ru/category/sushi/">Суши</a></li><li><a href="http://wokeda.ru/category/pitstsa/">Пицца</a></li><li><a href="http://wokeda.ru/category/tortili/">Тортильи</a></li><li><a href="http://wokeda.ru/category/frityur/">Фритюр</a></li><li><a href="http://wokeda.ru/category/sety-i-kombo/">Сеты и комбо</a></li><li><a href="http://wokeda.ru/category/biznes-lanchi/">Бизнес-ланчи</a></li><li><a href="http://wokeda.ru/category/salatyi/">Салаты</a></li><li><a href="http://wokeda.ru/category/supyi/">Супы</a></li><li><a href="http://wokeda.ru/category/desertyi/">Десерты</a></li><li><a href="http://wokeda.ru/category/napitki/">Напитки</a></li><li><a href="http://wokeda.ru/category/dopolnitelno/">Дополнительно</a></li></ul></div>
+    </div>
+</div>
+<!-- END OF HEADER -->
+
+<!-- CONTENT -->
+    <div id="content_holder" class="fixed"><div class="inner">
+    <div id="content">
+        <div class="box featured-box">
+            <h2 class="heading-title"><span>Лучшие блюда</span></h2>
+    <div class="box-content">
+        <ul style="padding: 0px; position: relative; z-index: 100;" class="roundabout-holder" id="myRoundabout"><li current-scale="1.0000" style="position: absolute; left: 78.1px; top: 36.4px; width: 450px; height: 300px; opacity: 1; z-index: 400; font-size: 13px;" class="roundabout-moveable-item roundabout-in-focus">
+                        <div class="prod_holder">
+                            <a href="http://wokeda.ru/category/naboryi-wok">
+                                <img src="/uploads/slider/WOK.jpg">
+                            </a>
+                            <h3>Вок</h3>
+                        </div>
+                        
+                    </li><li current-scale="0.5500" style="position: absolute; left: -59.3px; top: 103.9px; width: 247.5px; height: 165px; opacity: 0.55; z-index: 175; font-size: 7.15px;" class="roundabout-moveable-item">
+                        <div class="prod_holder">
+                            <a href="http://wokeda.ru/category/pitstsa">
+                                <img src="/uploads/slider/PIZZA.jpg">
+                            </a>
+                            <h3>Пицца</h3>
+                        </div>
+                        
+                    </li><li current-scale="0.5500" style="position: absolute; left: 417.9px; top: 103.9px; width: 247.5px; height: 165px; opacity: 0.55; z-index: 175; font-size: 7.15px;" class="roundabout-moveable-item">
+                        <div class="prod_holder">
+                            <a>
+                                <img src="/uploads/slider/Lanch_299_publei.jpg">
+                            </a>
+                            <h3>Ланч</h3>
+                        </div>
+                        <span class="pricetag">350 руб.</span>
+                    </li></ul>
+        <a href="#" class="previous_round">Далее</a>  <a href="#" class="next_round">Далее</a>
+    </div>
+</div>
+<div class="box">
+    <h2 class="heading-title">
+        <span>Добро пожаловать в WOK</span>
+    </h2>
+    <div class="box-content"><h2 style="font-style:italic; text-align:center"><span style="font-size:18px"><cite><var><span style="font-family:times new roman,times,serif">Первое кафе формата&nbsp;<strong><span style="" wa-subtypes="" wa-id="60" wa-type="NAME" class="WebAnnotator_NAME">WOK</span></strong>  в <span style="" wa-subtypes="" wa-id="59" wa-type="REGIONS" class="WebAnnotator_REGIONS">Уссурийске</span>. </span></var></cite></span></h2>
+
+<p><span style="font-size:18px"><cite><var><span style="font-family:times new roman,times,serif">Кафе и рестораны формата&nbsp;<strong><span style="" wa-subtypes="" wa-id="61" wa-type="NAME" class="WebAnnotator_NAME">WOK&nbsp;</span></strong>стали популярны во всем мире, благодаря качественному, вкусному, и быстрому способу приготовлением блюд. <strong><span style="" wa-subtypes="" wa-id="62" wa-type="NAME" class="WebAnnotator_NAME">WOK</span></strong><span style="" wa-subtypes="" wa-id="62" wa-type="NAME" class="WebAnnotator_NAME"> </span>это китайская сковорода круглой формы, обжарка продуктов в такой сковороде методом стир-фрай, сохраняет свежесть, аромат и значительную часть полезных свойств у продуктов.&nbsp;Формат кафе быстрого приготовления&nbsp;<strong><span style="" wa-subtypes="" wa-id="64" wa-type="NAME" class="WebAnnotator_NAME">WOK</span></strong><span style="" wa-subtypes="" wa-id="64" wa-type="NAME" class="WebAnnotator_NAME">&nbsp;</span>впервые появился в США в начале 20 века, постепенно завоевывая весь мир. По-этому <strong><span style="" wa-subtypes="" wa-id="63" wa-type="NAME" class="WebAnnotator_NAME">WOK</span></strong><span style="" wa-subtypes="" wa-id="63" wa-type="NAME" class="WebAnnotator_NAME">&nbsp;</span>это современный вариант традиционной восточной кухни, обогащённый традициями и вкусами со всего мира.</span><span style="font-family:times new roman,times,serif"> Попробовав блюдо из настоящего китайского вока, мы решили открыть кафе&nbsp;<strong><span style="" wa-subtypes="" wa-id="65" wa-type="NAME" class="WebAnnotator_NAME">WOK</span></strong><span style="" wa-subtypes="" wa-id="65" wa-type="NAME" class="WebAnnotator_NAME">&nbsp;</span>в <span style="" wa-subtypes="" wa-id="66" wa-type="REGIONS" class="WebAnnotator_REGIONS">Уссурийске</span>. Так, любимая еда американцев и европейцев, появилось и у нас.&nbsp;</span></var></cite></span></p>
+
+<h2 style="font-style:italic; text-align:center"><span style="font-size:18px"><cite><var><span style="font-family:times new roman,times,serif"><strong><span style="" wa-subtypes="" wa-id="67" wa-type="NAME" class="WebAnnotator_NAME">WOK </span>-&nbsp;</strong>это группа единомышленников, которая желает познакомить вас с полезной и вкусной едой. </span></var></cite></span></h2>
+
+<h2 style="font-style:italic; text-align:center"><span style="font-size:18px"><cite><var><span style="font-family:times new roman,times,serif"><strong><span style="" wa-subtypes="" wa-id="68" wa-type="NAME" class="WebAnnotator_NAME">WOK </span>-&nbsp;</strong>это те блюда, которые мы любим сами и потому уверены, что это полюбят и другие. </span></var></cite></span></h2>
+
+<h2 style="font-style:italic; text-align:center"><span style="font-size:18px"><cite><var><span style="font-family:times new roman,times,serif"><strong><span style="" wa-subtypes="" wa-id="69" wa-type="NAME" class="WebAnnotator_NAME">WOK </span>-&nbsp;</strong>это культура, в которой соединяется восток и запад, и которая популярна во всем мире. </span></var></cite></span></h2>
+</div>
+</div>
+<!--<div class="box">
+    <div class="banner">
+        <div class="banner_1">
+            <a href="/category/pitstsa/">
+                <img src="/uploads/baners/novinka.jpg" alt="" />
+            </a>
+        </div>
+        <div>
+            <a href="/pages/Dostavka.html">
+                <img src="/uploads/baners/dostavka-2015.jpg" alt="" />
+            </a>
+        </div>
+    </div>
+</div>-->
+<div class="box customer-choice">
+    <h2 class="heading-title"><span>Выбор клиента</span></h2>
+
+    <div class="box-content">
+        <div class="box-product fixed"><div class="prod_hold">
+                <a class="wrap_link" href="http://wokeda.ru/tovar/2vok-mega">
+                    <span class="image">
+                        <div w-resize="">
+                            <img style="width: 180px; position: absolute; top: 15px; left: 0px;" src="uploads/shop/products/15/7b7e5cf3de48a09580b18c6ea8d6c673_t_w200_h200.jpg" alt="ВОК МЕГА">
+                        </div>
+                    </span>
+                    <div class="pricetag_cena"><span class="price_name">ВОК МЕГА</span></div>
+                </a>
+
+                <div class="pricetag_small"><span class="price">320 руб.</span></div>
+                <div class="info">
+                    <h3>ВОК МЕГА</h3>
+                    <span>430 гр.</span>
+                    <p>Рис, свежие овощи, свинина, шампиньоны, соус терияки,  куриное яйцо.</p>
+                    <a class="add_to_cart_small" ng-click="ToCart('eyJpZCI6IjE1IiwidXJsIjoiMnZvay1tZWdhIiwiY2F0ZWdvcnlfaWQiOiI2MzkiLCJwYXJhbXMiOm51bGx9', $event)">В корзину</a>
+                </div>
+            </div><div class="prod_hold">
+                <a class="wrap_link" href="http://wokeda.ru/tovar/vok-shanhay">
+                    <span class="image">
+                        <div w-resize="">
+                            <img style="width: 180px; position: absolute; top: 15px; left: 0px;" src="uploads/shop/products/287/49e4534376b74218e4a5dbafcc1c52a9_t_w200_h200.jpg" alt="ВОК ШАНХАЙ">
+                        </div>
+                    </span>
+                    <div class="pricetag_cena"><span class="price_name">ВОК ШАНХАЙ</span></div>
+                </a>
+
+                <div class="pricetag_small"><span class="price">280 руб.</span></div>
+                <div class="info">
+                    <h3>ВОК ШАНХАЙ</h3>
+                    <span>330 гр.</span>
+                    <p>Лапша Удон ручной работы, морской коктейль, перчик халапеньо, соус бешамель</p>
+                    <a class="add_to_cart_small" ng-click="ToCart('eyJpZCI6IjI4NyIsInVybCI6InZvay1zaGFuaGF5IiwiY2F0ZWdvcnlfaWQiOiI2MzkiLCJwYXJhbXMiOm51bGx9', $event)">В корзину</a>
+                </div>
+            </div><div class="prod_hold">
+                <a class="wrap_link" href="http://wokeda.ru/tovar/vok-funchoza-s-kuritsey-">
+                    <span class="image">
+                        <div w-resize="">
+                            <img style="width: 180px; position: absolute; top: 15px; left: 0px;" src="uploads/shop/products/285/d3eed5f355d03e778e523bab2074100d_t_w200_h200.jpg" alt="ВОК Фунчоза с курицей ">
+                        </div>
+                    </span>
+                    <div class="pricetag_cena"><span class="price_name">ВОК Фунчоза с курицей </span></div>
+                </a>
+
+                <div class="pricetag_small"><span class="price">310 руб.</span></div>
+                <div class="info">
+                    <h3>ВОК Фунчоза с курицей </h3>
+                    <span>520 гр.</span>
+                    <p>Двойная фунчоза, куриное филе, грибы шиитаке, стрелки чеснока, соус устричный.</p>
+                    <a class="add_to_cart_small" ng-click="ToCart('eyJpZCI6IjI4NSIsInVybCI6InZvay1mdW5jaG96YS1zLWt1cml0c2V5LSIsImNhdGVnb3J5X2lkIjoiNjM5IiwicGFyYW1zIjpudWxsfQ==', $event)">В корзину</a>
+                </div>
+            </div><div class="prod_hold">
+                <a class="wrap_link" href="http://wokeda.ru/tovar/vok-s-krabom">
+                    <span class="image">
+                        <div w-resize="">
+                            <img style="width: 180px; position: absolute; top: 15px; left: 0px;" src="uploads/shop/products/286/7927eb4e6232c0b1dda6e4b70f422e53_t_w200_h200.jpg" alt="ВОК С КРАБОМ">
+                        </div>
+                    </span>
+                    <div class="pricetag_cena"><span class="price_name">ВОК С КРАБОМ</span></div>
+                </a>
+
+                <div class="pricetag_small"><span class="price">430 руб.</span></div>
+                <div class="info">
+                    <h3>ВОК С КРАБОМ</h3>
+                    <span>470 гр.</span>
+                    <p>Лапша Удон ручной работы, мясо краба, 2 куриных яйца, сыр, соус бешамель</p>
+                    <a class="add_to_cart_small" ng-click="ToCart('eyJpZCI6IjI4NiIsInVybCI6InZvay1zLWtyYWJvbSIsImNhdGVnb3J5X2lkIjoiNjM5IiwicGFyYW1zIjpudWxsfQ==', $event)">В корзину</a>
+                </div>
+            </div><div class="prod_hold">
+                <a class="wrap_link" href="http://wokeda.ru/tovar/vok-siti-">
+                    <span class="image">
+                        <div w-resize="">
+                            <img style="width: 180px; position: absolute; top: 15px; left: 0px;" src="uploads/shop/products/16/3c032259cf0a0a4d2e10fe0dd04a7465_t_w200_h200.jpg" alt="ВОК СИТИ ">
+                        </div>
+                    </span>
+                    <div class="pricetag_cena"><span class="price_name">ВОК СИТИ </span></div>
+                </a>
+
+                <div class="pricetag_small"><span class="price">270 руб.</span></div>
+                <div class="info">
+                    <h3>ВОК СИТИ </h3>
+                    <span>430 гр.</span>
+                    <p>Яичная лапша, свежие овощи, курица, ананас, кисло-сладкий соус.</p>
+                    <a class="add_to_cart_small" ng-click="ToCart('eyJpZCI6IjE2IiwidXJsIjoidm9rLXNpdGktIiwiY2F0ZWdvcnlfaWQiOiI2MzkiLCJwYXJhbXMiOm51bGx9', $event)">В корзину</a>
+                </div>
+            </div><div class="prod_hold">
+                <a class="wrap_link" href="http://wokeda.ru/tovar/vok-stambul-">
+                    <span class="image">
+                        <div w-resize="">
+                            <img style="width: 180px; position: absolute; top: 15px; left: 0px;" src="uploads/shop/products/14/04c274050d7972e99dbb889bf780a847_t_w200_h200.jpg" alt="ВОК СТАМБУЛ ">
+                        </div>
+                    </span>
+                    <div class="pricetag_cena"><span class="price_name">ВОК СТАМБУЛ </span></div>
+                </a>
+
+                <div class="pricetag_small"><span class="price">390 руб.</span></div>
+                <div class="info">
+                    <h3>ВОК СТАМБУЛ </h3>
+                    <span>520 гр.</span>
+                    <p>Баклажаны, говядина, рис, соус ЧП</p>
+                    <a class="add_to_cart_small" ng-click="ToCart('eyJpZCI6IjE0IiwidXJsIjoidm9rLXN0YW1idWwtIiwiY2F0ZWdvcnlfaWQiOiI2MzkiLCJwYXJhbXMiOm51bGx9', $event)">В корзину</a>
+                </div>
+            </div><div class="prod_hold">
+                <a class="wrap_link" href="http://wokeda.ru/tovar/vok-s-serdechkami">
+                    <span class="image">
+                        <div w-resize="">
+                            <img style="width: 180px; position: absolute; top: 15px; left: 0px;" src="uploads/shop/products/245/4d245e705dd6fd74295ebb8f4aff840d_t_w200_h200.jpg" alt="Вок С СЕРДЕЧКАМИ">
+                        </div>
+                    </span>
+                    <div class="pricetag_cena"><span class="price_name">Вок С СЕРДЕЧКАМИ</span></div>
+                </a>
+
+                <div class="pricetag_small"><span class="price">310 руб.</span></div>
+                <div class="info">
+                    <h3>Вок С СЕРДЕЧКАМИ</h3>
+                    <span>410 гр.</span>
+                    <p>Куриные сердечки, шампиньоны, лапша Удон ручной работы, лук, морковь, соус ЧП.</p>
+                    <a class="add_to_cart_small" ng-click="ToCart('eyJpZCI6IjI0NSIsInVybCI6InZvay1zLXNlcmRlY2hrYW1pIiwiY2F0ZWdvcnlfaWQiOiI2MzkiLCJwYXJhbXMiOm51bGx9', $event)">В корзину</a>
+                </div>
+            </div><div class="prod_hold">
+                <a class="wrap_link" href="http://wokeda.ru/tovar/vok-po-flotski-copy">
+                    <span class="image">
+                        <div w-resize="">
+                            <img style="width: 180px; position: absolute; top: 15px; left: 0px;" src="uploads/shop/products/114/8d9be44d67cff47482f8d5b39eba49e5_t_w200_h200.jpg" alt="ВОК ПО-ФЛОТСКИ ">
+                        </div>
+                    </span>
+                    <div class="pricetag_cena"><span class="price_name">ВОК ПО-ФЛОТСКИ </span></div>
+                </a>
+
+                <div class="pricetag_small"><span class="price">230 руб.</span></div>
+                <div class="info">
+                    <h3>ВОК ПО-ФЛОТСКИ </h3>
+                    <span>300 гр.</span>
+                    <p>Говядина, свинина, овощи, лапша яичная, соус острый.</p>
+                    <a class="add_to_cart_small" ng-click="ToCart('eyJpZCI6IjExNCIsInVybCI6InZvay1wby1mbG90c2tpLWNvcHkiLCJjYXRlZ29yeV9pZCI6IjYzOSIsInBhcmFtcyI6bnVsbH0=', $event)">В корзину</a>
+                </div>
+            </div></div>
+        <div class="clear"></div>
+    </div>
+</div>
+</div>    </div></div>
+<!-- END OF CONTENT -->
+
+<!-- PRE-FOOTER -->
+<div id="pre_footer">
+    <div class="inner">
+
+    </div>
+</div>
+<!-- END OF PRE-FOOTER -->
+
+<!-- FOOTER -->
+<div id="footer">
+    <div class="inner">
+        <div class="column_big">
+            <!-- FOOTER MODULES AREA -->
+            <div class="footer_modules">
+                <h3>О компании</h3>
+                <h2 style="font-style:italic; text-align:center"><cite><span style="font-size:16px"><var><span style="font-family:times new roman,times,serif">Первое кафе формата&nbsp;<strong><span style="" wa-subtypes="" wa-id="71" wa-type="NAME" class="WebAnnotator_NAME">WOK</span></strong>  в <span style="" wa-subtypes="" wa-id="70" wa-type="REGIONS" class="WebAnnotator_REGIONS">Уссурийске</span>. </span></var></span></cite></h2>
+
+<h2 style="font-style:italic">&nbsp;</h2>
+            </div>
+
+            <!-- END OF FOOTER MODULES AREA -->
+            <div class="footer_social">
+                <h3>Посоветуй друзьям</h3>
+                <!-- AddThis Button BEGIN -->
+
+                <div class="addthis_toolbox addthis_default_style "><script type="text/javascript">
+                        (function() {
+                            if (window.pluso)
+                                if (typeof window.pluso.start == "function") return;
+                            if (window.ifpluso == undefined) {
+                                window.ifpluso = 1;
+                                var d = document,
+                                    s = d.createElement('script'),
+                                    g = 'getElementsByTagName';
+                                s.type = 'text/javascript';
+                                s.charset = 'UTF-8';
+                                s.async = true;
+                                s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
+                                var h = d[g]('body')[0];
+                                h.appendChild(s);
+                            }
+                        })();
+                    </script>
+                    <div class="pluso" data-background="transparent" data-options="big,round,line,horizontal,nocounter,theme=06" data-services="vkontakte,odnoklassniki,facebook,twitter,moimir,email"><div class="pluso-010010100110-06"><span class="pluso-wrap" style="background:transparent"><a href="http://wokeda.ru/" title="ВКонтакте" class="pluso-vkontakte"></a><a href="http://wokeda.ru/" title="Одноклассники" class="pluso-odnoklassniki"></a><a href="http://wokeda.ru/" title="Facebook" class="pluso-facebook"></a><a href="http://wokeda.ru/" title="Twitter" class="pluso-twitter"></a><a href="http://wokeda.ru/" title="Мой Мир@Mail.Ru" class="pluso-moimir"></a><a href="http://wokeda.ru/" title="Отправить на email" class="pluso-email"></a><a href="http://pluso.ru/" class="pluso-more"></a></span></div></div></div>
+                <!-- AddThis Button END -->
+
+            </div>
+
+        </div>
+
+        <div class="column_small">
+            <h3>Полезная информация</h3>
+            <ul><li><a href="">1</a></li><li><a href="">2</a></li></ul>            <br>
+<!--            <div class="widget">-->
+<!--                <iframe src='/inwidget/index.php' scrolling='no' frameborder='no' style='border:none;width:263px;height:185px;overflow:hidden;'></iframe>-->
+<!--            </div>-->
+<!--            <div class="inst">-->
+<!--                <a href=""><img src="/templates/wokeda/image/inst2018.png"</a>-->
+<!--            </div>-->
+        </div>
+
+        <div class="column_small address">
+            <h3>Мы рады вас видеть:</h3>
+            <ul>
+                <li><p>c 10:00 до 23:00 без перерывов и выходных</p></li>
+                <li><p>По адресу: <span style="" wa-subtypes="" wa-id="72" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">улица Кирова 44б, Торговая База «Фортуна»</span>.</p></li>
+                <li class="phone-footer"><p>Телефон:  <span style="" wa-subtypes="" wa-id="73" wa-type="PHONE" class="WebAnnotator_PHONE">8 (4234) 241-556</span>, <span style="" wa-subtypes="" wa-id="74" wa-type="PHONE" class="WebAnnotator_PHONE">8 914 073 26 44</span>, <span style="" wa-subtypes="" wa-id="75" wa-type="PHONE" class="WebAnnotator_PHONE">8 924 722 15 56</span></p></li>
+            </ul>
+            <div class="inst">
+                <a href="https://www.instagram.com/cafe_wok_uss/" target="_blank"><img src="/templates/wokeda/image/inst2018.png" <="" a="">
+            </a></div><a href="https://www.instagram.com/cafe_wok_uss/" target="_blank">
+        </a></div><a href="https://www.instagram.com/cafe_wok_uss/" target="_blank">
+
+
+        <div class="clear"></div>
+    </a></div><a href="https://www.instagram.com/cafe_wok_uss/" target="_blank">
+</a></div><a href="https://www.instagram.com/cafe_wok_uss/" target="_blank">
+<!-- END OF FOOTER -->
+
+</a></div><script src="http://share.pluso.ru/pluso-like.js" async="" charset="UTF-8" type="text/javascript"></script><a href="https://www.instagram.com/cafe_wok_uss/" target="_blank">
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var interval;
+        $('ul#myRoundabout')
+            .roundabout({
+                'btnNext': '.next_round',
+                'btnPrev': '.previous_round'
+            })
+            .hover(
+            function() {
+
+                clearInterval(interval);
+            },
+            function() {
+
+                interval = startAutoPlay();
+            });
+
+        interval = startAutoPlay();
+    });
+
+    function startAutoPlay() {
+        return setInterval(function() {
+            $('ul#myRoundabout').roundabout_animateToPreviousChild();
+        }, 3000);
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+</a><style type="text/css">.pluso{position:relative;z-index:1;display:inline-block;padding:0;-webkit-border-radius:22px;-moz-border-radius:22px;border-radius:22px;background:transparent;text-align:left;font-size:0;line-height:0;*display:inline;*zoom:1;}
+.pluso span{float:none;}
+.pluso-010010100110-06 a:active{ opacity:.6; }
+.pluso-010010100110-06 .pluso-wrap a{display:inline-block;vertical-align:inherit;margin:5px 0 0 5px;padding:0;width:40px;height:40px;background:url(http://share.pluso.ru/img/pluso-like/round/big/04.png) 0 0 transparent no-repeat;}
+.pluso-wrap{margin:0px !important;}
+.pluso-010010100110-06 .pluso-wrap{position:relative;z-index:1;display:inline-block;padding:0 5px 5px 0;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;background:transparent;text-align:left;font-size:0;line-height:0;*display:inline;*zoom:1;}
+.pluso-010010100110-06 .pluso-wrap{-webkit-border-radius:22px;-moz-border-radius:22px;border-radius:22px;}
+.pluso-010010100110-06 a.pluso-more{width:40px;height:40px;background:url(http://share.pluso.ru/img/plus.png) 0 -60px no-repeat!important;position:relative;}
+.pluso-010010100110-06 a.pluso-more{margin-right:-22px;*left:5px;}
+.pluso-010010100110-06 .pluso-counter b{position:relative;padding:8px 12px;-webkit-border-radius: 22px;-moz-border-radius: 22px;border-radius: 122px;background:#eaeaeb;box-shadow:0 0 3px rgba(0,0,0,.3);color:#707070;white-space:nowrap;font:16px/40px Tahoma, Geneva, sans-serif!important;}
+.pluso-010010100110-06 .pluso-counter{position:relative;padding-right:28px;}
+.pluso-010010100110-06 .pluso-counter b{top:-14px;left:28px;}
+.pluso-010010100110-06 .pluso-counter b:after{position: absolute;top: 13px;left: -8px;z-index: 0;display: block;width: 0;border-width: 5px 9px 5px 0;border-style: solid;border-color: transparent #eaeaeb;content: '';}
+.pluso-010010100110-06 br{ display:none; }
+.pluso-010010100110-06 .pluso-counter{ display:none; }
+.pluso-box{position:absolute;border:4px solid #eaebea;width:310px;height:225px;overflow:hidden;z-index: 777;background:#f2f2f2;font:normal normal 12px/25px Tahoma, Geneva, sans-serif;box-shadow:0 4px 10px rgba(0, 0, 0, 0.4);text-align:left;-webkit-border-radius:14px;-moz-border-radius:14px;border-radius:14px;}
+.pluso-box a b{width:20px;height:20px;position:absolute;left:0;top:2px;}
+.pluso-box a:visited,.pluso-box a:hover,.pluso-box a{font:normal normal 12px/25px Tahoma, Geneva, sans-serif;color:#7f7f7f;text-decoration:none;white-space:nowrap;padding:0 0 0 25px;margin:0 0 0 5px;border:0;position:relative;width:115px;float:left;}
+.pluso-box .pluso-list{background:#ffffff;border-radius:14px;width:100%;height:200px;overflow:auto;position:absolute;left:0;top:25px;}
+.pluso-box a.pluso-logo{background:url(http://share.pluso.ru/img/pluso-like/logo-mini.png) 0 5px no-repeat;width:66px;height:19px;border:0;text-indent:-600em;padding:0 0 0 12px;margin:0 0 0 9px;}
+.pluso-box a.pluso-go{color:#4c4c4c;text-decoration:underline;padding-left:0;}
+.pluso-box a.pluso-close,.pluso-box a.pluso-close:hover,.pluso-box a.pluso-close:visited{float:right;width:20px;text-align:center;font-size:12px;line-height:20px;width:20px;margin:1px 1px 0 0;padding:0;font-weight:bold;color:#4c4c4c;text-decoration:none;background:#ffffff;border-radius:15px;border:1px solid #eaebea;}
+.pluso-box a.pluso-close:hover{background:#7f7f7f;color:#ffffff;border-color:transparent}
+.pluso-tip{cursor:pointer;position:absolute;padding:10px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;white-space:nowrap;font:bold 14px/12px Tahoma, Geneva, sans-serif!important;color:#fff;background:#f78d1d;background:-webkit-gradient(linear, left top, left bottom, from(#7ed263), to(#3d9530));background:-webkit-linear-gradient(top,#7ed263,#3d9530);background:-moz-linear-gradient(top,#7ed263,#3d9530);background:-ms-linear-gradient(top,#7ed263,#3d9530);background:-o-linear-gradient(top,#7ed263,#3d9530);background:linear-gradient(top,#7ed263,#3d9530);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7ed263, endColorstr=#3d9530);box-shadow:0 0 5px rgba(0,0,0,.5), inset 0 0 0px 1px rgba(0,0,0,.3)}
+.pluso-tip:after{position:absolute;z-index:0;display:block;width:0;height:0;border-style: solid;content:''}
+.pluso-tip.pluso-left-arrow:after{top:40%;right:-6px;border-color:transparent #447b36;border-width:6px 0px 6px 6px}
+.pluso-tip.pluso-top-arrow:after{bottom:-6px;border-color:#27601f transparent;border-width:6px 6px 0px 6px}
+.pluso-tip.pluso-bottom-arrow:after{top:-6px;border-color:#447b36 transparent;border-width:0px 6px 6px 6px}
+@keyframes pluso-market-animate{0% { opacity:1 } 50%{ opacity:.3} 100% { opacity:1}}
+@-webkit-keyframes pluso-market-animate{0% { opacity:1 } 50%{ opacity:.3} 100% { opacity:1}}
+.pluso-overlay-background{height:100%;width:100%;position:fixed;left:0;top:0;z-index:999999999;background-color: rgb(0, 0, 0);background-color: rgba(0, 0, 0, 0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";padding:0;margin:0;}
+.pluso-overlay-box{width:910px;margin: 50px auto 0;overflow:hidden;height:85%;background-color: #f5f5f5;border:1px solid #c4c4c4;padding:0!important;text-align:left;box-shadow:0 4px 12px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.5) inset;border-radius:10px;}
+a.pluso-overlay-close,a.pluso-overlay-close:hover,a.pluso-overlay-close:visited{position:absolute;left:50%;margin:0 0 0 442px;top:38px;width:26px;height:26px;text-align:center;font:normal 20px/22px Arial;padding:0;color:#878787;text-decoration:none;background:#ffffff;border-radius:26px;border:2px solid #c4c4c4;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+a.pluso-overlay-close:hover{background:#7f7f7f;color:#ffffff;border-color:transparent}
+.pluso-overlay-box div{margin:20px 0 0 0;padding:0 0 12px 0;border-bottom:1px solid #c4c4c4;}
+.pluso-overlay-box ul{list-style:none;margin:10px 0 10px 0px;padding:0;height:85%;overflow:auto;}
+.pluso-overlay-box li{width:210px;height:260px;background:#ffffff;border-radius:10px;border:none;float:left;padding:0;margin:0 0px 10px 10px;}
+.pluso-overlay-box li a{display:block;text-decoration:none;margin:0;padding:0;height:100%;overflow:hidden;position:relative;}
+.pluso-overlay-box li a span, .pluso-overlay-box li a:hover span{position: relative;width: 190px;height:150px;border:1px solid #c4c4c4;overflow:hidden;margin:10px auto 5px auto;padding:0;text-align:center;display:block;}
+.pluso-overlay-box li a:hover span{box-shadow:0 0 5px #c4c4c4;-webkit-box-shadow:0 0 5px #c4c4c4;border:1px solid #c4c4c4}
+.pluso-overlay-box li a em{font:normal bold 15px/20px Arial;float:left;color:#e86340;padding:0px 0 0 10px;margin:0;}
+.pluso-overlay-box li a em u{font:normal normal 12px/12px Arial;text-decoration:none;display:block;color:#eb6338;padding:0;margin:0;}
+.pluso-overlay-box li a strong{font:normal 11px/14px Arial;display:block;padding:0 10px;color:#454545;position:relative;bottom:auto;height:42px;width:180px;overflow:hidden;margin:0 0 5px 0;border:0;}
+.pluso-overlay-box li a:hover strong{height:42px;overflow:auto;padding:0 10px;border:0;}
+.pluso-overlay-box li a b, .pluso-overlay-box li a b:hover, .pluso-overlay-box li a b:active{font:bold normal 15px/18px Arial, sans-serif;color: #ffffff;padding-top: 7px;padding-right: 12px;padding-bottom: 7px;padding-left: 12px;text-decoration: none;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;-webkit-box-shadow: inset 0px -1px 2px rgba(255,255,255,.5);-moz-box-shadow: inset 0px -1px 2px rgba(255,255,255,.5);box-shadow: inset 0px -1px 2px rgba(255,255,255,.5);text-shadow: 0px 1px 2px #3d8a33;border:solid #4bb543 1px;background:-webkit-gradient(linear, 0 0, 0 100%, from(#95e488), to(#20a517));background: -moz-linear-gradient(top, #95e488, #20a517);background: -o-linear-gradient(top, #95e488, #20a517);-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#95e488, endColorStr=#20a517);filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#95e488, endColorStr=#20a517);display:inline-block;float:right;bottom:auto;right:10px;position:relative;}
+.pluso-overlay-box li a b:hover{background:-webkit-gradient(linear, 0 0, 0 100%, from(#b1f4a3), to(#27c21c));background: -moz-linear-gradient(top, #b1f4a3, #27c21c);background:-o-linear-gradient(top, #b1f4a3, #27c21c);-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#b1f4a3, endColorStr=#27c21c);filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#b1f4a3, endColorStr=#27c21c);}
+.pluso-overlay-box li a b:active{background:-webkit-gradient(linear, 0 0, 0 100%, from(#20a517), to(#95e488));background: -moz-linear-gradient(top, #20a517, #95e488);background:-o-linear-gradient(top, #20a517, #95e488);-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#20a517, endColorStr=#95e488);filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#20a517, endColorStr=#95e488);}
+.pluso-010010100110-06 .pluso-wrap a{ background-image:url(http://share.pluso.ru/img/pluso-like/round/big/06.png) }.pluso-010010100110-06 .pluso-wrap a.pluso-market-cart, .pluso-010010100110-06 .pluso-wrap a.pluso-market-cart-animate{ background:url(http://share.pluso.ru/img/pluso-like/round/big/market.png) -0px 0}.pluso-010010100110-06 .pluso-wrap a.pluso-market-cart-animate{animation: pluso-market-animate 3s linear infinite alternate;-webkit-animation: pluso-market-animate 3s linear infinite alternate;}.pluso-010010100110-06 .pluso-wrap a.pluso-market-dollar, .pluso-010010100110-06 .pluso-wrap a.pluso-market-dollar-animate{ background:url(http://share.pluso.ru/img/pluso-like/round/big/market.png) -42px 0}.pluso-010010100110-06 .pluso-wrap a.pluso-market-dollar-animate{animation: pluso-market-animate 3s linear infinite alternate;-webkit-animation: pluso-market-animate 3s linear infinite alternate;}.pluso-010010100110-06 .pluso-wrap a.pluso-market-bulb, .pluso-010010100110-06 .pluso-wrap a.pluso-market-bulb-animate{ background:url(http://share.pluso.ru/img/pluso-like/round/big/market.png) -84px 0}.pluso-010010100110-06 .pluso-wrap a.pluso-market-bulb-animate{animation: pluso-market-animate 3s linear infinite alternate;-webkit-animation: pluso-market-animate 3s linear infinite alternate;}.pluso-010010100110-06 .pluso-wrap a.pluso-market-quest, .pluso-010010100110-06 .pluso-wrap a.pluso-market-quest-animate{ background:url(http://share.pluso.ru/img/pluso-like/round/big/market.png) -126px 0}.pluso-010010100110-06 .pluso-wrap a.pluso-market-quest-animate{animation: pluso-market-animate 3s linear infinite alternate;-webkit-animation: pluso-market-animate 3s linear infinite alternate;}.pluso-010010100110-06 .pluso-wrap a.pluso-market-tag, .pluso-010010100110-06 .pluso-wrap a.pluso-market-tag-animate{ background:url(http://share.pluso.ru/img/pluso-like/round/big/market.png) -168px 0}.pluso-010010100110-06 .pluso-wrap a.pluso-market-tag-animate{animation: pluso-market-animate 3s linear infinite alternate;-webkit-animation: pluso-market-animate 3s linear infinite alternate;}.pluso-box a b{ background-image:url(http://share.pluso.ru/img/pluso-like/round/small/04.png) }.pluso-box a.pluso-market b{ background:url(http://share.pluso.ru/img/pluso-like/round/small/market.png) -21px 0}.pluso-box a.pluso-vkontakte b{ background-position: -84px 0}.pluso-box a.pluso-odnoklassniki b{ background-position: -63px 0}.pluso-box a.pluso-facebook b{ background-position: -0px 0}.pluso-box a.pluso-twitter b{ background-position: -21px 0}.pluso-box a.pluso-google b{ background-position: -126px 0}.pluso-box a.pluso-moimir b{ background-position: -147px 0}.pluso-box a.pluso-pinterest b{ background-position: -105px 0}.pluso-box a.pluso-livejournal b{ background-position: -168px 0}.pluso-box a.pluso-tumblr b{ background-position: -42px 0}.pluso-box a.pluso-liveinternet b{ background-position: -189px 0}.pluso-box a.pluso-springpad b{ background-position: -210px 0}.pluso-box a.pluso-stumbleupon b{ background-position: -231px 0}.pluso-box a.pluso-myspace b{ background-position: -252px 0}.pluso-box a.pluso-formspring b{ background-position: -273px 0}.pluso-box a.pluso-blogger b{ background-position: -294px 0}.pluso-box a.pluso-digg b{ background-position: -315px 0}.pluso-box a.pluso-surfingbird b{ background-position: -336px 0}.pluso-box a.pluso-bobrdobr b{ background-position: -357px 0}.pluso-box a.pluso-readability b{ background-position: -378px 0}.pluso-box a.pluso-instapaper b{ background-position: -399px 0}.pluso-box a.pluso-evernote b{ background-position: -420px 0}.pluso-box a.pluso-delicious b{ background-position: -525px 0}.pluso-box a.pluso-vkrugu b{ background-position: -504px 0}.pluso-box a.pluso-pinme b{ background-position: -546px 0}.pluso-box a.pluso-yandex b{ background-position: -567px 0}.pluso-box a.pluso-yazakladki b{ background-position: -588px 0}.pluso-box a.pluso-moikrug b{ background-position: -609px 0}.pluso-box a.pluso-googlebookmark b{ background-position: -630px 0}.pluso-box a.pluso-yahoo b{ background-position: -651px 0}.pluso-box a.pluso-moemesto b{ background-position: -672px 0}.pluso-box a.pluso-memori b{ background-position: -693px 0}.pluso-box a.pluso-juick b{ background-position: -735px 0}.pluso-box a.pluso-linkedin b{ background-position: -756px 0}.pluso-box a.pluso-webdiscover b{ background-position: -798px 0}.pluso-box a.pluso-bookmark b{ background-position: -441px 0}.pluso-box a.pluso-email b{ background-position: -462px 0}.pluso-box a.pluso-print b{ background-position: -483px 0}.pluso-box a.pluso-webmoney b{ background-position: -924px 0}.pluso-box a.pluso-misterwong b{ background-position: -903px 0}.pluso-box a.pluso-friendfeed b{ background-position: -882px 0}.pluso-box a.pluso-market b{ background-position: --21px 0}.pluso-010010100110-06 .pluso-wrap a.pluso-vkontakte{ background-position: -168px 0}.pluso-010010100110-06 .pluso-wrap a.pluso-odnoklassniki{ background-position: -126px 0}.pluso-010010100110-06 .pluso-wrap a.pluso-facebook{ background-position: -0px 0}.pluso-010010100110-06 .pluso-wrap a.pluso-twitter{ background-position: -42px 0}.pluso-010010100110-06 .pluso-wrap a.pluso-moimir{ background-position: -294px 0}.pluso-010010100110-06 .pluso-wrap a.pluso-email{ background-position: -924px 0}</style><script src="http://share.pluso.ru/process?act=counter&amp;u=http%3A%2F%2Fwokeda.ru%2F&amp;w=1920&amp;h=1080&amp;ref=&amp;uid=3237038734897808198&amp;k=rx2gfWcvlyDig115&amp;first=1" async="" charset="UTF-8" type="text/javascript"></script></body><wa-color id="WA-color-0" bg="#33CCFF" fg="#000000" class="WebAnnotator_ADDRESS" type="ADDRESS"></wa-color><wa-color id="WA-color-1" bg="#FF0000" fg="#000000" class="WebAnnotator_INN" type="INN"></wa-color><wa-color id="WA-color-2" bg="#33FF33" fg="#000000" class="WebAnnotator_KPP" type="KPP"></wa-color><wa-color id="WA-color-3" bg="#CC66CC" fg="#000000" class="WebAnnotator_OGRN" type="OGRN"></wa-color><wa-color id="WA-color-4" bg="#FF9900" fg="#000000" class="WebAnnotator_REG_CBR" type="REG_CBR"></wa-color><wa-color id="WA-color-5" bg="#99FFFF" fg="#000000" class="WebAnnotator_PHONE" type="PHONE"></wa-color><wa-color id="WA-color-6" bg="#FF6666" fg="#000000" class="WebAnnotator_EMAIL" type="EMAIL"></wa-color><wa-color id="WA-color-7" bg="#66FF99" fg="#000000" class="WebAnnotator_LEGAL_NAME" type="LEGAL_NAME"></wa-color><wa-color id="WA-color-8" bg="#3333FF" fg="#FFFFFF" class="WebAnnotator_NAME" type="NAME"></wa-color><wa-color id="WA-color-9" bg="#660000" fg="#FFFFFF" class="WebAnnotator_REGIONS" type="REGIONS"></wa-color><wa-color id="WA-color-10" bg="#006600" fg="#FFFFFF" class="WebAnnotator_RATE" type="RATE"></wa-color><wa-color id="WA-color-11" bg="#663366" fg="#FFFFFF" class="WebAnnotator_CURRENCY" type="CURRENCY"></wa-color><wa-title style="display:none;">WOK - Еда в коробочках. Быстрая доставка. Уссурийск.</wa-title></html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!-- base href="http://velop.ru/" -->
+	<title>Контакты</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Контакты">
+	<meta name="viewport" content="width=1024">
+	
+	<link rel="canonical" href="http://velop.ru/contact">	
+	<link rel="apple-touch-icon" sizes="57x57" href="http://velop.ru/design/velop/images/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://velop.ru/design/velop/images/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://velop.ru/design/velop/images/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://velop.ru/design/velop/images/apple-touch-icon-144.png">
+	<link href="http://velop.ru/design/velop/css/style.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="http://velop.ru/design/velop/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+	<link href="http://velop.ru/design/velop/js/popover/jquery.webui-popover.min.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="http://velop.ru/design/velop/css/animate.css" rel="stylesheet" type="text/css" media="screen">
+	
+	<script src="//admeo.ru/c9b6c48fcfc2d40e4425af905b2c4380.js?r=0.9585690208151467" async="" charset="UTF-8" type="text/javascript"></script><script src="http://mc.yandex.ru/metrika/watch.js" async="" type="text/javascript"></script><script integrity="sha384-L5W8VtxTGbPfTByZcxm1Yw9bMuas6ynZG3TbaMyC9OFxG2/fnwLWqhjmBKAkERms" crossorigin="anonymous" src="https://www.gstatic.com/recaptcha/releases/-nejAZ5my6jV0Fbx9re8ChMK/recaptcha__ru.js" async="" type="text/javascript"></script><script src="js/jquery/jquery.js" type="text/javascript"></script>
+	
+		
+	<script type="text/javascript" src="js/ctrlnavigate.js"></script>           
+	
+	<script src="design/velop/js/jquery-ui.min.js"></script>
+	<script src="design/velop/js/ajax_cart.js"></script>
+	
+	<script src="js/baloon/js/baloon.js" type="text/javascript"></script>
+	<link href="http://velop.ru/js/baloon/css/baloon.css" rel="stylesheet" type="text/css"> 
+	
+	
+	<script src="js/autocomplete/jquery.autocomplete-min.js" type="text/javascript"></script>
+	<style>
+		.autocomplete-suggestions{
+		background-color: #ffffff; width: 300px; overflow-y: hidden;overflow-x: auto;
+		border: 1px solid #e0e0e0;
+		padding: 5px;
+		}
+		.autocomplete-suggestions .autocomplete-suggestion{cursor: default;}
+		.autocomplete-suggestions .selected { background:#F0F0F0; }
+		.autocomplete-suggestions div { padding:2px 5px; white-space:nowrap; }
+		.autocomplete-suggestions strong { font-weight:normal; color:#3399FF; }
+	</style>	
+	<script>
+	$(function() {
+		//  Автозаполнитель поиска
+		$(".input_search").autocomplete({
+			serviceUrl:'ajax/search_products.php',
+			minChars:1,
+			noCache: false, 
+			onSelect:
+				function(suggestion){
+					 $(".input_search").closest('form').submit();
+				},
+			formatResult:
+				function(suggestion, currentValue){
+					var reEscape = new RegExp('(\\' + ['/', '.', '*', '+', '?', '|', '(', ')', '[', ']', '{', '}', '\\'].join('|\\') + ')', 'g');
+					var pattern = '(' + currentValue.replace(reEscape, '\\$1') + ')';
+	  				return (suggestion.data.image?"<img align=absmiddle src='"+suggestion.data.image+"'> ":'') + suggestion.value.replace(new RegExp(pattern, 'gi'), '<strong>$1<\/strong>');
+				}	
+		});
+	});
+	</script>
+					
+</head>
+<body>
+	<!-- Шапка -->
+	<div id="header">
+    	
+		<!-- Вход пользователя -->
+		<div id="account">
+							<a href="http://velop.ru/user/register" id="register">Регистрация</a>
+				<a href="http://velop.ru/user/login" id="login">Вход</a>
+					</div>
+		<!-- Вход пользователя (The End)-->
+        
+        <!-- Корзина -->
+		<div id="cart_informer">
+			
+	<a href="http://velop.ru/contact" id="callback" data-toggle="modal" data-target="#callback_modal">Заказать звонок</a>
+		</div>
+		<!-- Корзина (The End)-->
+              
+        <div id="phone"><span style="" wa-subtypes="" wa-id="7" wa-type="PHONE" class="WebAnnotator_PHONE">+7 (495) 661 - 16 - 99</span></div>
+        
+            <a href="http://velop.ru/" id="logo"><span style="" wa-subtypes="" wa-id="8" wa-type="NAME" class="WebAnnotator_NAME">Вело </span><span class="orange"><span style="" wa-subtypes="" wa-id="8" wa-type="NAME" class="WebAnnotator_NAME">Панда</span></span></a>
+        <p id="addr">велосипеды самокаты беговелы</p>
+
+        <!-- Меню -->
+		<ul id="menu">
+			<li>
+				<a href="http://velop.ru/">Главная</a>
+			</li>
+											<li>
+					<a href="http://velop.ru/products" data-page="8">Каталог</a>
+				</li>
+															<li>
+					<a href="http://velop.ru/blog" data-page="4">Акции</a>
+				</li>
+															<li>
+					<a href="http://velop.ru/dostavka" data-page="3">Доставка</a>
+				</li>
+																						<li>
+					<a href="http://velop.ru/oplata" data-page="2">Оплата</a>
+				</li>
+																						<li class="selected">
+					<a href="http://velop.ru/contact" data-page="6">Контакты</a>
+				</li>
+																							</ul>
+		<!-- Меню (The End) -->	
+	</div>
+	<!-- Шапка (The End)--> 
+
+
+	<!-- Вся страница --> 
+	<div id="main">
+	
+		<!-- Основная часть --> 
+		<div id="content">
+			
+<h1>Контакты</h1>
+
+<p style="margin: 0; color: #555;"><strong><span style="" wa-subtypes="" wa-id="9" wa-type="LEGAL_NAME" class="WebAnnotator_LEGAL_NAME">ООО "Эпл-Сервис"</span><br></strong><strong style="font-size: 13px;">ОГРН:&nbsp;</strong><span style="font-size: 13px;"><span style="" wa-subtypes="" wa-id="10" wa-type="OGRN" class="WebAnnotator_OGRN">1125074012469</span></span></p><h1><strong style="font-size: 13px;">Адрес магазина:</strong><span style="font-size: 13px;"> <span style="" wa-subtypes="" wa-id="11" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">г. Подольск, ул. Комсомольская, дом 1</span></span></h1><p><strong>График работы:</strong> ПН - ВС с 9:00 до 21:00</p><p><strong>Телефон:&nbsp;</strong><span><span style="" wa-subtypes="" wa-id="12" wa-type="PHONE" class="WebAnnotator_PHONE">+7 (495) 661 - 16 - 99</span></span></p><p><strong>Почта:<span style="" wa-subtypes="" wa-id="13" wa-type="EMAIL" class="WebAnnotator_EMAIL">&nbsp;</span></strong><span><span style="" wa-subtypes="" wa-id="13" wa-type="EMAIL" class="WebAnnotator_EMAIL">info@velop.ru</span></span></p><p><a href="https://vk.com/velo_panda"><img src="/files/uploads/vk.png" style="font-size: 13px;" height="32" width="32"></a><strong style="font-size: 13px;">&nbsp;</strong></p><p>&nbsp;</p><script type="mce-text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=coVBPt25H_uF9FUF3_rOPOSSQWZKLVPL&amp;width=100%&amp;height=400"></script>
+
+<!-- <h2>Обратная связь</h2>
+
+<form class="form feedback_form" method="post">
+		<label>Имя</label>
+	<input data-format=".+" data-notice="Введите имя" value="" name="name" maxlength="255" type="text"/>
+ 
+	<label>Email</label>
+	<input data-format="email" data-notice="Введите email" value="" name="email" maxlength="255" type="text"/>
+	
+	<label>Сообщение</label>
+	<textarea data-format=".+" data-notice="Введите сообщение" value="" name="message"></textarea>
+
+	<input class="button" type="submit" name="feedback" value="Отправить" />
+
+	<div class="captcha"><img src="captcha/image.php?2423"/></div> 
+	<input class="input_captcha" id="comment_captcha" type="text" name="captcha_code" value="" data-format="\d\d\d\d" data-notice="Введите капчу"/>
+	
+</form>
+ -->
+		</div>
+		<!-- Основная часть (The End) --> 
+
+		<div id="left">
+
+			<!-- Поиск-->
+			<div id="search">
+				<form action="products">
+					<input autocomplete="off" class="input_search" name="keyword" placeholder="Поиск товара" type="text">
+					<input class="button_search" value="" type="submit">
+				</form>
+			</div>
+			<!-- Поиск (The End)-->
+
+			
+			<!-- Меню каталога -->
+			<div id="catalog_menu">
+					
+			
+									<ul>
+												<li>
+												<a href="http://velop.ru/catalog/samokaty" data-category="203">Самокаты</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/elektrosamokaty" data-category="204">Электросамокаты</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/begovely" data-category="202">Беговелы</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/detskie-velosipedy" data-category="72">Детские велосипеды</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/podrostkovye-velosipedy" data-category="73">Подростковые велосипеды</a>
+									
+					</li>
+																							<li>
+												<a href="http://velop.ru/catalog/gornye-velosipedy" data-category="75">Горные велосипеды</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/skladnye-velosipedy" data-category="82">Складные велосипеды</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/turisticheskie-velosipedy" data-category="77">Туристические велосипеды</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/dorozhnye-velosipedy" data-category="70">Дорожные велосипеды</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/dvuhpodvesnye-velosipedy" data-category="80">Двухподвесные велосипеды</a>
+									
+					</li>
+																							<li>
+												<a href="http://velop.ru/catalog/shossejnye-velosipedy" data-category="79">Шоссейные велосипеды</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/kruizery" data-category="95">Круизеры</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/elektrovelosipedy" data-category="199">Электровелосипеды</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/aksessuary-strida" data-category="100">Аксессуары Strida</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/aksessuary" data-category="177">Аксессуары</a>
+												<ul>
+												<li>
+												<a href="http://velop.ru/catalog/bagazhniki" data-category="178">Багажники</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/velokompyutery" data-category="179">Велокомпьютеры</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/podnozhki" data-category="186">Подножки</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/smazki" data-category="190">Смазки</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/moyuschie-sredstva" data-category="191">Моющие средства</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/flyagoderzhateli" data-category="194">Флягодержатели</a>
+									
+					</li>
+																							<li>
+												<a href="http://velop.ru/catalog/instrumenty" data-category="196">Инструменты</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/detskie-kresla" data-category="181">Детские кресла</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/nasosy" data-category="185">Насосы</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/remnabory" data-category="187">Ремнаборы</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/svetooborudovanie" data-category="188">Светооборудование</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/signaly-zvonki" data-category="189">Сигналы. Звонки</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/sumki" data-category="192">Сумки</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/flyagi" data-category="193">Фляги</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/zamki" data-category="183">Замки</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/krylya-bryzgoviki" data-category="198">Крылья (Брызговики)</a>
+									
+					</li>
+										</ul>
+			
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/dvuhpodvesye-velosipedy" data-category="205">Двухподвесые велосипеды</a>
+									
+					</li>
+																<li>
+												<a href="http://velop.ru/catalog/gorodskie-velosipedy" data-category="206">Городские велосипеды</a>
+									
+					</li>
+										</ul>
+			
+			</div>
+			<!-- Меню каталога (The End)-->		
+	
+			
+			<!-- Все бренды -->
+			
+						<div id="all_brands">
+				<h2>Все бренды:</h2>
+					
+										<a href="http://velop.ru/brands/aplums">A-Plums</a>
+										
+										<a href="http://velop.ru/brands/bikase">BiKASE</a>
+										
+										<a href="http://velop.ru/brands/bikehand">Bikehand</a>
+										
+										<a href="http://velop.ru/brands/bulls">Bulls</a>
+										
+										<a href="http://velop.ru/brands/dlight">D-Light</a>
+										
+										<a href="http://velop.ru/brands/daytona">Daytona</a>
+										
+										<a href="http://velop.ru/brands/dosun">Dosun</a>
+										
+										<a href="http://velop.ru/brands/fu_kai_shin">Fu Kai Shin</a>
+										
+										<a href="http://velop.ru/brands/giyo">Giyo</a>
+										
+										<a href="http://velop.ru/brands/globber">GLOBBER</a>
+										
+										<a href="http://velop.ru/brands/handyway">Handyway</a>
+										
+										<a href="http://velop.ru/brands/khs">KHS</a>
+										
+										<a href="http://velop.ru/brands/kronyo">KRONYO</a>
+										
+										<a href="http://velop.ru/brands/lotus">LOTUS</a>
+										
+										<a href="http://velop.ru/brands/massload">Massload</a>
+										
+										<a href="http://velop.ru/brands/mini_bell">Mini Bell</a>
+										
+										<a href="http://velop.ru/brands/nuvo">Nuvo</a>
+										
+										<a href="http://velop.ru/brands/pegasus">Pegasus</a>
+										
+										<a href="http://velop.ru/brands/scool">Scool</a>
+										
+										<a href="http://velop.ru/brands/shulz">Shulz</a>
+										
+										<a href="http://velop.ru/brands/sigma">SIGMA</a>
+										
+										<a href="http://velop.ru/brands/sks">SKS</a>
+										
+										<a href="http://velop.ru/brands/strida">Strida</a>
+										
+										<a href="http://velop.ru/brands/tbs">TBS</a>
+										
+										<a href="http://velop.ru/brands/vinca_sport">Vinca Sport</a>
+										
+										<a href="http://velop.ru/brands/yueni">YUENI</a>
+										
+										<a href="http://velop.ru/brands/yung_fang">Yung Fang</a>
+										
+										<a href="http://velop.ru/brands/yws">YWS</a>
+												</div>
+						<!-- Все бренды (The End)-->
+
+			<!-- Выбор валюты -->
+						<!-- Выбор валюты (The End) -->	
+
+			
+			<!-- Просмотренные товары -->
+			
+						<!-- Просмотренные товары (The End)-->
+			
+			
+			<!-- Меню блога -->
+			
+						<div id="blog_menu">
+				<h2>Последние новости:</h2>
+								<ul>
+					<li data-post="2">08.09.2015 <a href="http://velop.ru/blog/skidka-do--39-na-letnyuyu-kollektsiyu-2015-goda">Скидка до -39% на летнюю коллекцию 2015 года!</a></li>
+					<br>
+				</ul>
+							</div>
+						<!-- Меню блога  (The End) -->
+			
+		</div>			
+		<div class="clearfix"></div>
+	</div>
+	<!-- Вся страница (The End)--> 
+	
+	<!-- Футер -->
+	<div id="footer">
+		<span style="" wa-subtypes="" wa-id="14" wa-type="NAME" class="WebAnnotator_NAME">Вело Панда </span>- Магазин велосипедов. все права защищены.
+		<br>
+		<a href="http://rcgit.ru/" target="_blank" class="text-uppercase author">
+            Создано и сопровождается
+            <span class="rcgit"></span>
+        </a>
+        <br>
+	</div>
+
+	<!-- Форма обратной связи -->
+
+	<link rel="stylesheet" href="http://velop.ru/fb-form/css/app.css">
+
+  <div class="fb-wrap">
+      <form class="fb-form" action="/fb-form/submit_form.php" method="post">
+          <a href="#" class="fb-form__close fb-form-toggle">
+              <!--?xml version='1.0' ?-->
+              <svg enable-background="new 0 0 128 128" height="15px" id="Слой_1" version="1.1" viewBox="0 0 128 128" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+                  <g>
+                      <polygon fill="#373737" points="123.5429688,11.59375 116.4765625,4.5185547 64.0019531,56.9306641 11.5595703,4.4882813     4.4882813,11.5595703 56.9272461,63.9970703 4.4570313,116.4052734 11.5244141,123.4814453 63.9985352,71.0683594     116.4423828,123.5117188 123.5126953,116.4414063 71.0732422,64.0019531   "></polygon>
+                  </g>
+              </svg>
+          </a>
+          <div class="fb-form__group">
+              <label class="fb-form__label" for="fb-name">Ваше имя *</label>
+              <input class="fb-form__field" name="name" id="fb-name" type="text">
+          </div>
+          <div class="fb-form__group">
+              <label class="fb-form__label" for="fb-contact">Ваш Email или номер телефона *</label>
+              <input class="fb-form__field" name="contact" id="fb-contact" type="text">
+          </div>
+          <div class="fb-form__group">
+              <label class="fb-form__label" for="fb-point">Ваше сообщение *</label>
+              <textarea class="fb-form__field fb-form__field_textarea" name="point" id="fb-point"></textarea>
+          </div>
+          <div class="fb-form__group fb-form__group_line">
+              <input class="fb-form__checkbox" name="agreement" id="fb-agreement" type="checkbox">
+              <label class="fb-form__label" for="fb-agreement">Я даю согласие на обработку своих <a href="http://velop.ru/confpolitics/" target="_blank">персональных данных</a></label>
+          </div>
+          <div class="g-recaptcha fb-form__recaptcha" data-sitekey="6LeEUCcUAAAAADzwtXfPq8oPg4UXhaKMlmeMJ0Gk"><div style="width: 304px; height: 78px;"><div><iframe sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation" scrolling="no" name="a-6j6mcli4reau" role="presentation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeEUCcUAAAAADzwtXfPq8oPg4UXhaKMlmeMJ0Gk&amp;co=aHR0cDovL3ZlbG9wLnJ1Ojgw&amp;hl=ru&amp;v=-nejAZ5my6jV0Fbx9re8ChMK&amp;size=normal&amp;cb=b8c4164r38ic" frameborder="0" height="78" width="304"></iframe></div><textarea style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;" id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"></textarea></div><iframe style="display: none;"></iframe></div>
+          <input class="fb-form__submit" type="submit">
+      </form>
+  </div>
+  <button class="fb-caller fb-form-toggle">Задать вопрос</button>
+    
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="/fb-form/js/app.js"></script>
+
+  <!-- Конец формы обратной связи -->
+
+	<!-- Футер (The End)-->
+	<script src="design/velop/js/popover/jquery.webui-popover.min.js" type="text/javascript"></script>
+	<script src="design/velop/js/jquery.cookie.js" type="text/javascript"></script>
+		
+	<script type="text/javascript">
+		var _0x190c=["\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x70\x6F\x70\x44\x65\x73\x63\x72\x22\x3E\u0412\u0430\u0448\x20\u043A\u0443\u043F\u043E\u043D\x20\u043D\u0430\x20\u0441\u043A\u0438\u0434\u043A\u0443\x3A\x20\x3C\x62\x3E\x51\x30\x39\x56\x55\x45\x39\x4F\x4C\x54\x45\x79\x3C\x2F\x62\x3E\x3C\x2F\x64\x69\x76\x3E","\x77\x65\x62\x75\x69\x50\x6F\x70\x6F\x76\x65\x72","\x2E\x70\x6F\x70\x42\x74\x6E"];(function(_0x934ax1){_0x934ax1(function(){_0x934ax1(_0x190c[2])[_0x190c[1]]({content:_0x190c[0],backdrop:true})})})(jQuery)
+	</script>
+		
+	
+
+<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter29733545 = new Ya.Metrika({id:29733545, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/29733545" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!-- звонилка -->
+<script src="data:text/javascript;charset=utf-8;base64,KGZ1bmN0aW9uKGIsYyl7c2V0VGltZW91dChmdW5jdGlvbigpe3ZhciBhPWRvY3VtZW50LGY9YS5nZXRFbGVtZW50c0J5VGFnTmFtZSgic2NyaXB0IilbMF0scz1hLmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpLGg9ZXNjYXBlKGEucmVmZXJyZXIpO3MudHlwZT0idGV4dC9qYXZhc2NyaXB0IjtzLmNoYXJzZXQ9IlVURi04IjtzLmFzeW5jPSEwO3Muc3JjPSIvLyIrYisiLyIrYysiLmpzP3I9IitNYXRoLnJhbmRvbSgpO2YucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUocyxmKX0sMCl9KSgiYWRtZW8ucnUiLCJjOWI2YzQ4ZmNmYzJkNDBlNDQyNWFmOTA1YjJjNDM4MCIpOw==" async=""></script>
+<!-- /звонилка -->
+
+	
+
+<div style="position: absolute; display: none; top: 163px; left: 481.5px; width: 348px; max-height: 400px; z-index: 9999;" class="autocomplete-suggestions"></div><div style="display: none;" id="baloon"><div class="direct" id="baloonHeader"></div><div id="baloonBody"></div><div id="baloonFooter"></div></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation" scrolling="no" name="c-6j6mcli4reau" style="width: 100%; height: 100%;" src="https://www.google.com/recaptcha/api2/bframe?hl=ru&amp;v=-nejAZ5my6jV0Fbx9re8ChMK&amp;k=6LeEUCcUAAAAADzwtXfPq8oPg4UXhaKMlmeMJ0Gk&amp;cb=62kikncl4npj" title="проверка recaptcha" frameborder="0"></iframe></div></div></body><wa-color id="WA-color-0" bg="#33CCFF" fg="#000000" class="WebAnnotator_ADDRESS" type="ADDRESS"></wa-color><wa-color id="WA-color-1" bg="#FF0000" fg="#000000" class="WebAnnotator_INN" type="INN"></wa-color><wa-color id="WA-color-2" bg="#33FF33" fg="#000000" class="WebAnnotator_KPP" type="KPP"></wa-color><wa-color id="WA-color-3" bg="#CC66CC" fg="#000000" class="WebAnnotator_OGRN" type="OGRN"></wa-color><wa-color id="WA-color-4" bg="#FF9900" fg="#000000" class="WebAnnotator_REG_CBR" type="REG_CBR"></wa-color><wa-color id="WA-color-5" bg="#99FFFF" fg="#000000" class="WebAnnotator_PHONE" type="PHONE"></wa-color><wa-color id="WA-color-6" bg="#FF6666" fg="#000000" class="WebAnnotator_EMAIL" type="EMAIL"></wa-color><wa-color id="WA-color-7" bg="#66FF99" fg="#000000" class="WebAnnotator_LEGAL_NAME" type="LEGAL_NAME"></wa-color><wa-color id="WA-color-8" bg="#3333FF" fg="#FFFFFF" class="WebAnnotator_NAME" type="NAME"></wa-color><wa-color id="WA-color-9" bg="#660000" fg="#FFFFFF" class="WebAnnotator_REGIONS" type="REGIONS"></wa-color><wa-color id="WA-color-10" bg="#006600" fg="#FFFFFF" class="WebAnnotator_RATE" type="RATE"></wa-color><wa-color id="WA-color-11" bg="#663366" fg="#FFFFFF" class="WebAnnotator_CURRENCY" type="CURRENCY"></wa-color><wa-title style="display:none;">Контакты</wa-title></html>
+<!--
+memory peak usage: 912464 bytes
+page generation time: 0.0066640377044678 seconds
+-->

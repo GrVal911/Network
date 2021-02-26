@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+	<title>Проект Worldsupp - поиск финансирования на любые цели в любой стране</title>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">	
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<link rel="shortcut icon" href="https://worldsupp.com/wp-content/themes/money/favicon.ico">
+	<link rel="preload" href="https://worldsupp.com/wp-content/themes/money/css/font-awesome.min.css" as="style" crossorigin="">
+    <link rel="preload" href="https://worldsupp.com/wp-content/themes/money/fonts/fontawesome-webfont.eot" as="font" type="application/vnd.ms-fontobject" crossorigin="">
+    <link rel="preload" href="https://worldsupp.com/wp-content/themes/money/fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://worldsupp.com/wp-content/themes/money/fonts/fontawesome-webfont.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="https://worldsupp.com/wp-content/themes/money/fonts/fontawesome-webfont.ttf" as="font" type="font/ttf" crossorigin="">
+    <link rel="preload" href="https://worldsupp.com/wp-content/themes/money/fonts/fontawesome-webfont.svg" as="font" type="image/svg+xml" crossorigin="">
+    
+    <style type="text/css" media="screen">
+    	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,formlabel,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:top}*{box-sizing:border-box;margin:0;padding:0}html,body{height:100%}body{background:#fff;font:16px/22px 'Open Sans',sans-serif;color:#000}img{max-width:100%;height:auto}strong{font-weight:700}input::-ms-clear{display:none}input{font:16px 'Open Sans',sans-serif;color:#000}textarea{font:16px/24px 'Open Sans',sans-serif;color:#000}::-webkit-input-placeholder{color:#8a8a8a}::-moz-placeholder{color:#8a8a8a}:-ms-input-placeholder{color:#8a8a8a}:-moz-placeholder{color:#8a8a8a}a{color:#000}a:hover{text-decoration:none}@supports(-webkit-overflow-scrolling:touch){textarea,input[type="text"],input[type="button"],input[type="submit"]{-webkit-appearance:none}}.hidden,.d-none{display:none}.q-wrapper{display:table;width:100%;height:100%;overflow:hidden;table-layout:fixed}.q-content-wrapper{display:table-row;height:100%}.q-inner{width:100%;max-width:1280px;margin:0 auto;padding:0 20px}.q-content .q-inner{padding-top:40px}.q-header__top{background:#345a8c;background:#345a8c;color:#fff}.q-header__top .q-inner{display:flex;align-items:center}.q-header__bottom{background:#f5f9fb}.q-logo{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;height:auto}.q-logo__container{flex-shrink:0}.q-header-menu{padding-left:0;margin-left:auto;font-size:14px}.q-header-menu__item{display:inline-block;position:relative;padding-left:29px;margin-top:0;margin-left:28px}.q-header-menu__item>a,.q-header-menu__item>a>i{line-height:19px}.q-header-menu__item i{padding-right:5px}.q-header-menu__item .df{align-items:center}.q-header-menu__item .df .img_wr{padding-right:10px}.q-header-menu__item::before{width:1px;height:11px;background:#fff;position:absolute;left:0;top:50%;margin-top:-4.5px;content:""}.q-header-menu__item:first-child{padding-left:0}.q-header-menu__item:first-child::before{display:none}.q-header-menu__link{color:#fff;text-decoration:none;opacity:1;transition:opacity 300ms}.q-header-menu__link:hover{opacity:.85}.q-header-settings{padding-left:49px;display:flex;align-items:center}.q-header-settings__item{padding-right:15px;padding-left:15px;cursor:pointer;display:inline-flex;height:70px;align-items:center;transition:background 300ms;position:relative}.q-header-settings__item_link{color:#fff;text-decoration:none}.q-header-settings__item_search{padding:0}.q-header-settings__item_search.active{display:inline-block;background:#264977;background:#264977}.q-header-settings__icon-wrapper{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-ms-align-items:center;align-items:center;width:100%;height:100%;padding-right:15px;padding-left:15px}.q-header-settings__item_callback{width:60px;padding:0}.q-header-settings__item:hover{background:#264977;background:#264977}.q-header-settings__item:hover .q-header-settings__item--icon._with-arrow::before{transform:rotate(-45deg)}.q-header-settings__item:hover .q-header-settings__item--icon._with-arrow::after{transform:rotate(45deg)}.q-header-settings__item:hover .q-header-settings__item--dropdown{opacity:1;visibility:visible}.q-header-settings__item--dropdown li{display:block;line-height:12px}.q-header-settings__item--dropdown li a{color:#fff;font-size:12px;text-decoration:none;line-height:12px}.q-header-settings__item--dropdown li a img{margin-right:5px}.q-header-settings__item:last-child{padding-right:17px}.q-header-settings__item:last-child._with-arrow{padding-right:14px}.q-header-settings__item--dropdown{width:335px;background:#264977;background:#264977;position:absolute;left:0;top:calc(100% - 1px);padding:15px;z-index:2;cursor:default;opacity:0;visibility:hidden;transition:opacity 300ms}.q-header-settings__item--info{display:block;padding:0 0 11px}.q-header-settings__item--info:last-child{padding-bottom:0}.q-header-settings__item--info a{color:#fff;text-decoration:none}.q-header-settings__item--icon{display:inline-block;position:relative;cursor:pointer;height:19px}.q-header-settings__item--icon._with-arrow{margin-right:17px}.q-header-settings__item--icon._with-arrow::before,.q-header-settings__item--icon._with-arrow::after{width:6px;height:2px;background:#fff;position:absolute;right:-14px;top:50%;content:"";transform:rotate(45deg);margin-top:-2px;transition:transform 300ms}.q-header-settings__item--icon._with-arrow::after{transform:rotate(-45deg);right:-18px}.q-header-settings__item--icon._search{width:21px;height:20px;background:url(../img/icon_search.svg) no-repeat}.searchform-wrapper{display:none;-ms-align-items:center;align-items:center;height:100%;width:auto;padding-left:10px;padding-right:10px;position:absolute;top:0;left:0;z-index:9;background-color:#264977;background-color:#264977;border-radius:4px;overflow:hidden}.q-header-settings__item_search.active .searchform-wrapper{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex}.searchform{height:40px;position:relative;border-radius:4px;overflow:hidden}.searchform__input{width:300px;height:40px;padding:5px;border:0}.searchform input[type="submit"]{display:none;width:40px;height:40px;position:absolute;top:0;right:0;z-index:9;font-size:0;cursor:pointer}.search-results__item{margin-bottom:20px}.search-results h2>a{display:block;margin-bottom:5px;font-size:1.25rem;line-height:1.3}/* .q-header-settings__item--icon._phone{width:20px;background:url(../img/icon_phone.svg) no-repeat} */.q-header-settings__item--icon._vk{width:31px;background:url(../img/icon_vk.svg) no-repeat}.q-header-settings__item--icon._message{width:29px;background:url(../img/icon_message.svg) no-repeat}.q-header-settings__item--icon._libra{width:24px;background:url(../img/icon_libra.svg) no-repeat}.q-header-settings__item>a{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-ms-align-items:center;align-items:center;justify-content:center;width:100%;height:100%}.q-header-bottom-menu{padding-left:0;font-size:14px;font-weight:700}.q-header-bottom-menu__item,.q-header-bottom-menu>li{position:relative;display:inline-block;margin:0 36px 0 -15px}.q-header-bottom-menu__item:last-child,.q-header-bottom-menu>li:last-child{margin-right:0}.q-header-bottom-menu__item:last-child .q-header-bottom-submenu,.q-header-bottom-menu>li:last-child>ul{left:auto;right:0}.q-header-bottom-menu__item:hover .q-header-bottom-menu__link,.q-header-bottom>li:hover>a{background:#ebf5fb}.q-header-bottom-menu__item:hover .q-header-bottom-menu__link::before,.q-header-bottom-menu>li:hover>a::before{transform:rotate(-45deg)}.q-header-bottom-menu__item:hover .q-header-bottom-menu__link::after,.q-header-bottom-menu>li:hover>a::after{transform:rotate(45deg)}.q-header-bottom-menu__item:hover .q-header-bottom-submenu,.q-header-bottom-menu__item:hover>ul,.q-header-bottom-menu>li:hover>ul{display:block;opacity:1;visibility:visible}.q-header-bottom-menu__link,.q-header-bottom-menu>li>a{display:inline-block;text-decoration:none;padding:18px 15px}.q-header-bottom-menu__link:hover,.q-header-bottom-menu>li>a:hover{opacity:.6}._with-dropdown .q-header-bottom-menu__link,.q-header-bottom-menu .menu-item-has-children>a{padding-right:42px}._with-dropdown .q-header-bottom-menu__link::before,._with-dropdown .q-header-bottom-menu__link::after,.q-header-bottom-menu .menu-item-has-children>a::before,.q-header-bottom-menu .menu-item-has-children>a::after{width:6px;height:2px;background:#000;position:absolute;right:14px;top:50%;content:"";transform:rotate(45deg);margin-top:-1px;transition:transform 300ms}._with-dropdown .q-header-bottom-menu__link::after,.q-header-bottom-menu .menu-item-has-children>a::after{transform:rotate(-45deg);right:10px}.q-header-bottom-submenu,.q-header-bottom-menu ul{width:200px;max-height:400px;padding:5px 15px 15px;position:absolute;top:100%;left:0;z-index:2;opacity:0;visibility:hidden;background:#ebf5fb;overflow-y:auto;transition:opacity 300ms;list-style-type:none}.q-header-bottom-submenu__item,.q-header-bottom-menu ul li{padding:0 0 11px}.q-header-bottom-submenu__item:nth-child(n+2),.q-header-bottom-menu ul li:nth-child(n+2){margin-top:0}.q-header-bottom-submenu__item:last-child,.q-header-bottom-menu ul li:last-child{padding-bottom:0}.q-header-bottom-submenu__item a,.q-header-bottom-menu ul li a{display:block}.q-header-bottom-submenu__item:hover a,.q-header-bottom-menu ul li:hover a{background-color:rgba(255,255,255,0.1)}.q-mobile-burger{width:30px;height:24px;cursor:pointer;position:relative;margin-left:auto;display:none}.q-mobile-burger span,.q-mobile-burger::before,.q-mobile-burger::after{display:block;width:30px;height:2px;margin-bottom:9px;position:relative;background:#fff;z-index:1;transform-origin:4px 0;transition:transform .5s cubic-bezier(0.77,0.2,0.05,1)}.q-mobile-burger::before,.q-mobile-burger::after{content:""}.q-mobile-burger::before{transform-origin:0 0}.q-mobile-burger::after{transform-origin:0 100%}._opened-menu.q-mobile-burger span{opacity:0;transform:rotate(0) scale(0.2,0.2)}._opened-menu.q-mobile-burger::before{opacity:1;transform:rotate(45deg) translate(0,-1px)}._opened-menu.q-mobile-burger::after{transform:rotate(-45deg) translate(2px,-1px)}.banner-front{height:150px;padding-top:60px;text-align:center}.banner-front__text{padding-right:15px;padding-left:15px;font-size:28px;color:#fefefe}.banner-front__text-underlined{display:inline-block;padding-bottom:4px;margin-bottom:-4px;border-bottom:1px dashed #fefefe}.nav-blocks{margin-top:10px}.nav-blocks__list{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;flex-wrap:wrap;justify-content:space-between;padding-left:0}.nav-blocks__card{display:inline-block;width:23.8%;height:150px;margin-top:20px;text-align:center;background-position:center 18px;background-repeat:no-repeat;border:1px solid #d2d7dc;border-radius:3px}.nav-blocks__card:hover{background-color:#345a8c}.nav-blocks__card a{display:block;height:100%;padding-top:80px;font-size:16px;text-decoration:none}.nav-blocks__card:hover a{font-weight:600;text-decoration:underline;color:#fff}
+    </style>
+    
+    
+    	
+		
+	
+	
+	<meta name="description" content="Более 10 000 пользователей. Более 100 заявок каждый день. Найдите деньги для ваших целей и проектов в любое время и любой точке мира">
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="https://worldsupp.com/">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Проект Worldsupp - поиск финансирования на любые цели в любой стране">
+	<meta property="og:description" content="Более 10 000 пользователей. Более 100 заявок каждый день. Найдите деньги для ваших целей и проектов в любое время и любой точке мира">
+	<meta property="og:url" content="https://worldsupp.com/">
+	<meta property="og:site_name" content="Россия">
+	<meta property="article:modified_time" content="2020-09-24T14:28:32+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<script src="https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js" async="" type="text/javascript"></script><script src="https://www.google-analytics.com/analytics.js" async="" type="text/javascript"></script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://worldsupp.com/#website","url":"https://worldsupp.com/","name":"\u0420\u043e\u0441\u0441\u0438\u044f","description":"","potentialAction":[{"@type":"SearchAction","target":"https://worldsupp.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"ru-RU"},{"@type":"WebPage","@id":"https://worldsupp.com/#webpage","url":"https://worldsupp.com/","name":"\u041f\u0440\u043e\u0435\u043a\u0442 Worldsupp - \u043f\u043e\u0438\u0441\u043a \u0444\u0438\u043d\u0430\u043d\u0441\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f \u043d\u0430 \u043b\u044e\u0431\u044b\u0435 \u0446\u0435\u043b\u0438 \u0432 \u043b\u044e\u0431\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0435","isPartOf":{"@id":"https://worldsupp.com/#website"},"datePublished":"2020-01-22T11:54:45+00:00","dateModified":"2020-09-24T14:28:32+00:00","description":"\u0411\u043e\u043b\u0435\u0435 10 000 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u0439. \u0411\u043e\u043b\u0435\u0435 100 \u0437\u0430\u044f\u0432\u043e\u043a \u043a\u0430\u0436\u0434\u044b\u0439 \u0434\u0435\u043d\u044c. \u041d\u0430\u0439\u0434\u0438\u0442\u0435 \u0434\u0435\u043d\u044c\u0433\u0438 \u0434\u043b\u044f \u0432\u0430\u0448\u0438\u0445 \u0446\u0435\u043b\u0435\u0439 \u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432 \u0432 \u043b\u044e\u0431\u043e\u0435 \u0432\u0440\u0435\u043c\u044f \u0438 \u043b\u044e\u0431\u043e\u0439 \u0442\u043e\u0447\u043a\u0435 \u043c\u0438\u0440\u0430","inLanguage":"ru-RU","potentialAction":[{"@type":"ReadAction","target":["https://worldsupp.com/"]}]}]}</script>
+	
+
+
+<style>.pseudo-clearfy-link { color: #008acf; cursor: pointer;}.pseudo-clearfy-link:hover { text-decoration: none;}</style><link rel="icon" href="https://worldsupp.com/wp-content/uploads/2020/09/cropped-fav_01-32x32.png" sizes="32x32">
+<link rel="icon" href="https://worldsupp.com/wp-content/uploads/2020/09/cropped-fav_01-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://worldsupp.com/wp-content/uploads/2020/09/cropped-fav_01-180x180.png">
+<meta name="msapplication-TileImage" content="https://worldsupp.com/wp-content/uploads/2020/09/cropped-fav_01-270x270.png">
+	 
+		<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+              {
+        "@type": "Question",
+        "name": "Что будет если не платить займ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Согласно Российскому законодательству максимальная сумма займа со всеми штрафами не может превышать более 100% от суммы суды. Поэтому взяв 100 рублей максимум вы заплатите не более 200 рублей. Но стоит иметь ввиду что полностью испортив кредитную историю вы более не сможете взять кредит нигде. "
+        }
+        
+      },            {
+        "@type": "Question",
+        "name": "Чем отличаются условия МФО на самом деле? ",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Многие МФО выдают займы новых клиентам под 0%. Это отличный вариант, чтобы получить в первый раз ссуду и не заплатив ничего за ее использование.  Если вы работаете с одной компанией, то в будущем она будет предлагать вам более лояльные условия. Так же нужно внимательно читать все договора, чтобы знать на каких условиях вы получаете деньги"
+        }
+        
+      },            {
+        "@type": "Question",
+        "name": "Лучше получать наличными или на карту",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "С одной стороны наличными можно получить сумму больше. С другой стороны выплата на карту осуществляется намного быстрее и не зависит от вашего местоположения"
+        }
+        
+      }            ]
+    }
+    </script>
+        
+    
+    
+        <script type="application/ld+json">
+    {
+    "@context":"http://schema.org",
+    "@type":"BlogPosting",
+    "@id":"https://worldsupp.com/",
+    "headline":"Главная",
+            "description":"Самые выгодные займы от банков и МФО для москвичей в любых жизненных ситуациях",
+            
+    "author":"Азизбек",
+    "dateModified":"2020-09-24T17:28:32+03:00",
+    "datePublished":"2020-01-22T14:54:45+03:00",
+    "mainEntityOfPage":"Главная",
+    "publisher": {
+        "@type": "Organization",
+        "name": "worldsupp",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://worldsupp.com/wp-content/themes/money/img/logo.png"
+        }
+    },
+    "image":"https://secure.gravatar.com/avatar/e128e9ee428f416c6d093ed872ce837b?s=96&d=mm&r=g"
+    }
+    </script>
+    	
+	<meta name="yandex-verification" content="aad887bc1efd837d">
+	
+	<link rel="alternate" hreflang="ru" href="https://worldsupp.com/"><link rel="alternate" hreflang="ru-UA" href="https://worldsupp.com/ru-ua"><link rel="alternate" hreflang="ru-UA" href="https://worldsupp.com/ru-kz"><link rel="alternate" hreflang="ru-KG" href="https://worldsupp.com/ru-kg"><link rel="alternate" hreflang="ky-KG" href="https://worldsupp.com/ky-kg"><link rel="alternate" hreflang="uk-UA" href="https://worldsupp.com/uk-ua"><link rel="alternate" hreflang="ru-UZ" href="https://worldsupp.com/ru-uz"><link rel="alternate" hreflang="ru-UZ" href="https://worldsupp.com/uz-uz"><link rel="alternate" hreflang="ru-BY" href="https://worldsupp.com/ru-by">	
+		
+	<script>
+    var priceRangeConfig = {
+		priceRange:{
+			min: 1000,
+			max: 100000,
+			value: 25000,
+			step: 1000,
+			ticksValues: ["1000", "25000", "50000", "100000"]		},
+		daysRange: {
+			min: 1,
+			max: 120,
+			value: 12,
+			step: 1,
+			ticksValues: ["1", "30", "60", "120"]
+		}
+	};
+	</script>
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-176558002-1" async="" type="text/javascript"></script></head>
+
+<body class="home page-template-default page page-id-2565 page-page" data-page-id="2565">
+<div class="q-wrapper">
+	<div class="q-content-wrapper">
+		<header class="q-header">
+			<div class="q-header__top">
+				<div class="q-inner">
+					<div class="q-logo__container">
+						<a href="https://worldsupp.com/" class="q-logo">
+    													<img src="https://worldsupp.com/wp-content/themes/money/img/logo.png" alt="worldsupp.com" class="q-logo__img">
+						</a>
+					</div>
+					
+					<div class="q-header-settings">
+    											<div class="q-header-settings__item q-header-settings__item_search">
+						  <div class="q-header-settings__icon-wrapper">
+							  <i class="q-header-settings__item--icon _search"></i>
+							</div>
+							<div class="searchform-wrapper">
+	<form class="searchform" id="searchform" action="/">		
+		<input class="field searchform__input" name="s" id="s" placeholder="Поиск" type="text">
+		<input class="submit" id="searchsubmit" value="Искать" type="submit">
+	</form>
+</div>						</div>
+						
+												<div class="q-header-settings__item">
+							<i class="q-header-settings__item--icon _phone _with-arrow"></i>
+							<div class="q-header-settings__item--dropdown">
+    															<span class="q-header-settings__item--info">Адрес: <strong>Москва, ул. Космонавта Волкова, 6А, офис 217. </strong></span>
+																<span class="q-header-settings__item--info">Телефон: <strong>8 (800)571-02-19 </strong></span>
+																<span class="q-header-settings__item--info">Email: <strong>info@worldsupp.com </strong></span>
+																<span class="q-header-settings__item--info">Ежедневно с 9:00 до 21:00: <strong>Ежедневно с 9:00 до 21:00</strong></span>
+															</div>
+						</div>
+						
+						<div class="q-header-settings__item q-header-settings__soc">
+							<i class="q-header-settings__item--icon _vk _with-arrow"></i>
+							<div class="q-header-settings__item--dropdown">
+    							    							<div class="df_soc df">
+        							<a target="_blank" rel="nofollow" href="https://vk.com/worldsupplier" class="df soc_item"><img src="https://worldsupp.com/wp-content/uploads/2020/08/vk.png" alt=""></a><a target="_blank" rel="nofollow" href="#" class="df soc_item"><img src="https://worldsupp.com/wp-content/uploads/2020/08/facebook.png" alt=""></a><a target="_blank" rel="nofollow" href="#" class="df soc_item"><img src="https://worldsupp.com/wp-content/uploads/2020/08/youtube.png" alt=""></a><a target="_blank" rel="nofollow" href="https://www.pinterest.ru/worldsupp/%D0%B4%D0%B5%D0%BD%D1%8C%D0%B3%D0%B8-%D0%B8-%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81/" class="df soc_item"><img src="https://worldsupp.com/wp-content/uploads/2020/08/pinterest.png" alt=""></a><a target="_blank" rel="nofollow" href="#" class="df soc_item"><img src="https://worldsupp.com/wp-content/uploads/2020/08/telegram.png" alt=""></a><a target="_blank" rel="nofollow" href="#" class="df soc_item"><img src="https://worldsupp.com/wp-content/uploads/2020/08/instagram-sketched.png" alt=""></a><a target="_blank" rel="nofollow" href="https://zen.yandex.ru/id/5b4f3aa0e5179300a8be5ea7" class="df soc_item"><img src="https://worldsupp.com/wp-content/uploads/2020/10/imgonline-com-ua-resize-ez4jvicnpp.jpg" alt=""></a>    							</div>
+    														</div>
+						</div>
+												
+						<div class="q-header-settings__item q-header-settings__item_callback">
+						    <a href="#form-callback-container" rel="modal:open">
+							  <i class="q-header-settings__item--icon _message"></i>
+							</a>
+						</div>
+						
+						<a class="q-header-settings__item" href="https://worldsupp.com/compare/">
+							<i class="q-header-settings__item--icon _libra"></i>
+						</a>
+												
+					</div>
+					<ul class="q-header-menu">
+    					                        <li class="q-header-menu__item">
+					        <a href="https://worldsupp.com/ratings/" class="q-header-menu__link">Рейтинги</a>
+						</li>
+						                        <li class="q-header-menu__item">
+					        <a href="https://worldsupp.com/reviews/" class="q-header-menu__link">Обзоры</a>
+						</li>
+						                        <li class="q-header-menu__item">
+							<a href="https://worldsupp.com/wp-admin" class="q-header-menu__link">Вход</a>
+						</li>
+                        					</ul>
+					
+					<div class="q-header-settings__item" style="position: relative;margin-left: 20px;">
+    					<i class="q-header-settings__item--icon _with-arrow" style="width: 16px;background: url(https://worldsupp.com/wp-content/uploads/2020/08/ru.png) no-repeat center center"></i>
+						    <ul class="q-header-settings__item--dropdown" style="right: 0;left: auto;width: 125px;">
+    						    <li><a href="https://worldsupp.com/"><img src="https://worldsupp.com/wp-content/uploads/2020/08/ru.png?%3E" alt=""> RUS</a></li><li><a href="https://worldsupp.com/ru-ua"><img src="https://worldsupp.com/wp-content/uploads/sites/2/2020/08/ua.png?%3E" alt=""> UA</a></li><li><a href="https://worldsupp.com/ru-kz"><img src="https://worldsupp.com/wp-content/uploads/sites/3/2020/08/kz.cbfqq_.jpg?%3E" alt=""> KZ</a></li><li><a href="https://worldsupp.com/ru-kg"><img src="https://worldsupp.com/wp-content/uploads/sites/4/2020/09/1_525535b041d94525535b041dd3.sagfs_.gif?%3E" alt=""> КГЗ</a></li><li><a href="https://worldsupp.com/ky-kg"><img src="https://worldsupp.com/wp-content/uploads/sites/7/2020/09/1_525535b041d94525535b041dd3.sagfs_.gif?%3E" alt=""> KG</a></li><li><a href="https://worldsupp.com/uk-ua"><img src="https://worldsupp.com/wp-content/uploads/sites/9/2020/08/ua.png?%3E" alt=""> Україна</a></li><li><a href="https://worldsupp.com/ru-uz"><img src="https://worldsupp.com/wp-content/uploads/sites/10/2020/10/imgonline-com-ua-resize-syr1hgopx9s.jpg?%3E" alt=""> Узбекистан</a></li><li><a href="https://worldsupp.com/uz-uz"><img src="https://worldsupp.com/wp-content/uploads/sites/12/2020/10/imgonline-com-ua-resize-syr1hgopx9s.jpg?%3E" alt=""> Oʻzbekiston</a></li><li><a href="https://worldsupp.com/ru-by"><img src="https://worldsupp.com/wp-content/uploads/sites/13/2020/11/bialorus.lhpiw_.jpg?%3E" alt=""> BY</a></li>						    </ul>
+                    </div>
+					
+					<div class="q-mobile-burger js-toggle-menu">
+						<span></span>
+					</div>
+					
+				</div>
+			</div>
+			<div class="q-header__bottom">
+    							<div class="q-inner">
+    									<ul class="q-header-bottom-menu q-header-bottom-menu_region js-menu">
+    											<li class="q-header-bottom-menu__item _with-dropdown j-users-region">
+							<a href="#" class="q-header-bottom-menu__link"><span style="" wa-subtypes="" wa-id="9" wa-type="REGIONS" class="WebAnnotator_REGIONS">Санкт-Петербург</span></a>
+							<ul class="q-header-bottom-submenu">
+								                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/sankt-peterburg/" class="q-header-bottom-submenu__link">Санкт-Петербург</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/novosibirsk/" class="q-header-bottom-submenu__link">Новосибирск</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/ekaterinburg/" class="q-header-bottom-submenu__link">Екатеринбург</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/kazan/" class="q-header-bottom-submenu__link">Казань</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/nijniy-novgorod/" class="q-header-bottom-submenu__link">Нижний Новгород</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/chelyabinsk/" class="q-header-bottom-submenu__link">Челябинск</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/samara/" class="q-header-bottom-submenu__link">Самара</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/omsk/" class="q-header-bottom-submenu__link">Омск</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/rostov/" class="q-header-bottom-submenu__link">Ростов-на-Дону</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/yfa/" class="q-header-bottom-submenu__link">Уфа</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/krasnoyarsk/" class="q-header-bottom-submenu__link">Красноярск</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/voronesh/" class="q-header-bottom-submenu__link">Воронеж</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/perm/" class="q-header-bottom-submenu__link">Пермь</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/volgograd/" class="q-header-bottom-submenu__link">Волгоград</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/krasnodar/" class="q-header-bottom-submenu__link">Краснодар</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/saratov/" class="q-header-bottom-submenu__link">Саратов</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/tumen/" class="q-header-bottom-submenu__link">Тюмень</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/toliatti/" class="q-header-bottom-submenu__link">Тольятти</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/ijevsk/" class="q-header-bottom-submenu__link">Ижевск</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/barnaul/" class="q-header-bottom-submenu__link">Барнаул</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/ylianovsk/" class="q-header-bottom-submenu__link">Ульяновск</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/irkutsk/" class="q-header-bottom-submenu__link">Иркутск</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/habarovsk/" class="q-header-bottom-submenu__link">Хабаровск</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/yaroslavl/" class="q-header-bottom-submenu__link">Ярославль</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/vladivostok/" class="q-header-bottom-submenu__link">Владивосток</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/mahachkala/" class="q-header-bottom-submenu__link">Махачкала</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/tomsk/" class="q-header-bottom-submenu__link">Томск</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/orenburg/" class="q-header-bottom-submenu__link">Оренбург</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/kemerovo/" class="q-header-bottom-submenu__link">Кемерово</a>
+                                </li>
+                                                                <li class="q-header-bottom-submenu__item">
+                                  <a href="https://worldsupp.com/moskva/" class="q-header-bottom-submenu__link">Москва</a>
+                                </li>
+                                							</ul>
+						</li>
+						<li id="menu-item-35673" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-35673"><a href="https://worldsupp.com/bez-otkazov/">Без отказов</a>
+<ul class="sub-menu">
+	<li id="menu-item-35674" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35674"><a href="https://worldsupp.com/mikrozaimy/">Микрозаймы</a></li>
+	<li id="menu-item-35675" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35675"><a href="https://worldsupp.com/mikrokredity/">Микрокредиты</a></li>
+	<li id="menu-item-35676" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35676"><a href="https://worldsupp.com/mini/">Мини кредиты</a></li>
+</ul>
+</li>
+<li id="menu-item-35677" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35677"><a href="https://worldsupp.com/zaim-proverok/">Без проверок</a></li>
+<li id="menu-item-35678" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35678"><a href="https://worldsupp.com/dengi-v-dolg/">Деньги в долг</a></li>
+<li id="menu-item-35679" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35679"><a href="https://worldsupp.com/na-kartu/">На карту</a></li>
+<li id="menu-item-35680" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35680"><a href="https://worldsupp.com/online">Онлайн</a></li>
+<li id="menu-item-35681" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35681"><a href="https://worldsupp.com/pod-zalog/">Под залог</a></li>
+<li id="menu-item-35682" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35682"><a href="https://worldsupp.com/srochnye/">Срочные</a></li>
+<li id="menu-item-35683" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35683"><a href="https://worldsupp.com/ak%D1%81ya/">Акции</a></li>
+						
+					</ul>
+				</div>
+							</div>
+		</header>
+		<!-- end of Header -->
+		<div class="q-content">
+			<div class="q-inner">
+            			<div class="banner-front" style="background: #264977 url(https://worldsupp.com/wp-content/themes/money/img/bg-banner-front.jpg);">
+                <div class="banner-front__text"><span style="" wa-subtypes="" wa-id="10" wa-type="NAME" class="WebAnnotator_NAME">World Supplier </span>- портал где можно найти <span class="banner-front__text-underlined">Деньги</span>, <span class="banner-front__text-underlined">Бизнес услуги</span> и <span class="banner-front__text-underlined">Фин. Помощь</span> в мире</div>
+			</div>
+						<div class="nav-blocks">
+			  <ul class="nav-blocks__list">
+                			    <li class="nav-blocks__card">
+			      <a href="https://worldsupp.com/fin-pomosch/" class="nav-blocks__link">Финансовая помощь <br>
+и фандрайзинг</a>
+			    </li>
+			    			    <li class="nav-blocks__card">
+			      <a href="https://worldsupp.com/chastniy/" class="nav-blocks__link">P2P Кредитование</a>
+			    </li>
+			    			    <li class="nav-blocks__card">
+			      <a href="https://worldsupp.com/online/" class="nav-blocks__link">Онлайн Займы от МФО</a>
+			    </li>
+			    			    <li class="nav-blocks__card">
+			      <a href="https://worldsupp.com/pomosh-kredit/" class="nav-blocks__link">Рейтинг кредитных <br>
+брокеров</a>
+			    </li>
+			    			    <li class="nav-blocks__card">
+			      <a href="https://worldsupp.com/dolgi/" class="nav-blocks__link">Купля продажа долгов по <br>
+всему миру</a>
+			    </li>
+			    			    <li class="nav-blocks__card">
+			      <a href="https://worldsupp.com/yuristy/" class="nav-blocks__link">Юридические услуги <br>
+Chargeback</a>
+			    </li>
+			    			    <li class="nav-blocks__card">
+			      <a href="https://worldsupp.com/lombardy/" class="nav-blocks__link">Рейтинг <br>
+ломбардов</a>
+			    </li>
+			    			    <li class="nav-blocks__card">
+			      <a href="https://worldsupp.com/kreditnye-brokery/" class="nav-blocks__link">Бизнес услуги и <br>
+консалтинг</a>
+			    </li>
+			    			  </ul>
+			</div>
+						<div class="news-preview">
+			  <h2 class="news-preview__title">Новости</h2>
+			  <div class="news-preview__list">
+                        <div class="news-preview__card news-preview__card_big" style="background: #345a8c url() no-repeat 50% 50%;">
+                <a href="https://worldsupp.com/news/novinka-dlya-bankovskogo-sektora-umnye-steklopakety/" class="news-preview__card-title news-preview__card-title_big">Новинка для банковского сектора — умные стеклопакеты!</a>
+                                <div class="news-preview__label">Кредиты</div>
+                                <div class="news-preview__date">25.11.2020</div>
+              </div>
+                          <div class="news-preview__card news-preview__card_big" style="background: #345a8c url() no-repeat 50% 50%;">
+                <a href="https://worldsupp.com/news/vozmozhno-vam-ne-pridetsya-platit-za-nekachestvennoe-zhile-i-uslugi/" class="news-preview__card-title news-preview__card-title_big">Возможно, вам не придется платить за некачественное жилье и услуги ЖКХ.</a>
+                                <div class="news-preview__label">Кредиты</div>
+                                <div class="news-preview__date">01.11.2020</div>
+              </div>
+                          <div class="news-preview__card news-preview__card_small" style="background: #345a8c url() no-repeat 50% 50%;">
+                <a href="https://worldsupp.com/news/banki-smogut-otvechat-na-obrascheniya-v-soobscheniyah/" class="news-preview__card-title news-preview__card-title_small">Банки смогут отвечать на обращения в сообщениях</a>
+                                <div class="news-preview__date"></div>
+              </div>
+                          <div class="news-preview__card news-preview__card_small" style="background: #345a8c url() no-repeat 50% 50%;">
+                <a href="https://worldsupp.com/news/tsifrovye-kreditnye-kartochki-dlya-predpriyatiy-rosbanka/" class="news-preview__card-title news-preview__card-title_small">Цифровые кредитные карточки для предприятий Росбанка</a>
+                                <div class="news-preview__date"></div>
+              </div>
+                          <div class="news-preview__card news-preview__card_small" style="background: #345a8c url() no-repeat 50% 50%;">
+                <a href="https://worldsupp.com/news/bank-rossii-hochet-sozdat-reestr-nelegalnyh-finansovyh-uslug/" class="news-preview__card-title news-preview__card-title_small">Банк России хочет создать реестр нелегальных финансовых услуг</a>
+                                <div class="news-preview__date">28.10.2020</div>
+              </div>
+                          <div class="news-preview__card news-preview__card_small" style="background: #345a8c url() no-repeat 50% 50%;">
+                <a href="https://worldsupp.com/news/volodin-rossiya-preodolevaet-ekonomicheskiy-krizis-bolee-uspeshno-chem-drugie-strany/" class="news-preview__card-title news-preview__card-title_small">Володин: Россия преодолевает экономический кризис более успешно, чем другие страны.</a>
+                                <div class="news-preview__date"></div>
+              </div>
+            
+			  </div>
+			</div>
+						<div class="support">
+			  <h2 class="support__title">Служба поддержки</h2>
+			  <div class="support__text">У вас есть вопросы по работе личного кабинета или выборе продукта?<br>
+Выберите удобный для вас способ связи и оставьте заявку на получение консультации</div>
+			  <div class="support__section support__section_ways">
+			    <h3 class="support__section-title">Способы связи:</h3>
+			    <ul class="support__links-list">
+    			    			        <li class="support__links-item">
+        			    <a href="#" class="support__link"><i class="fa fa-comments-o"></i><span class="support__link-decor">Открыть онлайн-консультант</span></a>
+                    </li>
+                    			        <li class="support__links-item">
+        			    <a href="#form-callback-container" class="support__link" rel="modal:open"><i class="fa fa-phone"></i><span class="support__link-decor">Заказать обратный звонок</span></a>
+                    </li>
+                    			        <li class="support__links-item">
+        			    <a href="mailto:info@worldsupp.com" class="support__link"><i class="fa fa-envelope-o"></i><span class="support__link-decor"><span style="" wa-subtypes="" wa-id="12" wa-type="EMAIL" class="WebAnnotator_EMAIL">info@worldsupp.com</span></span></a>
+                    </li>
+                    			        <li class="support__links-item">
+        			    <a href="#" class="support__link"><i class="fa fa-telegram"></i><span class="support__link-decor">@worldsupp</span></a>
+                    </li>
+                    			        <li class="support__links-item">
+        			    <a href="tel:+78003025650" class="support__link"><i class="fa fa-mobile"></i><span class="support__link-decor"><span style="" wa-subtypes="" wa-id="13" wa-type="PHONE" class="WebAnnotator_PHONE">+7(800)302-56-50</span></span></a>
+                    </li>
+                                    </ul>
+			  </div>
+			  <div class="support__section support__section_hotline">
+			    <h3 class="support__section-title">Горячая линия</h3>
+			    <p>Бесплатный номер телефона по России</p>
+			    <a href="tel:+78003025650" class="support__link support__link_hotline"><span class="support__link-decor"><span style="" wa-subtypes="" wa-id="11" wa-type="PHONE" class="WebAnnotator_PHONE">+7 (800) 302-56-50</span></span></a>
+			  </div>
+			  
+			  <div class="support__decor">
+			    <div class="support__decor-text">
+			      <span class="support__decor-text_strong">Алексей Лейхвис</span>Cлужба поддержки			    </div>
+			  </div>
+
+			</div>
+            		</div>
+	</div>
+	<!-- /.q-content -->
+
+  </div>
+  <!-- /.q-content-wrapper -->
+	<!-- footer -->
+		<footer class="footer" id="footer">
+		<div class="footer-top">
+			<div class="q-inner">
+    							<div class="q-logo__container">
+					<a href="https://worldsupp.com/" class="q-logo">
+						<img src="https://worldsupp.com/wp-content/themes/money/img/logo.png" alt="worldsupp" class="q-logo__img">
+					</a>
+				</div>				
+								<div class="menu-podval-container"><ul class="footer-menu"><li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="https://worldsupp.com/about/">О проекте</a></li>
+<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="https://worldsupp.com/contacts/">Контакты</a></li>
+<li id="menu-item-18856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18856"><a href="https://worldsupp.com/soglashenie">Пользовательское соглашение</a></li>
+<li id="menu-item-139106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139106"><a href="https://worldsupp.com/karta-sayta/">Карта cайта</a></li>
+<li id="menu-item-18850" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18850"><a href="https://worldsupp.com/vacancies">Наши вакансии</a></li>
+<li id="menu-item-114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114"><a href="https://worldsupp.com/reklama/">Реклама</a></li>
+<li id="menu-item-18847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18847"><a href="https://worldsupp.com/support">Служба поддержки</a></li>
+</ul></div>			</div>
+		</div>
+		<!-- /.footer-top -->
+		
+		<div class="footer-mid">
+		  <div class="q-inner">
+		    <div class="footer-mid-left">
+		      <div class="footer__mobile-app">
+		        <div class="block__title">Установка мобильного приложения</div>
+		        <p>Наведите камеру своего смартфона на QR-код и перейдите по ссылке</p>
+		      </div>
+		      <div class="footer__stores">
+		        <div class="block__title"></div>
+		        		        <a href="#" class="footer__app-store"></a>
+		        		        <a href="#" class="footer__google-play"></a>
+		        		      </div>
+		    </div>
+		    <div class="footer-mid-center">
+		      <div class="footer__social">
+		        <div class="block__title">Мы в соц. сетях</div>
+            <div class="footer__social-links">
+            <a style="background: transparent" target="_blank" rel="nofollow" href="https://vk.com/worldsupplier" class="footer__icon"><img src="https://worldsupp.com/wp-content/uploads/2020/08/vk.png" alt=""></a><a style="background: transparent" target="_blank" rel="nofollow" href="#" class="footer__icon"><img src="https://worldsupp.com/wp-content/uploads/2020/08/facebook.png" alt=""></a><a style="background: transparent" target="_blank" rel="nofollow" href="#" class="footer__icon"><img src="https://worldsupp.com/wp-content/uploads/2020/08/youtube.png" alt=""></a><a style="background: transparent" target="_blank" rel="nofollow" href="https://www.pinterest.ru/worldsupp/%D0%B4%D0%B5%D0%BD%D1%8C%D0%B3%D0%B8-%D0%B8-%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81/" class="footer__icon"><img src="https://worldsupp.com/wp-content/uploads/2020/08/pinterest.png" alt=""></a><a style="background: transparent" target="_blank" rel="nofollow" href="#" class="footer__icon"><img src="https://worldsupp.com/wp-content/uploads/2020/08/telegram.png" alt=""></a><a style="background: transparent" target="_blank" rel="nofollow" href="#" class="footer__icon"><img src="https://worldsupp.com/wp-content/uploads/2020/08/instagram-sketched.png" alt=""></a><a style="background: transparent" target="_blank" rel="nofollow" href="https://zen.yandex.ru/id/5b4f3aa0e5179300a8be5ea7" class="footer__icon"><img src="https://worldsupp.com/wp-content/uploads/2020/10/imgonline-com-ua-resize-ez4jvicnpp.jpg" alt=""></a>            </div>
+		      </div>		      
+		      <div class="footer__browsers">
+            <div class="block__title">Расширения для браузеров:</div>
+            <div class="footer__social-links">
+              <a href="#" class="footer__icon footer__icon_chrome" title="Chrome"></a>
+              <a href="#" class="footer__icon footer__icon_firefox" title="Firefox"></a>
+              <a href="#" class="footer__icon footer__icon_yandex" title="Yandex"></a>
+              <a href="#" class="footer__icon footer__icon_opera" title="Opera"></a>
+            </div>		        
+		      </div>
+		      <a href="#" class="footer__tg-bot-link">Телеграм-бот: <strong>@worldsupp</strong></a>
+		    </div>
+		    <div class="footer-mid-right">
+		      <div class="footer__service">
+		        <div class="block__title">Забота о клиентах:</div>
+		        <a href="tel:+78003025650" class="footer__service-tel"><span style="" wa-subtypes="" wa-id="14" wa-type="PHONE" class="WebAnnotator_PHONE">+7(800)302-56-50</span></a>
+		         <p class="footer__service-descr">Ежедневно с 8:00 до 22:00</p>
+		      </div>
+		      <div class="footer__feedback">
+		        <div class="block__title"></div>
+		        <div class="footer__feedback-list">
+                  <a href="mailto:ru@worldsupp.com" class="footer__icon"><i class="fa fa-envelope"></i></a>
+                  <a href="" class="footer__icon"><i class="fa fa-telegram"></i></a>
+                  <a href="tel:+78003025650" class="footer__icon"><i class="fa fa-phone"></i></a>
+		        </div>
+		      </div>
+              <div class="footer__feeds">
+                <a href="#" class="footer__icon footer__icon_01"></a>
+                <a href="#" class="footer__icon footer__icon_02"></a>
+                <a href="#" class="footer__icon footer__icon_03"></a>
+                <a href="#" class="footer__icon footer__icon_04"></a>
+              </div>		      
+		    </div>
+		    <div class="footer-mid-bottom">
+		      <p>Сайт не оказывает финансовых услуг. Все предложения размещенные на сайте не являются офертой. Содержание информационных статей основано на субъективном мнении редакции нашего сайта. Мы не несем ответственность за полноту и достоверность содержащейся в них информации. Сайт не принадлежит финансовой организации и на нем не оказываются финансовые услуги. Исключительное право на товарные знаки (знаки обслуживания) принадлежат их правообладателям. Информация на сайте размещается с задержкой и может не соответствовать действительности, конечные условия уточняйте на сайтах организаций</p>
+		    </div>
+		  </div>
+		</div>
+		<!-- /.footer-mid -->
+		
+		<div class="footer-bottom">
+		  <div class="q-inner">
+		    <div class="footer-bottom-top">
+          <div class="footer__copy">© #<span style="" wa-subtypes="" wa-id="15" wa-type="NAME" class="WebAnnotator_NAME">Worldsupp</span>, 2014-2021</div>
+                    <div class="footer-bottom__nav">
+                        <a href="https://worldsupp.com/polojenie-ob-otkaze-ot-otvetstvennosti" class="footer-bottom__nav-link">Отказ от отвественности</a>
+                        <a href="https://worldsupp.com/personal/" class="footer-bottom__nav-link">Обработка персональных данных</a>
+                        <a href="https://worldsupp.com/soglashenie" class="footer-bottom__nav-link">Пользовательское соглашение</a>
+                      </div>
+          		    </div>
+		    <div class="footer-bottom-left"><p><strong>Требования к заемщикам:</strong></p>
+<ul>
+<li>Возраст от 19 лет</li>
+<li>Гражданство РФ или СНГ</li>
+<li>Постоянный подтвержденный доход необходимым для оплаты платежей</li>
+<li>Кредитная история не имеет значения</li>
+</ul>
+<p><strong>Условия:</strong></p>
+<ul>
+<li>Суммы займов — от 500 до 200 000 <span style="" wa-subtypes="" wa-id="17" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">рублей </span>в зависимости от оценки Кредитора</li>
+<li>Сроки займов — от 1 до 365 дней</li>
+<li>Полная стоимость займа — от <span style="" wa-subtypes="" wa-id="18" wa-type="RATE" class="WebAnnotator_RATE">0%</span> до <span style="" wa-subtypes="" wa-id="19" wa-type="RATE" class="WebAnnotator_RATE">365%</span> годовых по решению банка или МФО</li>
+<li>Просрочка платежа — Оплата 0,2% в день от суммы, но не более 20% от общей ссуды</li>
+<li>В случае отсутствия оплат МФО или банк имеет право передать информацию в Бюро кредитных историей (БКИ)</li>
+</ul>
+</div>
+		    <div class="footer-bottom-right"><p>Проект <span style="" wa-subtypes="" wa-id="16" wa-type="NAME" class="WebAnnotator_NAME">Worldsupp</span>.com оказывает бесплатную помощь в подборе и поиске займов и кредитов на самых выгодных условиях. Все представленные на нашем сайте Банки и МФО работают с соблюдением российского законодательства: Гражданского кодекса РФ, Федерального закона №151 «О микрофинансовой деятельности и микрофинансовых организациях» от 02.07.2010 года, Федерального закона №353 «О потребительском кредите (займе)» от 21.12.2013 года, Федерального закона №218-ФЗ «О кредитных историях» от 30.12.2004 года, Федерального закона №209 «О развитии малого и среднего предпринимательства в Российской Федерации» (Ст. 15 п. 2) от 24.07.2007 года. Проект не оказывает услуг по предоставлению займов. Информация на сайте является ознакомительной и не является офертой. Некоторые лицензии банков партнеров: (Лицензии: АО «Банк ЖилФинанс» — №3138, АО ЮниКредит Банк — №1, ПАО «Совкомбанк» — №963, ПАО «Татфондбанк» — №3058, ПАО АКБ «Металлинвестбанк» — №2440, АО «Райффайзенбанк» — №3292, АКБ «Абсолют Банк» (ПАО) — №2306, ПАО «ТрансКапиталБанк» — №2210, АО «АБ «Россия» №328, ООО Национальная фабрика ипотеки №3403, ПАО Банк Зенит №3255, АО «КБ ДельтаКредит» №3338, ПАО Банк «ФК Открытие» №2209, ПАО КБ «Восточный» №1460, ПАО АКБ «Связь-Банк» №14710, АО КБ «Интерпромбанк» №3266, ПАО «АК БАРС» Банк №2590, «Газпромбанк» (Акционерное общество) №354, ПАО «Почта Банк» №650, АО «Россельхозбанк» №3349, ПАО Московский кредитный банк №1978, АКБ Российский капитал (ПАО) №2312, АО Банк «Развитие Столица» №3013, ПАО «БИНБАНК» №323, ПАО Банк «АЛЕКСАНДРОВСКИЙ» №53, АО Норвик Банк №902, АКБ Держава №2738, ООО «Первый Клиентский Банк» №3436, ПАО «БАНК УРАЛСИБ» №2275, Банк ВТБ (ПАО) №1000). Окончательные условия по кредиту зависят от финансового положения заемщика, возраста, семейного положения, финансовой дисциплины и других обстоятельств. Окончательное решение по кредиту принимается кредитной организацией на основании предоставленных оригиналов документов в соответствии с кредитной политикой кредитной организации. Ставка по кредиту от <span style="" wa-subtypes="" wa-id="25" wa-type="RATE" class="WebAnnotator_RATE">6%</span> до <span style="" wa-subtypes="" wa-id="26" wa-type="RATE" class="WebAnnotator_RATE">40%</span> годовых в <span style="" wa-subtypes="" wa-id="27" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">рублях</span>. Единоразовая комиссия по кредиту от 0% до 7,9%. Срок кредитования от 1 года до 30 лет. При запрашиваемой сумме кредита 500 000 <span style="" wa-subtypes="" wa-id="24" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">рублей </span>на срок 12 месяцев при ставке 12% годовых примерный ежемесячный платеж составит 44 424 <span style="" wa-subtypes="" wa-id="23" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">рублей</span>. Примерная общая сумма ежемесячных платежей за 12 месяцев составит 44 424 <span style="" wa-subtypes="" wa-id="21" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">рублей</span>*12 месяцев=533 088 <span style="" wa-subtypes="" wa-id="22" wa-type="CURRENCY" class="WebAnnotator_CURRENCY">рублей</span>, из них проценты за весь срок кредита 33 088 рублей. В случае неисполнения заемщиком обязательств по кредитному договору кредитор оставляет за собой право осуществлять взыскание задолженности в досудебном порядке в строгом соответствии со статьей 15 ФЗ №353. На досудебном этапе: личные встречи, телефонные переговоры, почтовые отправления по месту жительства заемщика, телеграфные сообщения, текстовые, голосовые и иные сообщения. Наш адрес: <span style="" wa-subtypes="" wa-id="28" wa-type="ADDRESS" class="WebAnnotator_ADDRESS">город Москва, Ул. Космонавта Волкова д.15.к3, офис 46</span>, <span style="" wa-subtypes="" wa-id="29" wa-type="PHONE" class="WebAnnotator_PHONE">+7(800)302-56-50</span>, <span style="" wa-subtypes="" wa-id="30" wa-type="EMAIL" class="WebAnnotator_EMAIL">info@worldsupp.com</span> Мы являемся операторами персональных данных Номер 54-17-002553, 28.08.2017 Приказ № 366-нд</p>
+</div>        
+		  </div>
+		</div>
+		<!-- /.footer-bottom -->		
+  </footer>
+  
+</div>
+	<div class="hidden-blocks hidden">
+	  <div class="popup-form-callback" id="form-callback-container">
+	    <h2>Заказать звонок</h2>
+	    <div role="form" class="wpcf7" id="wpcf7-f43-o1" dir="ltr" lang="ru-RU">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f43-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init" id="form-callback">
+<div style="display: none;">
+<input name="_wpcf7" value="43" type="hidden">
+<input name="_wpcf7_version" value="5.3.2" type="hidden">
+<input name="_wpcf7_locale" value="ru_RU" type="hidden">
+<input name="_wpcf7_unit_tag" value="wpcf7-f43-o1" type="hidden">
+<input name="_wpcf7_container_post" value="0" type="hidden">
+<input name="_wpcf7_posted_data_hash" value="" type="hidden">
+</div>
+<label><span class="wpcf7-form-control-wrap field-name"><input name="field-name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Имя*" type="text"></span></label>
+<label><span class="wpcf7-form-control-wrap field-phone"><input name="field-phone" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Телефон*" type="tel"></span></label>
+<input value="Отправить" class="wpcf7-form-control wpcf7-submit" type="submit"><span class="ajax-loader"></span><div class="wpcf7-response-output" aria-hidden="true"></div></form></div>	  </div>
+	  <div class="popup-form-condtions" id="condtions-callback-container">
+	    <div class="article">
+	      <h2>Условия предоставления займов и кредитов</h2>
+	      <p><strong>Внимание. Никогда не платите никаких предоплат, ни за что до фактического получения денег.</strong></p>
+<p>Заемщиками коммерческой микрофинансовой организации&nbsp;<em>(ломбарда)</em>&nbsp;являются физические лица.</p>
+<p>Заемщиками некоммерческой микрофинансовой организации, созданной в форме&nbsp;<em>потребительского кооператива финансовой взаимопомощи</em>, могут быть только физические лица – члены такого кооператива, осуществляющие ремесленную деятельность, деятельность по оказанию услуг в сфере агроэкотуризма, ведение личного подсобного хозяйства, получающие заем на цели осуществления указанной деятельности, а также физические лица, являющиеся собственниками имущества, учредителями (участниками) коммерческих организаций, получающие заем на цели осуществления предпринимательской деятельности данной коммерческой организации.</p>
+<p>Заемщиками некоммерческой микрофинансовой организации, созданной в форме&nbsp;<em>общества взаимного финансирования</em>, могут быть члены такого общества, являющиеся исключительно субъектами малого и (или) среднего предпринимательства, получающие заем на цели осуществления предпринимательской деятельности.</p>
+<p>Заемщиками некоммерческой микрофинансовой организации, созданной в форме&nbsp;<em>фонда</em>, могут быть как физические, так и юридические лица. При этом заем физическим лицам предоставляется на цели осуществления ремесленной деятельности, деятельности по оказанию услуг в сфере агроэкотуризма, ведения личного подсобного хозяйства, а физическим лицам, являющимся собственниками имущества, учредителями (участниками) коммерческой организации, – на цели осуществления предпринимательской деятельности данной коммерческой организации. Субъектам малого и (или) среднего предпринимательства заем предоставляется на цели осуществления предпринимательской деятельности.</p>
+	    </div>
+	  </div>
+	</div>
+
+<script type="text/javascript">var pseudo_links = document.querySelectorAll(".pseudo-clearfy-link");for (var i=0;i<pseudo_links.length;i++ ) { pseudo_links[i].addEventListener("click", function(e){   window.open( e.target.getAttribute("data-uri") ); }); }</script><script>document.oncopy = function () {var bodyElement = document.body;var selection = getSelection();var link_url = document.URL;var page_link = "<br>Источник: %link%";page_link = page_link.replace("%link%", " " + link_url + " ");var copy_text = selection + page_link;var divElement = document.createElement("div");divElement.style.position="absolute";divElement.style.left="-99999px";bodyElement.appendChild(divElement);divElement.innerHTML = copy_text;selection.selectAllChildren(divElement);window.setTimeout(function() {bodyElement.removeChild(divElement);},0);}</script><link rel="stylesheet" id="theme-style-css" href="https://worldsupp.com/wp-content/themes/money/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://worldsupp.com/wp-content/themes/money/css/font-awesome.min.css" type="text/css" media="all">
+<script type="text/javascript" src="https://worldsupp.com/wp-content/themes/money/js/jquery-3.4.1.min.js" id="jquery-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/worldsupp.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://worldsupp.com/wp-content/plugins/contact-form-7/includes/js/scripts.js" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://worldsupp.com/wp-content/themes/money/js/front.js" id="front-js"></script>
+<script type="text/javascript">
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+    
+    // создание ЛК на основе заполненной формы
+    if ( '51416' == event.detail.contactFormId ) {
+        (function($){
+            
+            var first_name  = event.detail.inputs[0].value,
+                phone       = event.detail.inputs[1].value,
+                email       = event.detail.inputs[2].value,
+                message     = event.detail.inputs[3].value;
+                
+            
+            jQuery(function(){
+                jQuery(document).ready(function(){
+                    jQuery.ajax({
+                        url: 'https://worldsupp.com/wp-admin/admin-ajax.php',
+                        type: 'POST',
+                        data: {
+                            'action': 'question_make_account',
+                            'first_name': first_name,
+                            'phone': phone,
+                            'email': email,
+                            'message': message
+                        },
+                        success: function (data) {
+                            //$('#add_question form').html('<div class="form__title">Заявка отправлена</div><p syle="text-align:center">Менеджер свяжется с Вами<br> в ближайшее время</p>');
+                            window.location.replace("https://worldsupp.com/success" + data);
+                        }
+                    });
+                });
+            }); 
+        })(jQuery);	
+    }
+    
+    // Наполняем категории объявлений заявками на основе квиза со страницы объявления
+    if ( '6404' == event.detail.contactFormId || '117' == event.detail.contactFormId ) {
+        // 117 ru-ua
+        
+       (function($){
+            
+        //console.log(event.detail);
+            
+		   var amount            = event.detail.inputs[0].value,
+		       period            = event.detail.inputs[1].value,
+		       credit_history_id = event.detail.inputs[2].value, // история
+		       purpose_id        = event.detail.inputs[3].value, // цель
+               pledge_id         = event.detail.inputs[4].value, // залог
+               first_name        = event.detail.inputs[5].value,
+               last_name         = event.detail.inputs[6].value,
+               middle_name       = event.detail.inputs[7].value,
+               birthday          = event.detail.inputs[8].value,
+               phone             = event.detail.inputs[9].value,
+               email             = event.detail.inputs[10].value,
+               region            = event.detail.inputs[11].value,
+               city              = event.detail.inputs[12].value,
+               message           = event.detail.inputs[13].value,
+               history_text      = event.detail.inputs[14].value, // история
+		       purpose_text      = event.detail.inputs[15].value, // цель
+               pledge_text       = event.detail.inputs[16].value, // залог
+               page_title        = event.detail.inputs[17].value;
+            
+            jQuery(function(){
+                jQuery(document).ready(function(){
+                    jQuery.ajax({
+                        url: 'https://worldsupp.com/wp-admin/admin-ajax.php',
+                        type: 'POST',
+                        data: {
+                            'action': 'add_application',
+                            'first_name': first_name,
+                            'last_name': last_name,
+                            'middle_name': middle_name,
+                            'phone': phone,
+                            'email': email,
+                            'birthday': birthday,
+                            'region': region,
+                            'city': city,
+                            'amount': amount,
+                            //'credit_history_id': credit_history_id,
+                            //'pledge_id': pledge_id,
+                            //'purpose_id': purpose_id,
+                            'period': period,
+                            'amount': amount.split(' ').join(''),
+                            'message': message,
+                            'history_text': history_text,
+                            'purpose_text': purpose_text,
+                            'pledge_text': pledge_text,
+                            'page_title': page_title,
+                            //'ip_address': ip_address,
+                            'pid': '2565'
+                        },
+                        success: function (data) {
+                                                        window.location.replace("https://worldsupp.com/success" + data);
+                            //console.log("https://worldsupp.com/success" + data);
+                        }
+                    });
+                });
+            }); 
+
+       })(jQuery);	
+    }
+         
+}, false );
+</script>
+
+<script>
+    /* /Добавить к сравнению */
+	$(document).on('click', '.j-add-compare', function(e){
+    	e.preventDefault();
+		var itemId = $(this).attr('data-card-id');
+		var curCookie = '';
+		if($.cookie('compare_arr') != null) {
+		  curCookie = $.cookie('compare_arr');			
+		} 
+		var curCookieArr = curCookie.split(',');
+		if (curCookieArr.length > 10) {
+			alert('Нельзя добавлять более 10 карточек в сравнение!');
+			return;
+		}
+        $(this).removeClass('j-add-compare').addClass('j-del-compare').html('<i class="fa fa-balance-scale"></i> Удалить из сравнения');
+        $(this).after('<br><a href="/compare" class="card__link-compare">Перейти к сравнению</a>');
+        var newCompareCookie = curCookie + ',' + itemId;
+        document.cookie = 'compare_arr=' + encodeURIComponent(newCompareCookie) + '; path=/; max-age=' + (7*86400);
+    });
+    
+	$(document).on('click', '.j-del-compare', function(e){
+    	e.preventDefault();
+		$(this).removeClass('j-del-compare').addClass('j-add-compare').html('<i class="fa fa-balance-scale"></i> Добавить в сравнение');	
+		$(this).siblings('.card__link-compare').remove();
+	});
+	
+	$(document).on('click', '.j-del-compare', function(e){
+    	e.preventDefault();
+		var itemID = $(this).closest('.q-about-company-sm').attr('data-page-id');
+		var curCookieArr = $.cookie('compare_arr').split(',');
+		curCookieArr.splice(curCookieArr.indexOf(itemID), 1);
+		var newCookieArr = curCookieArr;
+		var newCompareCookie = newCookieArr.join(',');
+        document.cookie = 'compare_arr=' + encodeURIComponent(newCompareCookie) + '; path=/; max-age=' + (7*86400);
+		$(this).closest('.q-about-company-sm').remove();
+	});
+</script>
+
+
+<!--noptimize-->
+<script type="text/javascript">
+
+var fired = false;
+window.addEventListener('scroll', () => {
+    if (fired === false) {
+        fired = true;
+        
+setTimeout(() => {
+            (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter55766962 = new Ya.Metrika({ id:55766962, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");       
+        }, 1000)
+    }
+});
+
+setTimeout(function() {
+    var headID = document.getElementsByTagName("head")[0];         
+    var newScript = document.createElement('script');
+    newScript.type = 'text/javascript';
+    newScript.async = 'async';
+    newScript.src = 'https://www.googletagmanager.com/gtag/js?id=UA-176558002-1';
+    headID.appendChild(newScript);
+    
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-176558002-1');
+    
+}, 5000);
+
+</script>
+<!--/noptimize-->
+
+
+<div style="display:none;" id="webannotator-main-menu"></div><div style="display:none;" id="webannotator-sec-menu"></div><div style="font-family:arial;z-index:11001;position:absolute;display:none;background-color:white;" id="webannotator-edit-menu"><img src="chrome://webannotator/skin/suppr.png"><img src="chrome://webannotator/skin/edit.png"></div></body><WA_data_element wa-maxid="0" id="WA_data_element"></WA_data_element><wa-color id="WA-color-0" bg="#33CCFF" fg="#000000" class="WebAnnotator_ADDRESS" type="ADDRESS"></wa-color><wa-color id="WA-color-1" bg="#FF0000" fg="#000000" class="WebAnnotator_INN" type="INN"></wa-color><wa-color id="WA-color-2" bg="#33FF33" fg="#000000" class="WebAnnotator_KPP" type="KPP"></wa-color><wa-color id="WA-color-3" bg="#CC66CC" fg="#000000" class="WebAnnotator_OGRN" type="OGRN"></wa-color><wa-color id="WA-color-4" bg="#FF9900" fg="#000000" class="WebAnnotator_REG_CBR" type="REG_CBR"></wa-color><wa-color id="WA-color-5" bg="#99FFFF" fg="#000000" class="WebAnnotator_PHONE" type="PHONE"></wa-color><wa-color id="WA-color-6" bg="#FF6666" fg="#000000" class="WebAnnotator_EMAIL" type="EMAIL"></wa-color><wa-color id="WA-color-7" bg="#66FF99" fg="#000000" class="WebAnnotator_LEGAL_NAME" type="LEGAL_NAME"></wa-color><wa-color id="WA-color-8" bg="#3333FF" fg="#FFFFFF" class="WebAnnotator_NAME" type="NAME"></wa-color><wa-color id="WA-color-9" bg="#660000" fg="#FFFFFF" class="WebAnnotator_REGIONS" type="REGIONS"></wa-color><wa-color id="WA-color-10" bg="#006600" fg="#FFFFFF" class="WebAnnotator_RATE" type="RATE"></wa-color><wa-color id="WA-color-11" bg="#663366" fg="#FFFFFF" class="WebAnnotator_CURRENCY" type="CURRENCY"></wa-color><wa-title style="display:none;">Проект Worldsupp - поиск финансирования на любые цели в любой стране</wa-title></html>
